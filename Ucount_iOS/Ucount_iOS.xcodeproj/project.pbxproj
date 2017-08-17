@@ -10,10 +10,9 @@
 		068D235696AD6EFEAE604377 /* Pods_Ucount_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BD0D3FDE99606374B93EC /* Pods_Ucount_iOSUITests.framework */; };
 		0949871249525377D6E4E5FF /* Pods_Ucount_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8BA740C141DE2F7EE49B2A /* Pods_Ucount_iOSTests.framework */; };
 		AEB590EB4E8225F88DE778A9 /* Pods_Ucount_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C7903DE37D85EFB2AD7DAF /* Pods_Ucount_iOS.framework */; };
-		E5A03AB81F442BDD00EFE9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */; };
+		E534B1741F45BED6005E8909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534B1731F45BED6005E8909 /* AppDelegate.swift */; };
 		E5A03ABA1F442BDD00EFE9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A03AB91F442BDD00EFE9A3 /* ViewController.swift */; };
 		E5A03ABD1F442BDD00EFE9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03ABB1F442BDD00EFE9A3 /* Main.storyboard */; };
-		E5A03ABF1F442BDD00EFE9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */; };
 		E5A03AC21F442BDD00EFE9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AC01F442BDD00EFE9A3 /* LaunchScreen.storyboard */; };
 		E5A03ACD1F442BDD00EFE9A3 /* Ucount_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A03ACC1F442BDD00EFE9A3 /* Ucount_iOSTests.swift */; };
 		E5A03AD81F442BDD00EFE9A3 /* Ucount_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A03AD71F442BDD00EFE9A3 /* Ucount_iOSUITests.swift */; };
@@ -21,6 +20,7 @@
 		E5A03AF61F45822300EFE9A3 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF51F45822300EFE9A3 /* Wealth.storyboard */; };
 		E5A03AF81F4582AD00EFE9A3 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF71F4582AD00EFE9A3 /* Financial.storyboard */; };
 		E5A03AFB1F4582C700EFE9A3 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF91F4582C700EFE9A3 /* Report.storyboard */; };
+		E5A03AFD1F45844800EFE9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AFC1F45844800EFE9A3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +49,10 @@
 		C5710BD563243124941A91CB /* Pods-Ucount_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_iOSUITests/Pods-Ucount_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D51215DE950693E7DDFD76F6 /* Pods-Ucount_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_iOS/Pods-Ucount_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DA1BD0D3FDE99606374B93EC /* Pods_Ucount_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534B1731F45BED6005E8909 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5A03AB41F442BDD00EFE9A3 /* Ucount_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ucount_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		E5A03AB91F442BDD00EFE9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5A03ABC1F442BDD00EFE9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E5A03AC11F442BDD00EFE9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A03AC31F442BDD00EFE9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E5A03AC81F442BDD00EFE9A3 /* Ucount_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ucount_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +65,7 @@
 		E5A03AF51F45822300EFE9A3 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Wealth.storyboard; path = Ucount_iOS/Wealth/Wealth.storyboard; sourceTree = SOURCE_ROOT; };
 		E5A03AF71F4582AD00EFE9A3 /* Financial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
 		E5A03AFA1F4582C700EFE9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ucount_iOS/Base.lproj/Report.storyboard; sourceTree = SOURCE_ROOT; };
+		E5A03AFC1F45844800EFE9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F74A467D63AFDCCBA6856BCE /* Pods-Ucount_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_iOSTests/Pods-Ucount_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,7 +185,7 @@
 		E5A03AEE1F45816A00EFE9A3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */,
+				E534B1731F45BED6005E8909 /* AppDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 		E5A03AF11F45819000EFE9A3 /* Total */ = {
 			isa = PBXGroup;
 			children = (
-				E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */,
+				E5A03AFC1F45844800EFE9A3 /* Assets.xcassets */,
 				E5A03AC01F442BDD00EFE9A3 /* LaunchScreen.storyboard */,
 				E5A03ABB1F442BDD00EFE9A3 /* Main.storyboard */,
 				E5A03AC31F442BDD00EFE9A3 /* Info.plist */,
@@ -345,8 +345,8 @@
 				E5A03AFB1F4582C700EFE9A3 /* Report.storyboard in Resources */,
 				E5A03AF41F4581F100EFE9A3 /* Plan.storyboard in Resources */,
 				E5A03AF81F4582AD00EFE9A3 /* Financial.storyboard in Resources */,
-				E5A03ABF1F442BDD00EFE9A3 /* Assets.xcassets in Resources */,
 				E5A03ABD1F442BDD00EFE9A3 /* Main.storyboard in Resources */,
+				E5A03AFD1F45844800EFE9A3 /* Assets.xcassets in Resources */,
 				E5A03AF61F45822300EFE9A3 /* Wealth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,8 +522,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E534B1741F45BED6005E8909 /* AppDelegate.swift in Sources */,
 				E5A03ABA1F442BDD00EFE9A3 /* ViewController.swift in Sources */,
-				E5A03AB81F442BDD00EFE9A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
