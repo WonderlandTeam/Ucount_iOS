@@ -9,6 +9,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Report-->
+        <scene sceneID="HpP-Zh-K8q">
+            <objects>
+                <viewController id="mv9-Xy-HsQ" userLabel="Report" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WIg-Q8-GKI"/>
+                        <viewControllerLayoutGuide type="bottom" id="KMq-8b-fXr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dPi-Un-PzM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="RDs-Ej-bsY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZR-7m-7li" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="-611"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fu8-Rz-x4d">
             <objects>
@@ -20,14 +39,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="rRQ-WH-MD7" kind="relationship" relationship="viewControllers" id="ZBp-dX-eo7"/>
-                        <segue destination="wOP-cr-jpf" kind="relationship" relationship="viewControllers" id="wr1-qc-2Jb"/>
+                        <segue destination="mv9-Xy-HsQ" kind="relationship" relationship="viewControllers" id="wr1-qc-2Jb"/>
                         <segue destination="JJ5-1R-wBS" kind="relationship" relationship="viewControllers" id="tSj-Xm-CUc"/>
                         <segue destination="vZW-Dq-z33" kind="relationship" relationship="viewControllers" id="jmp-Mj-cOl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBn-1O-Mh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1615" y="703"/>
+            <point key="canvasLocation" x="-1623" y="896"/>
         </scene>
         <!--Plan-->
         <scene sceneID="J86-iZ-WC8">
@@ -37,7 +56,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0v-Jt-Qus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-722" y="1016"/>
+            <point key="canvasLocation" x="142" y="1443"/>
         </scene>
         <!--Wealth-->
         <scene sceneID="PWe-UH-cze">
@@ -47,7 +66,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49Y-Sc-fYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-701" y="725"/>
+            <point key="canvasLocation" x="142" y="734"/>
         </scene>
         <!--Financial-->
         <scene sceneID="y8b-P2-FnY">
@@ -57,17 +76,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNA-Ob-xye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-701" y="416"/>
-        </scene>
-        <!--Report-->
-        <scene sceneID="BUf-G8-cjF">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Report" id="wOP-cr-jpf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iIr-b0-E3P"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nuv-zT-yDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-690" y="188"/>
+            <point key="canvasLocation" x="142" y="38"/>
         </scene>
     </scenes>
 </document>

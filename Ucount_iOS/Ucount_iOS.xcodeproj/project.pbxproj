@@ -17,6 +17,10 @@
 		E5A03AC21F442BDD00EFE9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AC01F442BDD00EFE9A3 /* LaunchScreen.storyboard */; };
 		E5A03ACD1F442BDD00EFE9A3 /* Ucount_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A03ACC1F442BDD00EFE9A3 /* Ucount_iOSTests.swift */; };
 		E5A03AD81F442BDD00EFE9A3 /* Ucount_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A03AD71F442BDD00EFE9A3 /* Ucount_iOSUITests.swift */; };
+		E5A03AF41F4581F100EFE9A3 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF31F4581F100EFE9A3 /* Plan.storyboard */; };
+		E5A03AF61F45822300EFE9A3 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF51F45822300EFE9A3 /* Wealth.storyboard */; };
+		E5A03AF81F4582AD00EFE9A3 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF71F4582AD00EFE9A3 /* Financial.storyboard */; };
+		E5A03AFB1F4582C700EFE9A3 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A03AF91F4582C700EFE9A3 /* Report.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,18 +50,22 @@
 		D51215DE950693E7DDFD76F6 /* Pods-Ucount_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_iOS/Pods-Ucount_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DA1BD0D3FDE99606374B93EC /* Pods_Ucount_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A03AB41F442BDD00EFE9A3 /* Ucount_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ucount_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		E5A03AB91F442BDD00EFE9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5A03ABC1F442BDD00EFE9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E5A03AC11F442BDD00EFE9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E5A03AC31F442BDD00EFE9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A03AC31F442BDD00EFE9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E5A03AC81F442BDD00EFE9A3 /* Ucount_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ucount_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A03ACC1F442BDD00EFE9A3 /* Ucount_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ucount_iOSTests.swift; sourceTree = "<group>"; };
 		E5A03ACE1F442BDD00EFE9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5A03AD31F442BDD00EFE9A3 /* Ucount_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ucount_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A03AD71F442BDD00EFE9A3 /* Ucount_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ucount_iOSUITests.swift; sourceTree = "<group>"; };
 		E5A03AD91F442BDD00EFE9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A03AF31F4581F100EFE9A3 /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Plan.storyboard; path = Ucount_iOS/Plan/Plan.storyboard; sourceTree = SOURCE_ROOT; };
+		E5A03AF51F45822300EFE9A3 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Wealth.storyboard; path = Ucount_iOS/Wealth/Wealth.storyboard; sourceTree = SOURCE_ROOT; };
+		E5A03AF71F4582AD00EFE9A3 /* Financial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
+		E5A03AFA1F4582C700EFE9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ucount_iOS/Base.lproj/Report.storyboard; sourceTree = SOURCE_ROOT; };
 		F74A467D63AFDCCBA6856BCE /* Pods-Ucount_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_iOSTests/Pods-Ucount_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,12 +145,13 @@
 		E5A03AB61F442BDD00EFE9A3 /* Ucount_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */,
+				E5A03AF21F45819A00EFE9A3 /* Wealth */,
+				E5A03AF11F45819000EFE9A3 /* Total */,
+				E5A03AF01F45818600EFE9A3 /* Report */,
+				E5A03AEF1F45817500EFE9A3 /* Plan */,
+				E5A03AEE1F45816A00EFE9A3 /* Main */,
+				E5A03AED1F45815000EFE9A3 /* Financial */,
 				E5A03AB91F442BDD00EFE9A3 /* ViewController.swift */,
-				E5A03ABB1F442BDD00EFE9A3 /* Main.storyboard */,
-				E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */,
-				E5A03AC01F442BDD00EFE9A3 /* LaunchScreen.storyboard */,
-				E5A03AC31F442BDD00EFE9A3 /* Info.plist */,
 			);
 			path = Ucount_iOS;
 			sourceTree = "<group>";
@@ -163,6 +172,57 @@
 				E5A03AD91F442BDD00EFE9A3 /* Info.plist */,
 			);
 			path = Ucount_iOSUITests;
+			sourceTree = "<group>";
+		};
+		E5A03AED1F45815000EFE9A3 /* Financial */ = {
+			isa = PBXGroup;
+			children = (
+				E5A03AF71F4582AD00EFE9A3 /* Financial.storyboard */,
+			);
+			path = Financial;
+			sourceTree = "<group>";
+		};
+		E5A03AEE1F45816A00EFE9A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E5A03AB71F442BDD00EFE9A3 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E5A03AEF1F45817500EFE9A3 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				E5A03AF31F4581F100EFE9A3 /* Plan.storyboard */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		E5A03AF01F45818600EFE9A3 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				E5A03AF91F4582C700EFE9A3 /* Report.storyboard */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		E5A03AF11F45819000EFE9A3 /* Total */ = {
+			isa = PBXGroup;
+			children = (
+				E5A03ABE1F442BDD00EFE9A3 /* Assets.xcassets */,
+				E5A03AC01F442BDD00EFE9A3 /* LaunchScreen.storyboard */,
+				E5A03ABB1F442BDD00EFE9A3 /* Main.storyboard */,
+				E5A03AC31F442BDD00EFE9A3 /* Info.plist */,
+			);
+			path = Total;
+			sourceTree = "<group>";
+		};
+		E5A03AF21F45819A00EFE9A3 /* Wealth */ = {
+			isa = PBXGroup;
+			children = (
+				E5A03AF51F45822300EFE9A3 /* Wealth.storyboard */,
+			);
+			path = Wealth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +342,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A03AC21F442BDD00EFE9A3 /* LaunchScreen.storyboard in Resources */,
+				E5A03AFB1F4582C700EFE9A3 /* Report.storyboard in Resources */,
+				E5A03AF41F4581F100EFE9A3 /* Plan.storyboard in Resources */,
+				E5A03AF81F4582AD00EFE9A3 /* Financial.storyboard in Resources */,
 				E5A03ABF1F442BDD00EFE9A3 /* Assets.xcassets in Resources */,
 				E5A03ABD1F442BDD00EFE9A3 /* Main.storyboard in Resources */,
+				E5A03AF61F45822300EFE9A3 /* Wealth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +565,7 @@
 				E5A03ABC1F442BDD00EFE9A3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E5A03AC01F442BDD00EFE9A3 /* LaunchScreen.storyboard */ = {
@@ -509,6 +574,16 @@
 				E5A03AC11F442BDD00EFE9A3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E5A03AF91F4582C700EFE9A3 /* Report.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5A03AFA1F4582C700EFE9A3 /* Base */,
+			);
+			name = Report.storyboard;
+			path = ../Total;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -710,6 +785,7 @@
 				E5A03ADE1F442BDD00EFE9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5A03ADF1F442BDD00EFE9A3 /* Build configuration list for PBXNativeTarget "Ucount_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +794,7 @@
 				E5A03AE11F442BDD00EFE9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5A03AE21F442BDD00EFE9A3 /* Build configuration list for PBXNativeTarget "Ucount_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +803,7 @@
 				E5A03AE41F442BDD00EFE9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
