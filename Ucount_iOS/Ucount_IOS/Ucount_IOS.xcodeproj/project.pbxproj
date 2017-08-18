@@ -17,10 +17,16 @@
 		E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447161F468AF9006F976E /* LaunchScreen.storyboard */; };
 		E58447231F468AF9006F976E /* Ucount_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447221F468AF9006F976E /* Ucount_IOSTests.swift */; };
 		E584472E1F468AF9006F976E /* Ucount_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584472D1F468AF9006F976E /* Ucount_IOSUITests.swift */; };
-		E584473F1F468E15006F976E /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584473E1F468E15006F976E /* Report.storyboard */; };
-		E58447441F468E3E006F976E /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447431F468E3E006F976E /* Plan.storyboard */; };
-		E58447491F4690FB006F976E /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447481F4690FB006F976E /* Wealth.storyboard */; };
-		E584474B1F469187006F976E /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584474A1F469187006F976E /* Financial.storyboard */; };
+		E58447561F46C382006F976E /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447541F46C382006F976E /* Person.storyboard */; };
+		E58447571F46C382006F976E /* Person~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447551F46C382006F976E /* Person~.storyboard */; };
+		E584475B1F46C39D006F976E /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447591F46C39D006F976E /* Financial.storyboard */; };
+		E584475C1F46C39D006F976E /* Financial~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475A1F46C39D006F976E /* Financial~.storyboard */; };
+		E58447601F46C3E3006F976E /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475E1F46C3E3006F976E /* Report.storyboard */; };
+		E58447611F46C3E3006F976E /* Report~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475F1F46C3E3006F976E /* Report~.storyboard */; };
+		E584476A1F46C40D006F976E /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447681F46C40D006F976E /* Wealth.storyboard */; };
+		E584476B1F46C40D006F976E /* Wealth~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447691F46C40D006F976E /* Wealth~.storyboard */; };
+		E584476F1F46C418006F976E /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584476D1F46C418006F976E /* Plan.storyboard */; };
+		E58447701F46C418006F976E /* Plan~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584476E1F46C418006F976E /* Plan~.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +69,16 @@
 		E58447291F468AF9006F976E /* Ucount_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ucount_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584472D1F468AF9006F976E /* Ucount_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ucount_IOSUITests.swift; sourceTree = "<group>"; };
 		E584472F1F468AF9006F976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E584473E1F468E15006F976E /* Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
-		E58447431F468E3E006F976E /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
-		E58447481F4690FB006F976E /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
-		E584474A1F469187006F976E /* Financial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
+		E58447541F46C382006F976E /* Person.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Person.storyboard; sourceTree = "<group>"; };
+		E58447551F46C382006F976E /* Person~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Person~.storyboard"; sourceTree = "<group>"; };
+		E58447591F46C39D006F976E /* Financial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
+		E584475A1F46C39D006F976E /* Financial~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Financial~.storyboard"; sourceTree = "<group>"; };
+		E584475E1F46C3E3006F976E /* Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+		E584475F1F46C3E3006F976E /* Report~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Report~.storyboard"; sourceTree = "<group>"; };
+		E58447681F46C40D006F976E /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
+		E58447691F46C40D006F976E /* Wealth~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Wealth~.storyboard"; sourceTree = "<group>"; };
+		E584476D1F46C418006F976E /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
+		E584476E1F46C418006F976E /* Plan~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Plan~.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,14 +157,15 @@
 		E584470C1F468AF9006F976E /* Ucount_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				E58447531F46C382006F976E /* Person */,
 				E584470D1F468AF9006F976E /* AppDelegate.swift */,
+				E58447581F46C39D006F976E /* Financial */,
 				E584470F1F468AF9006F976E /* ViewController.swift */,
+				E584475D1F46C3E3006F976E /* Report */,
 				E58447111F468AF9006F976E /* Main.storyboard */,
-				E584474A1F469187006F976E /* Financial.storyboard */,
-				E58447481F4690FB006F976E /* Wealth.storyboard */,
-				E58447431F468E3E006F976E /* Plan.storyboard */,
-				E584473E1F468E15006F976E /* Report.storyboard */,
+				E58447671F46C40D006F976E /* Wealth */,
 				E58447141F468AF9006F976E /* Assets.xcassets */,
+				E584476C1F46C418006F976E /* Plan */,
 				E58447161F468AF9006F976E /* LaunchScreen.storyboard */,
 				E58447191F468AF9006F976E /* Info.plist */,
 			);
@@ -175,6 +188,51 @@
 				E584472F1F468AF9006F976E /* Info.plist */,
 			);
 			path = Ucount_IOSUITests;
+			sourceTree = "<group>";
+		};
+		E58447531F46C382006F976E /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				E58447541F46C382006F976E /* Person.storyboard */,
+				E58447551F46C382006F976E /* Person~.storyboard */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		E58447581F46C39D006F976E /* Financial */ = {
+			isa = PBXGroup;
+			children = (
+				E58447591F46C39D006F976E /* Financial.storyboard */,
+				E584475A1F46C39D006F976E /* Financial~.storyboard */,
+			);
+			path = Financial;
+			sourceTree = "<group>";
+		};
+		E584475D1F46C3E3006F976E /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				E584475E1F46C3E3006F976E /* Report.storyboard */,
+				E584475F1F46C3E3006F976E /* Report~.storyboard */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		E58447671F46C40D006F976E /* Wealth */ = {
+			isa = PBXGroup;
+			children = (
+				E58447681F46C40D006F976E /* Wealth.storyboard */,
+				E58447691F46C40D006F976E /* Wealth~.storyboard */,
+			);
+			path = Wealth;
+			sourceTree = "<group>";
+		};
+		E584476C1F46C418006F976E /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				E584476D1F46C418006F976E /* Plan.storyboard */,
+				E584476E1F46C418006F976E /* Plan~.storyboard */,
+			);
+			path = Plan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,13 +351,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58447441F468E3E006F976E /* Plan.storyboard in Resources */,
+				E58447701F46C418006F976E /* Plan~.storyboard in Resources */,
 				E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */,
 				E58447151F468AF9006F976E /* Assets.xcassets in Resources */,
+				E58447611F46C3E3006F976E /* Report~.storyboard in Resources */,
+				E58447561F46C382006F976E /* Person.storyboard in Resources */,
 				E58447131F468AF9006F976E /* Main.storyboard in Resources */,
-				E584474B1F469187006F976E /* Financial.storyboard in Resources */,
-				E584473F1F468E15006F976E /* Report.storyboard in Resources */,
-				E58447491F4690FB006F976E /* Wealth.storyboard in Resources */,
+				E584476B1F46C40D006F976E /* Wealth~.storyboard in Resources */,
+				E58447601F46C3E3006F976E /* Report.storyboard in Resources */,
+				E584475C1F46C39D006F976E /* Financial~.storyboard in Resources */,
+				E584475B1F46C39D006F976E /* Financial.storyboard in Resources */,
+				E584476F1F46C418006F976E /* Plan.storyboard in Resources */,
+				E58447571F46C382006F976E /* Person~.storyboard in Resources */,
+				E584476A1F46C40D006F976E /* Wealth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@
                         <segue destination="vVg-o8-hh5" kind="relationship" relationship="viewControllers" id="shG-aP-EwI"/>
                         <segue destination="PCa-NE-zzX" kind="relationship" relationship="viewControllers" id="cgE-Xz-J4I"/>
                         <segue destination="Drc-f6-dFT" kind="relationship" relationship="viewControllers" id="Wwp-x2-4SQ"/>
-                        <segue destination="cvN-Vg-WnR" kind="relationship" relationship="viewControllers" id="YCg-Jm-2B0"/>
+                        <segue destination="qK8-C6-Jym" kind="relationship" relationship="viewControllers" id="YCg-Jm-2B0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kz-Vn-Sr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,7 +38,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qR2-4R-aUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90" y="-452"/>
+            <point key="canvasLocation" x="-81" y="-554"/>
         </scene>
         <!--Plan-->
         <scene sceneID="gBg-vw-ibH">
@@ -48,7 +48,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omo-ok-LXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="-275"/>
+            <point key="canvasLocation" x="-90" y="-418"/>
         </scene>
         <!--Wealth-->
         <scene sceneID="JwL-0b-3a3">
@@ -60,6 +60,26 @@
             </objects>
             <point key="canvasLocation" x="-101" y="-99"/>
         </scene>
+        <!--Financial-->
+        <scene sceneID="7HP-eI-e3x">
+            <objects>
+                <viewController id="qK8-C6-Jym" userLabel="Financial" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DKP-Pc-dhl"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ze-PE-PUB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hdn-qJ-4HB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="C5m-Za-74Q"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0w1-47-vhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="182"/>
+        </scene>
         <!--Person-->
         <scene sceneID="8AS-Y0-D4T">
             <objects>
@@ -68,17 +88,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejA-H8-jAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="147"/>
-        </scene>
-        <!--Financial-->
-        <scene sceneID="iSM-Z2-z0v">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Financial" id="cvN-Vg-WnR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1A0-9C-eUy"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EcV-rj-TNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-91" y="40"/>
+            <point key="canvasLocation" x="66" y="461"/>
         </scene>
     </scenes>
 </document>
