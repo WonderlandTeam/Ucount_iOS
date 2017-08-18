@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yGG-Tq-5yE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="k8d-lY-hOx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Wealth-->
-        <scene sceneID="rEp-1o-f0I">
+        <scene sceneID="ul7-ft-lj9">
             <objects>
-                <viewController id="yGG-Tq-5yE" userLabel="Wealth" sceneMemberID="viewController">
+                <viewController id="k8d-lY-hOx" userLabel="Wealth" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bGR-Cn-E2b"/>
-                        <viewControllerLayoutGuide type="bottom" id="PYe-Fq-fXC"/>
+                        <viewControllerLayoutGuide type="top" id="GSK-Gc-6dd"/>
+                        <viewControllerLayoutGuide type="bottom" id="1qs-mX-cAl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5s1-dd-ZRX">
+                    <view key="view" contentMode="scaleToFill" id="EeT-B0-IQ2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Yd0-Jn-MpV"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="9C7-cO-P4P"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f2u-kd-wD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvw-Um-T6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="197"/>
+            <point key="canvasLocation" x="695" y="530"/>
         </scene>
     </scenes>
 </document>
