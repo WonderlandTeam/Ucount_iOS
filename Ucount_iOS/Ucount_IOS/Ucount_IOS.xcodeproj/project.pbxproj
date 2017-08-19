@@ -10,6 +10,7 @@
 		1DCF89A552040E6AAF41C60B /* Pods_Ucount_IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5A417703A5EC0802A1C82D /* Pods_Ucount_IOSUITests.framework */; };
 		71AB14AE1F4830FE00EFFBF0 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AB14AC1F4830FE00EFFBF0 /* Financial.storyboard */; };
 		71AB14BC1F4844F500EFFBF0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB14BB1F4844F500EFFBF0 /* RegisterViewController.swift */; };
+		71AB14BE1F4848D400EFFBF0 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB14BD1F4848D400EFFBF0 /* ForgetViewController.swift */; };
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
 		E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584470D1F468AF9006F976E /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 		6931DB0EB119133441E94E37 /* Pods-Ucount_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		71AB14AD1F4830FE00EFFBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Financial.storyboard; sourceTree = "<group>"; };
 		71AB14BB1F4844F500EFFBF0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		71AB14BD1F4848D400EFFBF0 /* ForgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		C34FE42D6B8405B16123136E /* Pods-Ucount_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		71AB14BF1F48490400EFFBF0 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				E584470F1F468AF9006F976E /* LoginViewController.swift */,
+				71AB14BB1F4844F500EFFBF0 /* RegisterViewController.swift */,
+				71AB14BD1F4848D400EFFBF0 /* ForgetViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		9E25B71060796BB389CAE09B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				E58447111F468AF9006F976E /* Main.storyboard */,
-				E584470F1F468AF9006F976E /* LoginViewController.swift */,
-				71AB14BB1F4844F500EFFBF0 /* RegisterViewController.swift */,
 				E584470D1F468AF9006F976E /* AppDelegate.swift */,
 				E58447141F468AF9006F976E /* Assets.xcassets */,
 				E58447161F468AF9006F976E /* LaunchScreen.storyboard */,
 				E58447191F468AF9006F976E /* Info.plist */,
+				71AB14BF1F48490400EFFBF0 /* login */,
 				E58447531F46C382006F976E /* Person */,
 				E58447581F46C39D006F976E /* Financial */,
 				E584475D1F46C3E3006F976E /* Report */,
@@ -534,6 +545,7 @@
 			files = (
 				E58447101F468AF9006F976E /* LoginViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
+				71AB14BE1F4848D400EFFBF0 /* ForgetViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				71AB14BC1F4844F500EFFBF0 /* RegisterViewController.swift in Sources */,
 			);
