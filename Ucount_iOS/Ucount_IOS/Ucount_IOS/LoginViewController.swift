@@ -19,7 +19,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         super.viewDidLoad()
         idText.delegate = self
         passwordText.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
 
     override func didReceiveMemoryWarning() {
