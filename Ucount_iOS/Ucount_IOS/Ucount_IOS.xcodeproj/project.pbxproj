@@ -16,8 +16,6 @@
 		E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447161F468AF9006F976E /* LaunchScreen.storyboard */; };
 		E58447231F468AF9006F976E /* Ucount_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447221F468AF9006F976E /* Ucount_IOSTests.swift */; };
 		E584472E1F468AF9006F976E /* Ucount_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584472D1F468AF9006F976E /* Ucount_IOSUITests.swift */; };
-		E58447561F46C382006F976E /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447541F46C382006F976E /* Person.storyboard */; };
-		E58447571F46C382006F976E /* Person~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447551F46C382006F976E /* Person~.storyboard */; };
 		E58447601F46C3E3006F976E /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475E1F46C3E3006F976E /* Report.storyboard */; };
 		E584476A1F46C40D006F976E /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447681F46C40D006F976E /* Wealth.storyboard */; };
 		E584476F1F46C418006F976E /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584476D1F46C418006F976E /* Plan.storyboard */; };
@@ -68,8 +66,6 @@
 		E58447291F468AF9006F976E /* Ucount_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ucount_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584472D1F468AF9006F976E /* Ucount_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ucount_IOSUITests.swift; sourceTree = "<group>"; };
 		E584472F1F468AF9006F976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E58447541F46C382006F976E /* Person.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Person.storyboard; sourceTree = "<group>"; };
-		E58447551F46C382006F976E /* Person~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Person~.storyboard"; sourceTree = "<group>"; };
 		E584475E1F46C3E3006F976E /* Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		E58447681F46C40D006F976E /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E584476D1F46C418006F976E /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
@@ -163,7 +159,6 @@
 				E58447731F487206006F976E /* login */,
 				E58447161F468AF9006F976E /* LaunchScreen.storyboard */,
 				E58447191F468AF9006F976E /* Info.plist */,
-				E58447531F46C382006F976E /* Person */,
 				E58447581F46C39D006F976E /* Financial */,
 				E584475D1F46C3E3006F976E /* Report */,
 				E58447671F46C40D006F976E /* Wealth */,
@@ -188,15 +183,6 @@
 				E584472F1F468AF9006F976E /* Info.plist */,
 			);
 			path = Ucount_IOSUITests;
-			sourceTree = "<group>";
-		};
-		E58447531F46C382006F976E /* Person */ = {
-			isa = PBXGroup;
-			children = (
-				E58447541F46C382006F976E /* Person.storyboard */,
-				E58447551F46C382006F976E /* Person~.storyboard */,
-			);
-			path = Person;
 			sourceTree = "<group>";
 		};
 		E58447581F46C39D006F976E /* Financial */ = {
@@ -362,12 +348,10 @@
 				E58447701F46C418006F976E /* Plan~.storyboard in Resources */,
 				E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */,
 				E58447151F468AF9006F976E /* Assets.xcassets in Resources */,
-				E58447561F46C382006F976E /* Person.storyboard in Resources */,
 				E584477B1F487532006F976E /* Financial.storyboard in Resources */,
 				E58447131F468AF9006F976E /* Main.storyboard in Resources */,
 				E58447601F46C3E3006F976E /* Report.storyboard in Resources */,
 				E584476F1F46C418006F976E /* Plan.storyboard in Resources */,
-				E58447571F46C382006F976E /* Person~.storyboard in Resources */,
 				E584476A1F46C40D006F976E /* Wealth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
