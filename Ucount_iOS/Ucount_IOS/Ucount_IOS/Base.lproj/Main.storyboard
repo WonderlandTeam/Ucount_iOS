@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e2S-PF-6FX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e2S-PF-6FX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,7 +34,7 @@
         <scene sceneID="clu-89-mpR">
             <objects>
                 <viewControllerPlaceholder storyboardName="Report" id="FTA-bU-Jk8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="FLt-Lx-7xh"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="FLt-Lx-7xh" userLabel="报表"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qR2-4R-aUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +44,7 @@
         <scene sceneID="gBg-vw-ibH">
             <objects>
                 <viewControllerPlaceholder storyboardName="Plan" id="vVg-o8-hh5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wQV-om-w6R"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="wQV-om-w6R" userLabel="规划"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omo-ok-LXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +54,7 @@
         <scene sceneID="JwL-0b-3a3">
             <objects>
                 <viewControllerPlaceholder storyboardName="Wealth" id="PCa-NE-zzX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IN7-Fd-fpk"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="IN7-Fd-fpk" userLabel="资产"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G32-KI-pb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +64,7 @@
         <scene sceneID="8AS-Y0-D4T">
             <objects>
                 <viewControllerPlaceholder storyboardName="Person" id="Drc-f6-dFT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iny-qc-aCc"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="iny-qc-aCc" userLabel="个人中心"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejA-H8-jAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

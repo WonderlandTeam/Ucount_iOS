@@ -22,11 +22,10 @@
 		E584475B1F46C39D006F976E /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447591F46C39D006F976E /* Financial.storyboard */; };
 		E584475C1F46C39D006F976E /* Financial~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475A1F46C39D006F976E /* Financial~.storyboard */; };
 		E58447601F46C3E3006F976E /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475E1F46C3E3006F976E /* Report.storyboard */; };
-		E58447611F46C3E3006F976E /* Report~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584475F1F46C3E3006F976E /* Report~.storyboard */; };
 		E584476A1F46C40D006F976E /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447681F46C40D006F976E /* Wealth.storyboard */; };
-		E584476B1F46C40D006F976E /* Wealth~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447691F46C40D006F976E /* Wealth~.storyboard */; };
 		E584476F1F46C418006F976E /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584476D1F46C418006F976E /* Plan.storyboard */; };
 		E58447701F46C418006F976E /* Plan~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E584476E1F46C418006F976E /* Plan~.storyboard */; };
+		E58447721F481625006F976E /* WealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447711F481625006F976E /* WealthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,11 +73,10 @@
 		E58447591F46C39D006F976E /* Financial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
 		E584475A1F46C39D006F976E /* Financial~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Financial~.storyboard"; sourceTree = "<group>"; };
 		E584475E1F46C3E3006F976E /* Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
-		E584475F1F46C3E3006F976E /* Report~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Report~.storyboard"; sourceTree = "<group>"; };
 		E58447681F46C40D006F976E /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
-		E58447691F46C40D006F976E /* Wealth~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Wealth~.storyboard"; sourceTree = "<group>"; };
 		E584476D1F46C418006F976E /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
 		E584476E1F46C418006F976E /* Plan~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Plan~.storyboard"; sourceTree = "<group>"; };
+		E58447711F481625006F976E /* WealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WealthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				E584475E1F46C3E3006F976E /* Report.storyboard */,
-				E584475F1F46C3E3006F976E /* Report~.storyboard */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -221,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				E58447681F46C40D006F976E /* Wealth.storyboard */,
-				E58447691F46C40D006F976E /* Wealth~.storyboard */,
+				E58447711F481625006F976E /* WealthViewController.swift */,
 			);
 			path = Wealth;
 			sourceTree = "<group>";
@@ -354,10 +351,8 @@
 				E58447701F46C418006F976E /* Plan~.storyboard in Resources */,
 				E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */,
 				E58447151F468AF9006F976E /* Assets.xcassets in Resources */,
-				E58447611F46C3E3006F976E /* Report~.storyboard in Resources */,
 				E58447561F46C382006F976E /* Person.storyboard in Resources */,
 				E58447131F468AF9006F976E /* Main.storyboard in Resources */,
-				E584476B1F46C40D006F976E /* Wealth~.storyboard in Resources */,
 				E58447601F46C3E3006F976E /* Report.storyboard in Resources */,
 				E584475C1F46C39D006F976E /* Financial~.storyboard in Resources */,
 				E584475B1F46C39D006F976E /* Financial.storyboard in Resources */,
@@ -539,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58447101F468AF9006F976E /* ViewController.swift in Sources */,
+				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
