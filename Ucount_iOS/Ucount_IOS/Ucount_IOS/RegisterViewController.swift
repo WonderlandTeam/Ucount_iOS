@@ -1,37 +1,39 @@
 //
-//  ViewController.swift
+//  RegisterViewController.swift
 //  Ucount_IOS
 //
-//  Created by 李一鹏 on 2017/8/18.
+//  Created by 黄飘 on 2017/8/19.
 //  Copyright © 2017年 李一鹏. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController ,UITextFieldDelegate{
+class RegisterViewController: UIViewController ,UITextFieldDelegate{
+    
+    @IBOutlet weak var telephone: UITextField!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     
-    @IBOutlet weak var idText: UITextField!
-    
-    @IBOutlet weak var passwordText: UITextField!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        idText.delegate = self
-        passwordText.delegate = self
+        telephone.delegate = self
+        username.delegate = self
+        password.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
     //点到view的别的地方，焦点从textfield转移,反焦点
     override  func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        idText.resignFirstResponder()
-        passwordText.resignFirstResponder()
+        telephone.resignFirstResponder()
+        username.resignFirstResponder()
+        password.resignFirstResponder()
     }
     
     //点击return，键盘消失
@@ -39,6 +41,9 @@ class ViewController: UIViewController ,UITextFieldDelegate{
         textField.resignFirstResponder()
         return true
     }
-
+    
+    
+    
+    
 }
 
