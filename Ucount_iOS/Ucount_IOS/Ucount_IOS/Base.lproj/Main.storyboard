@@ -125,17 +125,12 @@
             </objects>
             <point key="canvasLocation" x="-2802" y="-165"/>
         </scene>
-<<<<<<< HEAD
-        <!--Main-->
-        <scene sceneID="dpC-Ir-vWK">
-            <objects>
-                <tabBarController storyboardIdentifier="Financial" id="e2S-PF-6FX" userLabel="Main" sceneMemberID="viewController">
-=======
+
         <!--Tab Bar Controller-->
         <scene sceneID="dpC-Ir-vWK">
             <objects>
                 <tabBarController id="e2S-PF-6FX" sceneMemberID="viewController">
->>>>>>> 151886e3c110ed3b910000f59c7f758b8eab1afe
+
                     <tabBar key="tabBar" contentMode="scaleToFill" id="R7Q-HG-dHh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
