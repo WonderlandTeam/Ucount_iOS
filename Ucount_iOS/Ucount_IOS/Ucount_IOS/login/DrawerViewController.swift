@@ -18,7 +18,8 @@ class DrawerViewController: UIViewController {
     //MARK: - 单例
     static let shareDrawer = UIApplication.shared.keyWindow?.rootViewController as? DrawerViewController
     
-    init(mainVC: UIViewController, leftMenuVC: UIViewController, leftWidth: CGFloat) {        super.init(nibName: nil, bundle: nil)
+    init(mainVC: UIViewController, leftMenuVC: UIViewController, leftWidth: CGFloat) {
+        super.init(nibName: nil, bundle: nil)
         
         self.mainVC = mainVC
         self.leftVC = leftMenuVC
