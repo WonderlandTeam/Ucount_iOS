@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1DCF89A552040E6AAF41C60B /* Pods_Ucount_IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5A417703A5EC0802A1C82D /* Pods_Ucount_IOSUITests.framework */; };
+		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
+		7173FBCB1F490FE900EC01F5 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBCA1F490FE900EC01F5 /* DrawerViewController.swift */; };
+		7173FBCD1F49115400EC01F5 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBCC1F49115400EC01F5 /* LeftMenuViewController.swift */; };
+		71AB14C51F488E3400EFFBF0 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB14C41F488E3400EFFBF0 /* TabbarViewController.swift */; };
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
 		E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584470D1F468AF9006F976E /* AppDelegate.swift */; };
@@ -51,6 +55,10 @@
 		4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54207CAA375462461F7DD38D /* Pods-Ucount_IOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6931DB0EB119133441E94E37 /* Pods-Ucount_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
+		7173FBCA1F490FE900EC01F5 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		7173FBCC1F49115400EC01F5 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		71AB14C41F488E3400EFFBF0 /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		C34FE42D6B8405B16123136E /* Pods-Ucount_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,10 +161,10 @@
 		E584470C1F468AF9006F976E /* Ucount_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				E58447731F487206006F976E /* login */,
 				E58447111F468AF9006F976E /* Main.storyboard */,
 				E584470D1F468AF9006F976E /* AppDelegate.swift */,
 				E58447141F468AF9006F976E /* Assets.xcassets */,
-				E58447731F487206006F976E /* login */,
 				E58447161F468AF9006F976E /* LaunchScreen.storyboard */,
 				E58447191F468AF9006F976E /* Info.plist */,
 				E58447581F46C39D006F976E /* Financial */,
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				E584477A1F487532006F976E /* Financial.storyboard */,
+				7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -222,9 +231,12 @@
 		E58447731F487206006F976E /* login */ = {
 			isa = PBXGroup;
 			children = (
+				7173FBCA1F490FE900EC01F5 /* DrawerViewController.swift */,
 				E58447781F487298006F976E /* RegisterViewController.swift */,
 				E58447761F487272006F976E /* LoginViewController.swift */,
 				E58447741F48724C006F976E /* ForgetViewController.swift */,
+				71AB14C41F488E3400EFFBF0 /* TabbarViewController.swift */,
+				7173FBCC1F49115400EC01F5 /* LeftMenuViewController.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -528,7 +540,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
+				7173FBCB1F490FE900EC01F5 /* DrawerViewController.swift in Sources */,
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
+				71AB14C51F488E3400EFFBF0 /* TabbarViewController.swift in Sources */,
+				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
+				7173FBCD1F49115400EC01F5 /* LeftMenuViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				E58447751F48724C006F976E /* ForgetViewController.swift in Sources */,
