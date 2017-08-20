@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        
+        let leftVC = LeftMenuViewController()
+        let tabBarVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        window?.rootViewController = DrawerViewController(mainVC: tabBarVC!, leftMenuVC: leftVC, leftWidth: 300)
+        window?.makeKeyAndVisible()
         return true
     }
 
