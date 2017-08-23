@@ -45,7 +45,7 @@ class allAcountableViewController: UITableViewController{
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath.row)
+        
         let cell = self.tableView.dequeueReusableCell(withIdentifier: cellItem[indexPath.row])!
         
         return cell
