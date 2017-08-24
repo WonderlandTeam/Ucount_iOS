@@ -59,38 +59,6 @@
             </objects>
             <point key="canvasLocation" x="582" y="-94"/>
         </scene>
-        <!--资产-->
-        <scene sceneID="Axs-Lq-6Ya">
-            <objects>
-                <viewController storyboardIdentifier="WealthViewController" id="g8S-lT-Q5Z" customClass="WealthViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ynK-0z-u4I"/>
-                        <viewControllerLayoutGuide type="bottom" id="CoE-53-QEZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xmn-N0-sxV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="资产界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rn-1l-brg">
-                                <rect key="frame" x="166" y="267" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="资产" id="btM-iV-UiQ"/>
-                    <connections>
-                        <outlet property="panGesture" destination="K3d-tg-fdh" id="1h7-lx-H6M"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Huo-dB-FgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="K3d-tg-fdh"/>
-            </objects>
-            <point key="canvasLocation" x="2351.1999999999998" y="1244.527736131934"/>
-        </scene>
         <!--Financial-->
         <scene sceneID="Ja1-HY-lCb">
             <objects>
@@ -112,7 +80,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="g8S-lT-Q5Z" kind="relationship" relationship="viewControllers" id="92I-fH-u0R"/>
+                        <segue destination="2eT-eq-KsY" kind="relationship" relationship="viewControllers" id="92I-fH-u0R"/>
                         <segue destination="0qd-oz-E38" kind="relationship" relationship="viewControllers" id="GCK-2Y-aeF"/>
                         <segue destination="gNG-1q-PNL" kind="relationship" relationship="viewControllers" id="wyC-4P-DyB"/>
                         <segue destination="8QF-Pk-UFx" kind="relationship" relationship="viewControllers" id="IZf-KQ-vEm"/>
@@ -175,6 +143,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKR-bJ-BsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="2281.7091454272863"/>
+        </scene>
+        <!--WealthViewController-->
+        <scene sceneID="PQH-Ai-q2x">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WealthViewController" storyboardName="Wealth" referencedIdentifier="WealthViewController" id="2eT-eq-KsY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OaZ-IV-Qao"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjF-LM-PpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2351.1999999999998" y="1244.527736131934"/>
         </scene>
     </scenes>
 </document>
