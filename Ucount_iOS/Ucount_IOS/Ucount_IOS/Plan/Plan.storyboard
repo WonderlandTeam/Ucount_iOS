@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QmM-RK-Sxd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X9-fl-nnI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Plan-->
-        <scene sceneID="fVQ-8O-h1K">
+        <!--规划-->
+        <scene sceneID="zDy-vo-qFZ">
             <objects>
-                <viewController id="QmM-RK-Sxd" userLabel="Plan" sceneMemberID="viewController">
+                <viewController id="1X9-fl-nnI" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="d5y-4e-0pY"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fjd-YC-Wm2"/>
+                        <viewControllerLayoutGuide type="top" id="QKv-sw-beS"/>
+                        <viewControllerLayoutGuide type="bottom" id="IRB-V4-MhV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KRz-vT-Nli">
+                    <view key="view" contentMode="scaleToFill" id="yT5-K8-Am8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="规划界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvE-vP-iSX">
+                                <rect key="frame" x="152" y="169" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Amm-Jn-d5w"/>
+                    <tabBarItem key="tabBarItem" title="规划" id="T7A-AS-uNt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5qk-td-zoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLs-eV-eyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="1071"/>
+            <point key="canvasLocation" x="2214" y="2445"/>
         </scene>
     </scenes>
 </document>
