@@ -11,6 +11,8 @@ import UIKit
 
 class WealthViewController : UIViewController{
     
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("进来了")
@@ -22,6 +24,8 @@ class WealthViewController : UIViewController{
 }
 
 extension WealthViewController : SendMessageDelegate{
+
+    
     func sendWord(message: String) {
         print(message)
     }

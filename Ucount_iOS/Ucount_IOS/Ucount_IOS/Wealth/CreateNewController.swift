@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+protocol SendMessageDelegate {
+    func sendWord (message : String)
+}
+
+
 class CreateNewController: UIViewController {
     
     @IBOutlet weak var typePicker: UIPickerView!
@@ -30,12 +36,13 @@ class CreateNewController: UIViewController {
     }
     
     @IBAction func  sendNameToWealth (sender : AnyObject) {
-        if (sendDelegate != nil)
-        {
-            
+            print("点击两下")
+        
             print("点击一下")
             self.sendDelegate?.sendWord(message : name.text! )
-        }
+            self.navigationController?.popViewController(animated: true)
+            print("结束了")
+        
     }
     
 
@@ -51,6 +58,3 @@ class CreateNewController: UIViewController {
 
 }
 
-protocol SendMessageDelegate {
-    func sendWord (message : String)
-}
