@@ -10,66 +10,6 @@
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
-        <scene sceneID="dpC-Ir-vWK">
-            <objects>
-                <tabBarController id="e2S-PF-6FX" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="R7Q-HG-dHh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="PCa-NE-zzX" kind="relationship" relationship="viewControllers" id="cgE-Xz-J4I"/>
-                        <segue destination="vVg-o8-hh5" kind="relationship" relationship="viewControllers" id="shG-aP-EwI"/>
-                        <segue destination="FTA-bU-Jk8" kind="relationship" relationship="viewControllers" id="p0x-qF-lKs"/>
-                        <segue destination="dJn-m7-MBU" kind="relationship" relationship="viewControllers" id="zLU-eD-qeF"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3kz-Vn-Sr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1276" y="-79"/>
-        </scene>
-        <!--Report-->
-        <scene sceneID="clu-89-mpR">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Report" id="FTA-bU-Jk8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="FLt-Lx-7xh" userLabel="报表"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qR2-4R-aUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="415" y="-452"/>
-        </scene>
-        <!--Plan-->
-        <scene sceneID="gBg-vw-ibH">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Plan" id="vVg-o8-hh5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wQV-om-w6R" userLabel="规划"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Omo-ok-LXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="526" y="-274"/>
-        </scene>
-        <!--Wealth-->
-        <scene sceneID="JwL-0b-3a3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Wealth" id="PCa-NE-zzX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IN7-Fd-fpk" userLabel="资产"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G32-KI-pb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="582" y="-94"/>
-        </scene>
-        <!--Financial-->
-        <scene sceneID="Ja1-HY-lCb">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Financial" id="dJn-m7-MBU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wZN-zN-QdT"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Omm-7k-oBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2212.8000000000002" y="420.98950524737637"/>
-        </scene>
-        <!--Tab Bar Controller-->
         <scene sceneID="T7s-JC-CZF">
             <objects>
                 <tabBarController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="mmR-7O-4mM" sceneMemberID="viewController">
