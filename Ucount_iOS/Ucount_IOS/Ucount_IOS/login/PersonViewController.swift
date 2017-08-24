@@ -16,12 +16,15 @@ class PersonViewController: UIViewController,UITableViewDelegate,UITableViewData
     @IBOutlet weak var table: UITableView!
     
     
-    var titles = ["修改密码","我的帖子","收藏","赞","评论","我的消息"]
+    var titles = ["修改密码","帖子","收藏","赞","评论","我的消息"]
+    var images = ["修改密码","帖子","收藏","赞","评论","消息"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        table.tableFooterView = UIView()
+        
         self.view.addGestureRecognizer(leftPan)
         
         self.view.frame = CGRect(x:0,y:0,width:Common.screenWidth,height: Common.screenHeight)
@@ -33,7 +36,7 @@ class PersonViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return titles.count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
