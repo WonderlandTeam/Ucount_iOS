@@ -41,7 +41,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     }
     
     @IBAction func close(segue: UIStoryboardSegue){
-
+        print("mengbi")
     }
 
 

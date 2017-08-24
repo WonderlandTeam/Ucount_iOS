@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -124,7 +124,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="返回"/>
                                 <connections>
-                                    <segue destination="k2Y-yC-56Y" kind="unwind" identifier="" unwindAction="closeToWealthWithSegue:" id="D3l-kF-IBO"/>
+                                    <action selector="back:" destination="DWf-DS-axJ" eventType="touchUpInside" id="y1z-0Q-rTa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账户名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-Zl-V09">
@@ -197,14 +197,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="money" destination="fzz-os-QUg" id="nti-PT-WCn"/>
                         <outlet property="name" destination="mDs-r9-NCS" id="hCP-BQ-XuP"/>
                         <outlet property="typePicker" destination="ZU8-TL-1vB" id="MaT-FC-Wnk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGO-lF-xKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="k2Y-yC-56Y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4110" y="1100"/>
+            <point key="canvasLocation" x="4108" y="1098.8005997001501"/>
         </scene>
         <!--allAcount-->
         <scene sceneID="Aaf-OY-c0f">
@@ -219,7 +219,7 @@
                                 <rect key="frame" x="0.0" y="28" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZlP-tZ-y5i" id="R5s-mS-P05">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-H0-vMA">
@@ -236,7 +236,7 @@
                                 <rect key="frame" x="0.0" y="98" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tew-O0-Z9M" id="uov-XF-Iw2">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIZ-F6-T3z">
@@ -253,7 +253,7 @@
                                 <rect key="frame" x="0.0" y="168" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="niu-qN-M2j" id="cpt-MA-KKU">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aR-uF-4WP">
@@ -270,7 +270,7 @@
                                 <rect key="frame" x="0.0" y="238" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n3q-II-Rbr" id="U3w-D4-UUl">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="校园卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mE-Dr-bcB">
