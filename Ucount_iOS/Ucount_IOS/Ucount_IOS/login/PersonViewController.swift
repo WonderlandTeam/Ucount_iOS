@@ -10,9 +10,10 @@ import UIKit
 
 class PersonViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
-    @IBOutlet weak var table: UITableView!
     
     @IBOutlet var leftPan: UIPanGestureRecognizer!
+    
+    @IBOutlet weak var table: UITableView!
     
     
     var titles = ["修改密码","我的帖子","收藏","赞","评论","我的消息"]
