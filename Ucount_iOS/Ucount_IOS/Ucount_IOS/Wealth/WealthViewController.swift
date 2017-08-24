@@ -12,6 +12,7 @@ import UIKit
 class WealthViewController : UIViewController{
     
   
+    @IBOutlet var panGesture: UIPanGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()

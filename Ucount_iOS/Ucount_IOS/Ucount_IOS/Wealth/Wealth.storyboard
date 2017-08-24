@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="k8d-lY-hOx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="k8d-lY-hOx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Wealth-->
         <scene sceneID="ul7-ft-lj9">
             <objects>
-                <viewController id="k8d-lY-hOx" userLabel="Wealth" customClass="WealthViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k8d-lY-hOx" userLabel="Wealth" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GSK-Gc-6dd"/>
                         <viewControllerLayoutGuide type="bottom" id="1qs-mX-cAl"/>
@@ -215,7 +215,7 @@
                                 <rect key="frame" x="0.0" y="28" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XBi-QK-dNU" id="jSp-BJ-eAS">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdW-uV-hrf">
@@ -232,7 +232,7 @@
                                 <rect key="frame" x="0.0" y="98" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37Q-Kd-d0K" id="GIP-4N-wXO">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pev-lK-ERv">
@@ -249,7 +249,7 @@
                                 <rect key="frame" x="0.0" y="168" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qW-nX-N9K" id="KxW-mN-1oh">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep8-8J-j2h">
@@ -266,7 +266,7 @@
                                 <rect key="frame" x="0.0" y="238" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7fI-jv-W2B" id="88i-jz-EKM">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="校园卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l7-uO-qRF">
