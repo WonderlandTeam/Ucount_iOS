@@ -9,9 +9,7 @@
 import UIKit
 
 class FinancialViewController: UIViewController {
-    
 
-    @IBOutlet var panGesture: UIPanGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
 

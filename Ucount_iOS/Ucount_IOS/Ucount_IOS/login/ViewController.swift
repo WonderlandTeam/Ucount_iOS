@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        personNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PersonNavigationController") as! PersonNavigationController
+        personNavigationController = UIStoryboard(name: "Person", bundle: nil).instantiateViewController(withIdentifier: "PersonNavigationController") as! PersonNavigationController
         
         personNavigationController.view.center = CGPoint(x: personNavigationController.view.center.x - Common.screenWidth , y:personNavigationController.view.center.y)
         
