@@ -10,6 +10,10 @@ import UIKit
 
 class FinancialViewController: UIViewController {
 
+    @IBOutlet weak var segment: UISegmentedControl!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +25,9 @@ class FinancialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func segmentTapped(_ sender: AnyObject) {
+        print(sender.selectedSegmentIndex)
+    }
 
     
     
