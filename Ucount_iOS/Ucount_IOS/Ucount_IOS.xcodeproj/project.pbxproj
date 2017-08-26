@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1DCF89A552040E6AAF41C60B /* Pods_Ucount_IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5A417703A5EC0802A1C82D /* Pods_Ucount_IOSUITests.framework */; };
+		710361551F510A71003B15E2 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361541F510A71003B15E2 /* PopularViewController.swift */; };
+		710361571F510A80003B15E2 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361561F510A80003B15E2 /* PushViewController.swift */; };
+		710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361581F510A8E003B15E2 /* KnowledgeViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
 		71802FD51F4EB691005D39E4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD41F4EB691005D39E4 /* Common.swift */; };
 		71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */; };
@@ -61,6 +64,9 @@
 		4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54207CAA375462461F7DD38D /* Pods-Ucount_IOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6931DB0EB119133441E94E37 /* Pods-Ucount_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		710361541F510A71003B15E2 /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		710361561F510A80003B15E2 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		710361581F510A8E003B15E2 /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
 		71802FD41F4EB691005D39E4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = login/Common.swift; sourceTree = "<group>"; };
 		71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonNavigationController.swift; path = ../login/PersonNavigationController.swift; sourceTree = "<group>"; };
@@ -223,6 +229,9 @@
 			children = (
 				E5DA70C91F4EFC1600D43B73 /* Financial.storyboard */,
 				7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */,
+				710361541F510A71003B15E2 /* PopularViewController.swift */,
+				710361561F510A80003B15E2 /* PushViewController.swift */,
+				710361581F510A8E003B15E2 /* KnowledgeViewController.swift */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -568,15 +577,18 @@
 			files = (
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
+				710361571F510A80003B15E2 /* PushViewController.swift in Sources */,
 				E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */,
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
 				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
+				710361551F510A71003B15E2 /* PopularViewController.swift in Sources */,
 				71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */,
 				E584477F1F4C7502006F976E /* CreateNewController.swift in Sources */,
 				71802FD91F4EB71A005D39E4 /* PersonViewController.swift in Sources */,
 				71802FDB1F4EB743005D39E4 /* ViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
+				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				71802FD51F4EB691005D39E4 /* Common.swift in Sources */,
 				E58447751F48724C006F976E /* ForgetViewController.swift in Sources */,
