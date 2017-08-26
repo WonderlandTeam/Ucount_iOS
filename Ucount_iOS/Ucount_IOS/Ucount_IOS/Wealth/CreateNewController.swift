@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol SendMessageDelegate {
+protocol SendMessageDelegate :class {
     func sendWord (message : String)
 }
 
@@ -23,7 +23,7 @@ class CreateNewController: UIViewController {
     
     var countType : [String] = ["银行卡","信用卡","微信钱包"]
     
-    var sendDelegate : SendMessageDelegate?
+    weak var sendDelegate : SendMessageDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +42,8 @@ class CreateNewController: UIViewController {
     }
     
     @IBAction func  sendNameToWealth (sender : AnyObject) {
-            print("点击两下")
-        print(name.text!)
+        print("点击两下")
+        
         let confirmAction = UIAlertAction(title: "确定",style : .default,handler: nil)
         if(name.text == "")
         {
@@ -74,16 +74,17 @@ class CreateNewController: UIViewController {
         {
             let alertSuccess = UIAlertController(title: "系统提示",message: "保存成功！",preferredStyle: .alert)
             
-            alertSuccess.addAction(confirmAction)
+            
             self.present(alertSuccess, animated: true, completion: nil)
+            print("点击一下")
+            self.sendDelegate?.sendWord( message: name.text! )
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
+            print("结束了")
+
         }
         
         
         
-        print("点击一下")
-        self.sendDelegate?.sendWord(message : name.text! )
-        self.navigationController?.popViewController(animated: true)
-            print("结束了")
         
     }
     

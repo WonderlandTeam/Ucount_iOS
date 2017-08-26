@@ -9,26 +9,28 @@
 
 import UIKit
 
-class WealthViewController : UIViewController{
+class WealthViewController : UIViewController,SendMessageDelegate{
     
-  
+     let Create = CreateNewController() //设置代理
+    
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("进来了")
+       
+        Create.sendDelegate = self
     }
     
     @IBAction func closeToWealth(segue : UIStoryboardSegue) {
         print("closess")
     }
-}
-
-extension WealthViewController : SendMessageDelegate{
-
     
-    func sendWord(message: String) {
+    func sendWord (message : String){
+        print("这个方式执行了")
         print(message)
+        
     }
 }
+
 
