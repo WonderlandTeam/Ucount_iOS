@@ -8,28 +8,44 @@
 
 import UIKit
 
-class PopularViewController: UIViewController {
-
+class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource {
+    
+    var titleArray = ["this is a title","title1","title2"]
+    var authorArray = ["theAuthor","myAuthor","hihihi"]
+    var dateArray = ["2017-01-04 22:00","2013-12-03 23:00","2015-01-04 12:00"]
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
+        self.tableView.tableFooterView = UIView()
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
+        return 3
+        //return dataArray.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "firstCell")!
+        var title = cell.viewWithTag(100) as! UILabel
+        title.text = titleArray[indexPath.row]
+        var author = cell.viewWithTag(101) as! UILabel
+        author.text = authorArray[indexPath.row]
+        var date = cell.viewWithTag(102) as! UILabel
+        date.text = dateArray[indexPath.row]
+        
+        return cell
+    }
+    
+    
 }
