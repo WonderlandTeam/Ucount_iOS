@@ -22,7 +22,6 @@
 		71802FF91F4ED1DB005D39E4 /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71802FF81F4ED1DB005D39E4 /* Person.storyboard */; };
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
-		E50535821F50282800CD8A2F /* WealthExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50535811F50282800CD8A2F /* WealthExtension.swift */; };
 		E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50535831F504E5A00CD8A2F /* itemizeViewController.swift */; };
 		E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584470D1F468AF9006F976E /* AppDelegate.swift */; };
 		E58447131F468AF9006F976E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447111F468AF9006F976E /* Main.storyboard */; };
@@ -36,6 +35,7 @@
 		E58447791F487298006F976E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447781F487298006F976E /* RegisterViewController.swift */; };
 		E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584477C1F49F3DA006F976E /* allAcountableViewController.swift */; };
 		E584477F1F4C7502006F976E /* CreateNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584477E1F4C7502006F976E /* CreateNewController.swift */; };
+		E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB5C31F5155B600FDA308 /* CashViewController.swift */; };
 		E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */; };
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
 		E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */; };
@@ -81,7 +81,6 @@
 		C34FE42D6B8405B16123136E /* Pods-Ucount_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E50535811F50282800CD8A2F /* WealthExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WealthExtension.swift; sourceTree = "<group>"; };
 		E50535831F504E5A00CD8A2F /* itemizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemizeViewController.swift; sourceTree = "<group>"; };
 		E584470A1F468AF9006F976E /* Ucount_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ucount_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584470D1F468AF9006F976E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		E58447781F487298006F976E /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E584477C1F49F3DA006F976E /* allAcountableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allAcountableViewController.swift; sourceTree = "<group>"; };
 		E584477E1F4C7502006F976E /* CreateNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewController.swift; sourceTree = "<group>"; };
+		E59AB5C31F5155B600FDA308 /* CashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
 		E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewExtension.swift; sourceTree = "<group>"; };
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -251,7 +251,6 @@
 		E58447671F46C40D006F976E /* Wealth */ = {
 			isa = PBXGroup;
 			children = (
-				E50535811F50282800CD8A2F /* WealthExtension.swift */,
 				E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */,
 				E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */,
 				E58447711F481625006F976E /* WealthViewController.swift */,
@@ -259,6 +258,7 @@
 				E584477E1F4C7502006F976E /* CreateNewController.swift */,
 				E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */,
 				E50535831F504E5A00CD8A2F /* itemizeViewController.swift */,
+				E59AB5C31F5155B600FDA308 /* CashViewController.swift */,
 			);
 			path = Wealth;
 			sourceTree = "<group>";
@@ -584,8 +584,8 @@
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
 				710361571F510A80003B15E2 /* PushViewController.swift in Sources */,
+				E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */,
 				E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */,
-				E50535821F50282800CD8A2F /* WealthExtension.swift in Sources */,
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
 				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
@@ -595,11 +595,8 @@
 				71802FD91F4EB71A005D39E4 /* PersonViewController.swift in Sources */,
 				71802FDB1F4EB743005D39E4 /* ViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
-<<<<<<< HEAD
 				E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */,
-=======
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
->>>>>>> 4f825c7d58825d3bb21954a134a67cef9ea0900d
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				71802FD51F4EB691005D39E4 /* Common.swift in Sources */,
 				E58447751F48724C006F976E /* ForgetViewController.swift in Sources */,

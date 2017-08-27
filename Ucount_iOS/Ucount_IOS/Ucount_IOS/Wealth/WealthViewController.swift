@@ -26,6 +26,12 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         print("closess")
     }
     
+    @IBAction func testbutton(){
+        print("侧一下按钮")
+        let view = CashViewController()
+        
+    }
+    
     func sendWord (message : String){
         print("这个方式执行了")
         print(message)

@@ -45,6 +45,22 @@
             </objects>
             <point key="canvasLocation" x="1400.8" y="1987.5562218890557"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rfg-Gm-XgK">
+            <objects>
+                <navigationController id="yRf-cV-y8f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPT-Je-WEV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mht-cY-SB3" kind="relationship" relationship="rootViewController" id="qF1-sP-NXm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrP-Tt-JuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4658" y="1912"/>
+        </scene>
         <!--资产-->
         <scene sceneID="Axs-Lq-6Ya">
             <objects>
@@ -130,6 +146,14 @@
                                 <state key="normal" title="明细"/>
                                 <connections>
                                     <segue destination="Xr8-ED-bWe" kind="show" id="R9e-pl-pMW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-FY-gVG">
+                                <rect key="frame" x="172" y="111" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="测试"/>
+                                <connections>
+                                    <action selector="testbutton" destination="g8S-lT-Q5Z" eventType="touchUpInside" id="Y8j-mt-51j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,6 +269,34 @@
             </objects>
             <point key="canvasLocation" x="4108" y="1098.8005997001501"/>
         </scene>
+        <!--Cash View Controller-->
+        <scene sceneID="ILK-1y-woU">
+            <objects>
+                <viewController id="mht-cY-SB3" customClass="CashViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bmx-Rz-bf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="mcR-As-zxc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gaz-q9-csC">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="433"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a56-Zv-I2J">
+                                <rect key="frame" x="155" y="72" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tPE-VD-ftQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Urp-nC-7HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5388.8000000000002" y="1892.2038980509747"/>
+        </scene>
         <!--allAcount-->
         <scene sceneID="Aaf-OY-c0f">
             <objects>
@@ -270,6 +322,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="yRf-cV-y8f" kind="show" id="3Wl-EY-GUd"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bankCard" id="tew-O0-Z9M">
                                 <rect key="frame" x="0.0" y="98" width="288" height="70"/>
