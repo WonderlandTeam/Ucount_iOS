@@ -16,6 +16,7 @@ class articleViewController: UIViewController {
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var content: UITextView!
     
+    
     var like: Int!
     var post: Post!
     var callBack: postCallBack!
@@ -32,10 +33,8 @@ class articleViewController: UIViewController {
         self.content.text = post.content
         self.like = post.like
         
-        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
