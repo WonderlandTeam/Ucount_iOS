@@ -17,9 +17,12 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     
+    
     override func viewDidLoad() {
         self.tableView.tableFooterView = UIView()
         super.viewDidLoad()
+        
+        self.view.bringSubview(toFront: tableView)
         
         // Do any additional setup after loading the view.
     }
@@ -31,12 +34,13 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
-        return 3
+        return titleArray.count
         //return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "firstCell")!
+        
         var title = cell.viewWithTag(100) as! UILabel
         title.text = titleArray[indexPath.row]
         var author = cell.viewWithTag(101) as! UILabel
@@ -44,8 +48,24 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
         var date = cell.viewWithTag(102) as! UILabel
         date.text = dateArray[indexPath.row]
         
+        cell.accessoryType = .disclosureIndicator
+        // cell.editingAccessoryType = .detailButton
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hihi")
+        self.tableView.deselectRow(at: indexPath, animated: true)
+        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "articleViewController") as! articleViewController
+        self.present(vc,animated: true)
+    }
+    
+    
+    //    override func  prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        if segue.identifier == "showArticle"{
+    //
+    //        }
+    //    }
     
 }
