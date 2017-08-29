@@ -12,10 +12,15 @@ struct Post {
     var id: String
     var title: String
     var author: String
+    var date: String
     var content: String
+    var like: Int
 
 }
-
+struct postRead {
+    var isLike: Bool
+    var isCollect: Bool
+}
 
 
 

@@ -10,14 +10,11 @@ import UIKit
 
 class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     
-    var titleArray = ["this is a title","title1","title2"]
-    var authorArray = ["theAuthor","myAuthor","hihihi"]
-    var dateArray = ["2017-01-04 22:00","2013-12-03 23:00","2015-01-04 12:00"]
-    var contentArray = ["   content1", "    \ncontent2","     \n    content3\n   content32"]
+    var posts = [Post(id: "456", title: "title1", author: "author1", date: "2017-12-30 12:00", content: "content1", like: 67),
+                 Post(id: "457", title: "title2", author: "author2", date: "2016-12-4 22:00", content: "content2", like: 7),
+                 Post(id: "458", title: "title3", author: "author3", date: "2013-11-20 6:00", content: "content3", like: 6)]
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
     
     override func viewDidLoad() {
         self.tableView.tableFooterView = UIView()
@@ -35,20 +32,17 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
-        return titleArray.count
+        return posts.count
         //return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "firstCell")!
         
-        var title = cell.viewWithTag(100) as! UILabel
-        title.text = titleArray[indexPath.row]
-        var author = cell.viewWithTag(101) as! UILabel
-        author.text = authorArray[indexPath.row]
-        var date = cell.viewWithTag(102) as! UILabel
-        date.text = dateArray[indexPath.row]
-        
+        //cell里要显示的东西
+        (cell.viewWithTag(100) as! UILabel).text = posts[indexPath.row].title
+        (cell.viewWithTag(101) as! UILabel).text = posts[indexPath.row].author
+        (cell.viewWithTag(102) as! UILabel).text = posts[indexPath.row].date
         cell.accessoryType = .disclosureIndicator
         // cell.editingAccessoryType = .detailButton
         
@@ -56,14 +50,19 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("hihi")
         self.tableView.deselectRow(at: indexPath, animated: true)
         let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "articleViewController") as! articleViewController
+        
+        //返回的是否点赞和收藏的数据
+        vc.callBack = ({(change: postRead)->Void  in
+            print(change.isLike)
+            print(change.isCollect)
+        })
+        //传递过去的有关帖子的数据
+        vc.post = posts[indexPath.row]
+        
         self.present(vc,animated: true){
-            vc.theTitle.text = self.titleArray[indexPath.row]
-            vc.author.text = self.authorArray[indexPath.row]
-            vc.date.text = self.dateArray[indexPath.row]
-            vc.content.text = self.contentArray[indexPath.row]
+            
         }
     }
     
