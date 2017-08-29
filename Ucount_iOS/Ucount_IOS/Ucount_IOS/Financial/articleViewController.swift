@@ -10,6 +10,9 @@ import UIKit
 
 class articleViewController: UIViewController {
 
+    @IBAction func backTapped(_ sender: Any) {
+        self.dismiss(animated: true )
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
