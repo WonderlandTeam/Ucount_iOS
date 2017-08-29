@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol SendMessageDelegate :class {
-    func sendWord (message : String)
+    func sendWord (message : [String])
 }
 
 
@@ -22,6 +22,8 @@ class CreateNewController: UIViewController {
     @IBOutlet weak var name: UITextField!  //账户名称
     
     var countType : [String] = ["银行卡","信用卡","微信钱包"]
+    
+    var newInfo : [String] = [] //封装新建账户类型
     
     weak var sendDelegate : SendMessageDelegate?
 
@@ -42,7 +44,7 @@ class CreateNewController: UIViewController {
     }
     
     @IBAction func  sendNameToWealth (sender : AnyObject) {
-        print("点击两下")
+        
         
         let confirmAction = UIAlertAction(title: "确定",style : .default,handler: nil)
         if(name.text == "")
@@ -76,14 +78,16 @@ class CreateNewController: UIViewController {
             
             
             self.present(alertSuccess, animated: true, completion: nil)
-            print("打印："+name.text!)
+            print("选择类型"+"\(typePicker.selectedRow(inComponent: 0))")
             if sendDelegate != nil{
-                print("进入if 语句")
-                 self.sendDelegate?.sendWord( message: name.text! )
+                 newInfo.append(name.text!)
+                 newInfo.append(money.text!)
+                 newInfo.append(countType[typePicker.selectedRow(inComponent: 0)])
+                 self.sendDelegate?.sendWord( message: newInfo )
             }
             
             self.presentingViewController?.dismiss(animated: true, completion: nil)
-            print("结束了")
+            
 
         }
         
