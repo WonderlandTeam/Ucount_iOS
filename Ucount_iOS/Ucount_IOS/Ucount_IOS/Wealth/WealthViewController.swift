@@ -12,7 +12,7 @@ import UIKit
 class WealthViewController : UIViewController,SendMessageDelegate{
     
     
-    typealias sendInfoBlock = (info: [String]) -> Void //传递新创建的账户信息
+    typealias sendInfoBlock = (_ info: [String]) -> Void //传递新创建的账户信息
     
     var sendToCreate : sendInfoBlock?
     

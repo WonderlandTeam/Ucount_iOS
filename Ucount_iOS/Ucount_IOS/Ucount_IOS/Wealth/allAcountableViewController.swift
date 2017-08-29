@@ -29,9 +29,7 @@ class allAcountableViewController: UITableViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        allAcountableViewController.sendToCreate{
-            
-        }
+
     }
 
     override func didReceiveMemoryWarning() {
