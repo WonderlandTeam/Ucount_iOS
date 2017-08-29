@@ -12,8 +12,11 @@ class allAcountableViewController: UITableViewController{
     
     @IBOutlet var acountTableview: UITableView!
     
-    var cellItem : [String] = ["cash","bankCard","aliCard","schoolCard"]
+    var typeName : [String] = ["现金","银行卡","支付宝","校园卡"]
     
+    var typeMoney : [String] = ["9.9","0.0","0,0","0.0"]
+    
+    var newTypeInfo : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,10 @@ class allAcountableViewController: UITableViewController{
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,14 +46,19 @@ class allAcountableViewController: UITableViewController{
 //
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        var count = cellItem.count
+        var count = typeName.count
         return count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: cellItem[indexPath.row])!
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "countType")!
+        var name = cell.viewWithTag(21) as! UILabel
+        name.text = typeName[indexPath.row]
+        
+        var money = cell.viewWithTag(22) as! UILabel
+        money.text = "\(typeMoney[indexPath.row])"
         
         return cell
     }
