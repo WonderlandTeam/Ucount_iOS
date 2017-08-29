@@ -11,7 +11,7 @@ import UIKit
 
 class WealthViewController : UIViewController,SendMessageDelegate{
     
-     let Create = CreateNewController() //设置代理
+    
     
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     
@@ -19,7 +19,15 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         super.viewDidLoad()
         print("进来了")
        
-        Create.sendDelegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "createNewSegue")
+        {
+            let Create = segue.destination as! CreateNewController
+            Create.sendDelegate = self
+            
+        }
     }
     
     @IBAction func closeToWealth(segue : UIStoryboardSegue) {
@@ -29,6 +37,8 @@ class WealthViewController : UIViewController,SendMessageDelegate{
     @IBAction func testbutton(){
         print("侧一下按钮")
         let view = CashViewController()
+        
+        self.navigationController?.pushViewController(view, animated: true)
         
     }
     

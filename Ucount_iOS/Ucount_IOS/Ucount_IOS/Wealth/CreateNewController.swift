@@ -76,8 +76,12 @@ class CreateNewController: UIViewController {
             
             
             self.present(alertSuccess, animated: true, completion: nil)
-            print("点击一下")
-            self.sendDelegate?.sendWord( message: name.text! )
+            print("打印："+name.text!)
+            if sendDelegate != nil{
+                print("进入if 语句")
+                 self.sendDelegate?.sendWord( message: name.text! )
+            }
+            
             self.presentingViewController?.dismiss(animated: true, completion: nil)
             print("结束了")
 
@@ -87,6 +91,8 @@ class CreateNewController: UIViewController {
         
         
     }
+    
+
     
 
     /*

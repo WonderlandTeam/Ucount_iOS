@@ -45,22 +45,6 @@
             </objects>
             <point key="canvasLocation" x="1400.8" y="1987.5562218890557"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Rfg-Gm-XgK">
-            <objects>
-                <navigationController id="yRf-cV-y8f" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPT-Je-WEV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="mht-cY-SB3" kind="relationship" relationship="rootViewController" id="qF1-sP-NXm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XrP-Tt-JuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4658" y="1912"/>
-        </scene>
         <!--资产-->
         <scene sceneID="Axs-Lq-6Ya">
             <objects>
@@ -113,7 +97,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新建"/>
                                 <connections>
-                                    <segue destination="DWf-DS-axJ" kind="show" id="otd-MM-VMu"/>
+                                    <segue destination="DWf-DS-axJ" kind="show" identifier="createNewSegue" id="otd-MM-VMu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqz-WP-z2d">
@@ -135,7 +119,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f58-ZX-xzt">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="433"/>
                                         <connections>
-                                            <segue destination="my7-dw-wdK" kind="embed" id="dj8-ec-kfY"/>
+                                            <segue destination="my7-dw-wdK" kind="embed" id="amI-eD-bf1"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -160,6 +144,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="资产" id="btM-iV-UiQ"/>
+                    <navigationItem key="navigationItem" id="NtL-Bf-vqE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="panGesture" destination="K3d-tg-fdh" id="1h7-lx-H6M"/>
@@ -267,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGO-lF-xKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4108" y="1098.8005997001501"/>
+            <point key="canvasLocation" x="4122" y="1060"/>
         </scene>
         <!--Cash View Controller-->
         <scene sceneID="ILK-1y-woU">
@@ -281,13 +266,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="288" height="433"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a56-Zv-I2J">
-                                <rect key="frame" x="155" y="72" width="47" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现金界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a56-Zv-I2J">
+                                <rect key="frame" x="105" y="62" width="78" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-CC-t8p">
+                                <rect key="frame" x="23" y="20" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="back" destination="mht-cY-SB3" eventType="touchUpInside" id="mVi-nH-Zvb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -295,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urp-nC-7HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5388.8000000000002" y="1892.2038980509747"/>
+            <point key="canvasLocation" x="3767" y="1892"/>
         </scene>
         <!--allAcount-->
         <scene sceneID="Aaf-OY-c0f">
@@ -306,11 +299,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cash" id="ZlP-tZ-y5i">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cash" id="ZlP-tZ-y5i">
                                 <rect key="frame" x="0.0" y="28" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZlP-tZ-y5i" id="R5s-mS-P05">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="255" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-H0-vMA">
@@ -323,7 +316,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="yRf-cV-y8f" kind="show" id="3Wl-EY-GUd"/>
+                                    <segue destination="mht-cY-SB3" kind="show" id="LEj-qe-myj"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bankCard" id="tew-O0-Z9M">
@@ -383,13 +376,14 @@
                             <outlet property="delegate" destination="my7-dw-wdK" id="5yc-px-wol"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Vpo-mE-acQ"/>
                     <connections>
                         <outlet property="acountTableview" destination="uCR-g4-hnn" id="M9I-It-KP3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NM-3D-fW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3993" y="1884"/>
+            <point key="canvasLocation" x="3080" y="1893"/>
         </scene>
     </scenes>
 </document>
