@@ -9,7 +9,13 @@
 import UIKit
 
 class articleViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var theTitle: UILabel!
+    @IBOutlet weak var author: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var content: UITextView!
+    
     @IBAction func backTapped(_ sender: Any) {
         self.dismiss(animated: true )
     }

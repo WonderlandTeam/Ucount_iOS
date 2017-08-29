@@ -13,6 +13,7 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     var titleArray = ["this is a title","title1","title2"]
     var authorArray = ["theAuthor","myAuthor","hihihi"]
     var dateArray = ["2017-01-04 22:00","2013-12-03 23:00","2015-01-04 12:00"]
+    var contentArray = ["   content1", "    \ncontent2","     \n    content3\n   content32"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -58,14 +59,22 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
         print("hihi")
         self.tableView.deselectRow(at: indexPath, animated: true)
         let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "articleViewController") as! articleViewController
-        self.present(vc,animated: true)
+        self.present(vc,animated: true){
+            vc.theTitle.text = self.titleArray[indexPath.row]
+            vc.author.text = self.authorArray[indexPath.row]
+            vc.date.text = self.dateArray[indexPath.row]
+            vc.content.text = self.contentArray[indexPath.row]
+        }
     }
     
-    
-    //    override func  prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if segue.identifier == "showArticle"{
-    //
-    //        }
-    //    }
-    
 }
+
+
+
+
+
+
+
+
+
+
