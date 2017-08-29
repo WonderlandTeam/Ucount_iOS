@@ -14,30 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        //window = UIWindow(frame: UIScreen.main.bounds)
-        //window?.backgroundColor = UIColor.white
-        
-      //  let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        //self..pushViewController(vc, animated: true)
-        
-       // let leftVC = LeftMenuViewController()
-        //let tabBarVC = UIStoryboard(name: "Financial", bundle: nil).instantiateInitialViewController()
-        //window?.rootViewController = DrawerViewController(mainVC: tabBarVC!, leftMenuVC: leftVC, leftWidth: 300)
-        //window?.makeKeyAndVisible()
-        
-        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.backgroundColor = UIColor.white
-//       
-//        
-//        let leftVC = LeftMenuViewController()
-//        let tabBarVC = UIStoryboard(name: "Financial", bundle: nil).instantiateInitialViewController()
-//        window?.rootViewController = DrawerViewController(mainVC: tabBarVC!, leftMenuVC: leftVC, leftWidth: 300)
-//        window?.makeKeyAndVisible()
-//        
-//        
-//        
         return true
     }
 
