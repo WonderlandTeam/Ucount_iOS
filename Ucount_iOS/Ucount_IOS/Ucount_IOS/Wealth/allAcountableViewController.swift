@@ -29,7 +29,8 @@ class allAcountableViewController: UITableViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-
+        print(typeName)
+        acountTableview.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
