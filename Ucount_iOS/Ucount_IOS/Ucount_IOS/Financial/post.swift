@@ -21,7 +21,6 @@ struct postRead {
     var id: String
     var isLike: Bool
     var isCollect: Bool
-    var comment: String
 }
 
 struct myPost{
@@ -30,5 +29,14 @@ struct myPost{
     var author:String
     var date:String
 }
+
+struct Comment{
+    var postId: String
+    var userId: String
+    var date: String
+    var text: String
+}
+
+
 
 
