@@ -29,6 +29,7 @@ class talkViewController: UIViewController {
     }
     override func viewDidLoad() {
         self.talkContent.text = "请在这里发表评论。"
+        self.talkContent.becomeFirstResponder()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
