@@ -66,12 +66,12 @@ class articleViewController: UIViewController {
     }
     
     @IBAction func talkTapped(_ sender: Any) {
-        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "talkViewController") as! talkViewController
+        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "commentViewController") as! commentViewController
         
         //返回的是评论的内容
-        vc.callBack = ({(words: String)->Void  in
-            self.comment = words
-        })
+//        vc.callBack = ({(words: String)->Void  in
+//            self.comment = words
+//        })
         
         self.present(vc,animated: true){
             
@@ -87,6 +87,10 @@ class articleViewController: UIViewController {
         
         super.viewDidLoad()
         
+        self.content.layer.borderWidth = 1
+        self.content.layer.borderColor = UIColor.gray.cgColor
+        self.content.layer.cornerRadius = 10
+
         self.content.isEditable = false
     }
 

@@ -11,6 +11,7 @@
 		710361551F510A71003B15E2 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361541F510A71003B15E2 /* PopularViewController.swift */; };
 		710361571F510A80003B15E2 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361561F510A80003B15E2 /* PushViewController.swift */; };
 		710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361581F510A8E003B15E2 /* KnowledgeViewController.swift */; };
+		710890D51F56CED4006181BC /* commentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710890D41F56CED4006181BC /* commentViewController.swift */; };
 		7152762D1F566B3900086254 /* talkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152762C1F566B3900086254 /* talkViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
 		71802FD51F4EB691005D39E4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD41F4EB691005D39E4 /* Common.swift */; };
@@ -72,6 +73,7 @@
 		710361541F510A71003B15E2 /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		710361561F510A80003B15E2 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		710361581F510A8E003B15E2 /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
+		710890D41F56CED4006181BC /* commentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentViewController.swift; sourceTree = "<group>"; };
 		7152762C1F566B3900086254 /* talkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = talkViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
 		71802FD41F4EB691005D39E4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = login/Common.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				718B85131F55420400C972BE /* articleViewController.swift */,
 				718B85171F556A2E00C972BE /* post.swift */,
 				7152762C1F566B3900086254 /* talkViewController.swift */,
+				710890D41F56CED4006181BC /* commentViewController.swift */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 			files = (
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
+				710890D51F56CED4006181BC /* commentViewController.swift in Sources */,
 				710361571F510A80003B15E2 /* PushViewController.swift in Sources */,
 				E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */,
 				E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */,

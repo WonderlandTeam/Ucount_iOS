@@ -186,6 +186,24 @@
             </objects>
             <point key="canvasLocation" x="2469.5652173913045" y="3726.358695652174"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="xM5-fO-sjH">
+            <objects>
+                <viewController storyboardIdentifier="commentViewController" id="cjm-QU-Kx6" customClass="commentViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="niu-WT-XiB"/>
+                        <viewControllerLayoutGuide type="bottom" id="03R-vE-KZj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gcq-hA-hMc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXZ-CY-cww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2464" y="4370"/>
+        </scene>
         <!--Talk View Controller-->
         <scene sceneID="fTO-pm-yam">
             <objects>
@@ -209,7 +227,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jIA-AP-OIo">
                                 <rect key="frame" x="41" y="82" width="334" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -230,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WG5-4g-1iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2485.507246376812" y="4477.989130434783"/>
+            <point key="canvasLocation" x="2464" y="5237"/>
         </scene>
         <!--Push View Controller-->
         <scene sceneID="eAu-aY-dyU">
