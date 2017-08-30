@@ -51,6 +51,17 @@ class PushViewController: UIViewController,UITextFieldDelegate ,UITextViewDelega
         })
     }
 
+    @IBAction func pushTapped(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "发布成功!",
+                                                message: nil, preferredStyle: .alert)
+        //显示提示框
+        self.present(alertController, animated: true, completion: nil)
+        //两秒钟后自动消失
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.presentedViewController?.dismiss(animated: false, completion: nil)
+        }
+    }
+    
     
     override  func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         //点到view的别的地方，焦点从textfield转移,反焦点
