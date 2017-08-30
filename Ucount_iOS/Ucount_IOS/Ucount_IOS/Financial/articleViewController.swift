@@ -57,7 +57,11 @@ class articleViewController: UIViewController {
     }
     
     @IBAction func talkTapped(_ sender: Any) {
-        //self.
+        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "talkViewController") as! talkViewController
+        
+        self.present(vc,animated: true){
+            
+        }
     }
     
     override func viewDidLoad() {
