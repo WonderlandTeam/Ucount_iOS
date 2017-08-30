@@ -15,6 +15,7 @@ class WealthViewController : UIViewController,SendMessageDelegate{
     typealias sendInfoBlock = (_ info: [String]) -> Void //传递新创建的账户信息
     
     var sendToCreate : sendInfoBlock?
+    var allAcountVC : allAcountableViewController?
     
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     
@@ -30,6 +31,10 @@ class WealthViewController : UIViewController,SendMessageDelegate{
             let Create = segue.destination as! CreateNewController
             Create.sendDelegate = self
             
+        }
+        else if(segue.identifier == "allAcountInfo")
+        {
+            allAcountVC = segue.destination as! allAcountableViewController
         }
     }
     
@@ -50,10 +55,10 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         print(message[0])
         print(message[1])
         print(message[2])
-        if (sendToCreate != nil)
-        {
-            sendToCreate!(message)
-        }
+        
+        allAcountVC!.typeName.append(message[0])
+        allAcountVC!.typeMoney.append(message[1])
+        print("已发送")
         
     }
 }

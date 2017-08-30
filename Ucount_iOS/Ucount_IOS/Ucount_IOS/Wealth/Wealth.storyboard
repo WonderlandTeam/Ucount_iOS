@@ -130,7 +130,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f58-ZX-xzt">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="433"/>
                                         <connections>
-                                            <segue destination="my7-dw-wdK" kind="embed" id="amI-eD-bf1"/>
+                                            <segue destination="my7-dw-wdK" kind="embed" identifier="allAcountInfo" id="amI-eD-bf1"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
