@@ -33,7 +33,7 @@ class articleViewController: UIViewController {
     
     
     @IBAction func backTapped(_ sender: Any) {
-        self.callBack(postRead(id: post.id, isLike: isLike, isCollect: isCollect, comment: self.comment))
+        self.callBack(postRead(id: post.id, isLike: isLike, isCollect: isCollect))
         self.dismiss(animated: true )
     }
     
@@ -75,14 +75,6 @@ class articleViewController: UIViewController {
                        Comment(postId: post.id, userId: "userid2", date: "2013-12-1 22:20", text: "给你加个鸡腿！！"),
                        Comment(postId: post.id, userId: "userid3", date: "2012-11-28 12:00", text: "哈哈哈")]
 
-        
-        //返回的是评论的内容
-//        vc.callBack = ({(words: String)->Void  in
-//            self.comment = words
-//        })
-        
-        //comments.removeAll()
-    
         if(comments.count == 0){//没有评论
             let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "noCommentViewController") as! noCommentViewController
             self.present(vc,animated: true){
@@ -91,7 +83,7 @@ class articleViewController: UIViewController {
         }else{//有评论
             let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "commentViewController") as! commentViewController
             vc.comments = comments
-            
+            vc.post = self.post
             self.present(vc,animated: true){
                 
             }
