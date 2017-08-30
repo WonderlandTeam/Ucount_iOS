@@ -75,8 +75,18 @@ class articleViewController: UIViewController {
                        Comment(postId: post.id, userId: "userid2", date: "2013-12-1 22:20", text: "给你加个鸡腿！！"),
                        Comment(postId: post.id, userId: "userid3", date: "2012-11-28 12:00", text: "哈哈哈")]
 
+        //comments.removeAll()
         if(comments.count == 0){//没有评论
-            let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "noCommentViewController") as! noCommentViewController
+            let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "talkViewController") as! talkViewController
+            
+            vc.callBack = ({(words: String)->Void  in
+                //与逻辑层对接存储评论,不用返回给article
+                print(self.post.id)
+                print(self.post.author)
+                print(words)
+            })
+
+            
             self.present(vc,animated: true){
                 
             }
