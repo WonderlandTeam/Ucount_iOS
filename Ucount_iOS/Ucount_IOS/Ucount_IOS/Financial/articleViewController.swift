@@ -16,6 +16,9 @@ class articleViewController: UIViewController {
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var content: UITextView!
     
+    @IBOutlet weak var collectButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var talkButton: UIButton!
     
     var like: Int!
     var post: Post!
@@ -23,9 +26,21 @@ class articleViewController: UIViewController {
     
     @IBAction func backTapped(_ sender: Any) {
         self.callBack(postRead(isLike: false, isCollect: true))
-        
         self.dismiss(animated: true )
     }
+    
+    @IBAction func collectTapped(_ sender: Any) {
+        print("collecting")
+    }
+    
+    @IBAction func likeTapped(_ sender: Any) {
+        print("liking")
+    }
+    
+    @IBAction func talkTapped(_ sender: Any) {
+        print("talking")
+    }
+    
     override func viewDidLoad() {
         self.theTitle.text = post.title
         self.author.text = post.author
@@ -34,7 +49,6 @@ class articleViewController: UIViewController {
         self.like = post.like
         
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,14 +57,13 @@ class articleViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+
+
+
+
+
+
+

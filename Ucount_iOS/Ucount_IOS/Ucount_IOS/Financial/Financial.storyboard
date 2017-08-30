@@ -136,28 +136,40 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-KM-snx">
+                            <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-KM-snx">
                                 <rect key="frame" x="47" y="689" width="39" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="收藏"/>
+                                <connections>
+                                    <action selector="collectTapped:" destination="e4y-kD-Okz" eventType="touchUpInside" id="WYR-Ej-8BJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfX-Uo-sSi">
+                            <button opaque="NO" tag="201" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfX-Uo-sSi">
                                 <rect key="frame" x="188" y="687" width="39" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="赞"/>
+                                <connections>
+                                    <action selector="likeTapped:" destination="e4y-kD-Okz" eventType="touchUpInside" id="eR8-bn-IbK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-w0-b5l">
+                            <button opaque="NO" tag="202" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-w0-b5l">
                                 <rect key="frame" x="327" y="691" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="评论"/>
+                                <connections>
+                                    <action selector="talkTapped:" destination="e4y-kD-Okz" eventType="touchUpInside" id="1Rf-Fv-ogk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="author" destination="qd8-k5-6v4" id="EJD-Sj-zA9"/>
+                        <outlet property="collectButton" destination="qlM-KM-snx" id="yFJ-zq-nbz"/>
                         <outlet property="content" destination="CDx-hC-cax" id="PAh-9x-toh"/>
                         <outlet property="date" destination="gN7-oY-RzP" id="wh3-ZO-2Vn"/>
+                        <outlet property="likeButton" destination="UfX-Uo-sSi" id="9HI-P0-qfj"/>
+                        <outlet property="talkButton" destination="Oea-w0-b5l" id="1Th-dH-wyZ"/>
                         <outlet property="theTitle" destination="dmL-oM-bMh" id="Cbb-zB-fMg"/>
                     </connections>
                 </viewController>
