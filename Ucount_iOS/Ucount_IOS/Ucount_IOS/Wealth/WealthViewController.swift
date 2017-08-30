@@ -12,9 +12,9 @@ import UIKit
 class WealthViewController : UIViewController,SendMessageDelegate{
     
     
-    typealias sendInfoBlock = (_ info: [String]) -> Void //传递新创建的账户信息
     
-    var sendToCreate : sendInfoBlock?
+    
+    
     var allAcountVC : allAcountableViewController?
     
     @IBOutlet var panGesture: UIPanGestureRecognizer!
@@ -42,13 +42,7 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         print("closess")
     }
     
-    @IBAction func testbutton(){
-        print("侧一下按钮")
-        let view = CashViewController()
-        
-        self.navigationController?.pushViewController(view, animated: true)
-        
-    }
+
     
     func sendWord (message : [String]){
         

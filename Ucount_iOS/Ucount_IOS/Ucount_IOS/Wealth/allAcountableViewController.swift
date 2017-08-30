@@ -14,7 +14,7 @@ class allAcountableViewController: UITableViewController{
     
     var typeName : [String] = ["现金","银行卡","支付宝","校园卡"]
     
-    var typeMoney : [String] = ["9.9","0.0","0,0","0.0"]
+    var typeMoney : [String] = ["9.9","0.0","0.0","0.0"]
     
     var newTypeInfo : [String] = []
     
@@ -29,7 +29,7 @@ class allAcountableViewController: UITableViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print(typeName)
+        
         acountTableview.reloadData()
     }
 
@@ -59,7 +59,7 @@ class allAcountableViewController: UITableViewController{
         name.text = typeName[indexPath.row]
         
         var money = cell.viewWithTag(22) as! UILabel
-        money.text = "\(typeMoney[indexPath.row])"
+        money.text = "\(typeMoney[indexPath.row])"+" 元"
         
         return cell
     }
