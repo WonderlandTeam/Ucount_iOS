@@ -24,6 +24,11 @@ struct postRead {
     var comment: String
 }
 
-
+struct myPost{
+    var id: String
+    var title: String
+    var author:String
+    var date:String
+}
 
 

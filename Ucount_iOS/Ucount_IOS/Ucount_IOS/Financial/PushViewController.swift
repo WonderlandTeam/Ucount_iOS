@@ -8,11 +8,27 @@
 
 import UIKit
 
-class PushViewController: UIViewController {
-
+class PushViewController: UIViewController,UITextFieldDelegate ,UITextViewDelegate{
+    
+    @IBOutlet weak var postTitle: UITextField!
+    @IBOutlet weak var postContent: UITextView!
+    
+    
+    @IBOutlet weak var contentHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.postTitle.text = ""
+        self.postTitle.layer.borderWidth = 1
+        self.postTitle.layer.borderColor = UIColor.gray.cgColor
+        self.postTitle.layer.cornerRadius = 8
 
+        self.postContent.text = ""
+        self.postContent.layer.borderWidth = 1
+        self.postContent.layer.borderColor = UIColor.gray.cgColor
+        self.postContent.layer.cornerRadius = 10
+        self.postTitle.delegate = self
+        self.postContent.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -22,14 +38,31 @@ class PushViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        UIView.animate(withDuration: 0.4, animations: {
+            self.contentHeight.constant = 300
+        })
     }
-    */
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        UIView.animate(withDuration: 0.8, animations: {
+            self.contentHeight.constant = 528
+            
+        })
+    }
 
+    
+    override  func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //点到view的别的地方，焦点从textfield转移,反焦点
+        postTitle.resignFirstResponder()
+        postContent.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        postTitle.resignFirstResponder()
+        return true
+    }
+    
+    
+    
 }
