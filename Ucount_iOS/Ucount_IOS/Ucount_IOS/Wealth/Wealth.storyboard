@@ -115,14 +115,6 @@
                                     <segue destination="Xr8-ED-bWe" kind="show" id="R9e-pl-pMW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-FY-gVG">
-                                <rect key="frame" x="172" y="111" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="测试"/>
-                                <connections>
-                                    <action selector="testbutton" destination="g8S-lT-Q5Z" eventType="touchUpInside" id="Y8j-mt-51j"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RvH-Dq-33N">
                                 <rect key="frame" x="17" y="149" width="333" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

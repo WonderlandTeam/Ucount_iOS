@@ -27,6 +27,12 @@
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
 		E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50535831F504E5A00CD8A2F /* itemizeViewController.swift */; };
+		E51B15A61F56D9E300CB9CDE /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15A51F56D9E300CB9CDE /* ReportViewController.swift */; };
+		E51B15A81F56E12200CB9CDE /* CreateNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15A71F56E12200CB9CDE /* CreateNewController.swift */; };
+		E51B15AA1F56ED8C00CB9CDE /* FirstReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15A91F56ED8C00CB9CDE /* FirstReportViewController.swift */; };
+		E51B15AC1F56EDA400CB9CDE /* SecondReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AB1F56EDA400CB9CDE /* SecondReportViewController.swift */; };
+		E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AD1F56EDB400CB9CDE /* ThirdReportViewController.swift */; };
+		E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */; };
 		E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584470D1F468AF9006F976E /* AppDelegate.swift */; };
 		E58447131F468AF9006F976E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447111F468AF9006F976E /* Main.storyboard */; };
 		E58447151F468AF9006F976E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58447141F468AF9006F976E /* Assets.xcassets */; };
@@ -38,7 +44,6 @@
 		E58447771F487272006F976E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447761F487272006F976E /* LoginViewController.swift */; };
 		E58447791F487298006F976E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447781F487298006F976E /* RegisterViewController.swift */; };
 		E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584477C1F49F3DA006F976E /* allAcountableViewController.swift */; };
-		E584477F1F4C7502006F976E /* CreateNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584477E1F4C7502006F976E /* CreateNewController.swift */; };
 		E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB5C31F5155B600FDA308 /* CashViewController.swift */; };
 		E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */; };
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
@@ -90,6 +95,12 @@
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50535831F504E5A00CD8A2F /* itemizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemizeViewController.swift; sourceTree = "<group>"; };
+		E51B15A51F56D9E300CB9CDE /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		E51B15A71F56E12200CB9CDE /* CreateNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewController.swift; sourceTree = "<group>"; };
+		E51B15A91F56ED8C00CB9CDE /* FirstReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstReportViewController.swift; sourceTree = "<group>"; };
+		E51B15AB1F56EDA400CB9CDE /* SecondReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondReportViewController.swift; sourceTree = "<group>"; };
+		E51B15AD1F56EDB400CB9CDE /* ThirdReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdReportViewController.swift; sourceTree = "<group>"; };
+		E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewExtension.swift; sourceTree = "<group>"; };
 		E584470A1F468AF9006F976E /* Ucount_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ucount_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584470D1F468AF9006F976E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58447121F468AF9006F976E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,7 +118,6 @@
 		E58447761F487272006F976E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E58447781F487298006F976E /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E584477C1F49F3DA006F976E /* allAcountableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allAcountableViewController.swift; sourceTree = "<group>"; };
-		E584477E1F4C7502006F976E /* CreateNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewController.swift; sourceTree = "<group>"; };
 		E59AB5C31F5155B600FDA308 /* CashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
 		E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewExtension.swift; sourceTree = "<group>"; };
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
@@ -256,6 +266,11 @@
 			isa = PBXGroup;
 			children = (
 				71802FEF1F4EC7B0005D39E4 /* Report.storyboard */,
+				E51B15A51F56D9E300CB9CDE /* ReportViewController.swift */,
+				E51B15A91F56ED8C00CB9CDE /* FirstReportViewController.swift */,
+				E51B15AB1F56EDA400CB9CDE /* SecondReportViewController.swift */,
+				E51B15AD1F56EDB400CB9CDE /* ThirdReportViewController.swift */,
+				E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -263,11 +278,11 @@
 		E58447671F46C40D006F976E /* Wealth */ = {
 			isa = PBXGroup;
 			children = (
+				E51B15A71F56E12200CB9CDE /* CreateNewController.swift */,
 				E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */,
 				E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */,
 				E58447711F481625006F976E /* WealthViewController.swift */,
 				E584477C1F49F3DA006F976E /* allAcountableViewController.swift */,
-				E584477E1F4C7502006F976E /* CreateNewController.swift */,
 				E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */,
 				E50535831F504E5A00CD8A2F /* itemizeViewController.swift */,
 				E59AB5C31F5155B600FDA308 /* CashViewController.swift */,
@@ -593,18 +608,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */,
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
+				E51B15AA1F56ED8C00CB9CDE /* FirstReportViewController.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
 				710890D51F56CED4006181BC /* commentViewController.swift in Sources */,
 				710361571F510A80003B15E2 /* PushViewController.swift in Sources */,
 				E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */,
 				E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */,
+				E51B15A81F56E12200CB9CDE /* CreateNewController.swift in Sources */,
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
 				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
+				E51B15A61F56D9E300CB9CDE /* ReportViewController.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
 				710361551F510A71003B15E2 /* PopularViewController.swift in Sources */,
 				71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */,
-				E584477F1F4C7502006F976E /* CreateNewController.swift in Sources */,
 				71802FD91F4EB71A005D39E4 /* PersonViewController.swift in Sources */,
 				71802FDB1F4EB743005D39E4 /* ViewController.swift in Sources */,
 				718B85141F55420400C972BE /* articleViewController.swift in Sources */,
@@ -613,8 +631,10 @@
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
+				E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */,
 				71802FD51F4EB691005D39E4 /* Common.swift in Sources */,
 				7152762D1F566B3900086254 /* talkViewController.swift in Sources */,
+				E51B15AC1F56EDA400CB9CDE /* SecondReportViewController.swift in Sources */,
 				E58447751F48724C006F976E /* ForgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

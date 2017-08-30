@@ -1,14 +1,14 @@
 //
-//  itemizeViewController.swift
+//  ThirdReportViewController.swift
 //  Ucount_IOS
 //
-//  Created by 李一鹏 on 2017/8/25.
+//  Created by 李一鹏 on 2017/8/30.
 //  Copyright © 2017年 李一鹏. All rights reserved.
 //
 
 import UIKit
 
-class itemizeViewController: UIViewController {
+class ThirdReportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +19,6 @@ class itemizeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    //返回事件
-    @IBAction func back(_ sender:Any)
-    {
-        self.dismiss(animated: true, completion: nil)
     }
     
 
