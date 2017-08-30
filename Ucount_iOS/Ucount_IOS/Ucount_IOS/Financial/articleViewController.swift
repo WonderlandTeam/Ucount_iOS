@@ -59,6 +59,11 @@ class articleViewController: UIViewController {
     @IBAction func talkTapped(_ sender: Any) {
         let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "talkViewController") as! talkViewController
         
+        //返回的是评论的内容
+        vc.callBack = ({(words: String)->Void  in
+            print(words)
+        })
+        
         self.present(vc,animated: true){
             
         }
