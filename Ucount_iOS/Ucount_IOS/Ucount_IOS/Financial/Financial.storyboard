@@ -145,7 +145,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="201" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfX-Uo-sSi">
-                                <rect key="frame" x="188" y="687" width="39" height="39"/>
+                                <rect key="frame" x="179" y="687" width="39" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="赞"/>
                                 <connections>
@@ -160,6 +160,13 @@
                                     <action selector="talkTapped:" destination="e4y-kD-Okz" eventType="touchUpInside" id="1Rf-Fv-ogk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="203" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7M-2O-5sp">
+                                <rect key="frame" x="226" y="702" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -169,6 +176,7 @@
                         <outlet property="content" destination="CDx-hC-cax" id="PAh-9x-toh"/>
                         <outlet property="date" destination="gN7-oY-RzP" id="wh3-ZO-2Vn"/>
                         <outlet property="likeButton" destination="UfX-Uo-sSi" id="9HI-P0-qfj"/>
+                        <outlet property="likeLabel" destination="T7M-2O-5sp" id="SmG-3R-nuI"/>
                         <outlet property="talkButton" destination="Oea-w0-b5l" id="1Th-dH-wyZ"/>
                         <outlet property="theTitle" destination="dmL-oM-bMh" id="Cbb-zB-fMg"/>
                     </connections>

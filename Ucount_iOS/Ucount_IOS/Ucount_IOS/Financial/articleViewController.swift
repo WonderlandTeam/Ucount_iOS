@@ -15,12 +15,12 @@ class articleViewController: UIViewController {
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var content: UITextView!
+    @IBOutlet weak var likeLabel: UILabel!
     
     @IBOutlet weak var collectButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var talkButton: UIButton!
     
-    var like: Int!
     var post: Post!
     var callBack: postCallBack!
     
@@ -29,16 +29,35 @@ class articleViewController: UIViewController {
         self.dismiss(animated: true )
     }
     
-    @IBAction func collectTapped(_ sender: Any) {
-        print("collecting")
+    @IBAction func collectTapped(_ sender: UIButton) {
+        sender.isEnabled = false
+        if(sender.imageView?.image == UIImage(named:"收藏")){
+            sender.setImage(UIImage(named:"已收藏"), for: UIControlState.normal)
+        }else if (sender.imageView?.image == UIImage(named:"已收藏")){
+            sender.setImage(UIImage(named:"收藏"), for: UIControlState.normal)
+        }
+        
+        sender.isEnabled  = true
     }
+
     
-    @IBAction func likeTapped(_ sender: Any) {
-        print("liking")
+    
+    @IBAction func likeTapped(_ sender: UIButton) {
+        sender.isEnabled = false
+        let origin = Int(self.likeLabel.text!)
+        if(sender.imageView?.image == UIImage(named:"赞")){
+            sender.setImage(UIImage(named:"已赞"), for: UIControlState.normal)
+            self.likeLabel.text = String(origin!+1)
+        }else if (sender.imageView?.image == UIImage(named:"已赞")){
+            sender.setImage(UIImage(named:"赞"), for: UIControlState.normal)
+            self.likeLabel.text = String(origin!-1)
+        }
+        
+        sender.isEnabled  = true
     }
     
     @IBAction func talkTapped(_ sender: Any) {
-        print("talking")
+        //self.
     }
     
     override func viewDidLoad() {
@@ -46,9 +65,11 @@ class articleViewController: UIViewController {
         self.author.text = post.author
         self.date.text = post.date
         self.content.text = post.content
-        self.like = post.like
+        self.likeLabel.text = String(post.like)
         
         super.viewDidLoad()
+        
+        self.content.isEditable = false
     }
 
     override func didReceiveMemoryWarning() {
