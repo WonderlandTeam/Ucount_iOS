@@ -21,7 +21,10 @@ class articleViewController: UIViewController {
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var talkButton: UIButton!
     
+    
+    //这篇帖子所有的信息
     var post: Post!
+
     var callBack: postCallBack!
     
     var isLike: Bool = false
@@ -66,16 +69,32 @@ class articleViewController: UIViewController {
     }
     
     @IBAction func talkTapped(_ sender: Any) {
-        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "commentViewController") as! commentViewController
+
+        //这里根据post.id来找到所有的评论，并传给commentViewController
+        var comments = [Comment(postId: post.id, userId: "userid1", date: "2017-3-18 22:00", text: "文章写得很好。"),
+                       Comment(postId: post.id, userId: "userid2", date: "2013-12-1 22:20", text: "给你加个鸡腿！！"),
+                       Comment(postId: post.id, userId: "userid3", date: "2012-11-28 12:00", text: "哈哈哈")]
+
         
         //返回的是评论的内容
 //        vc.callBack = ({(words: String)->Void  in
 //            self.comment = words
 //        })
         
-        self.present(vc,animated: true){
-            
+        //comments.removeAll()
+    
+        if(comments.count == 0){//没有评论
+            let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "noCommentViewController") as! noCommentViewController
+            self.present(vc,animated: true){
+                
+            }
+        }else{//有评论
+            let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "commentViewController") as! commentViewController
+            self.present(vc,animated: true){
+                
+            }
         }
+        
     }
     
     override func viewDidLoad() {

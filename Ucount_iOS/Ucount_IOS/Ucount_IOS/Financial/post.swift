@@ -31,4 +31,13 @@ struct myPost{
     var date:String
 }
 
+struct Comment{
+    var postId: String
+    var userId: String
+    var date: String
+    var text: String
+}
+
+
+
 
