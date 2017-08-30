@@ -13,8 +13,30 @@ class commentViewController: UIViewController,UITableViewDelegate,UITableViewDat
     var post: Post!      //该帖子的所有信息
     var comments:[Comment] = []  //对于该帖子所有的评论
     var comment: String! //跳转到talk后新加的评论
+
     
     @IBOutlet weak var table: UITableView!
+  
+    @IBAction func commentTapped(_ sender: UIButton) {
+        var index = sender.tag
+        var selected = comments[index]
+        
+        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "talkViewController") as! talkViewController
+        
+        //返回的是评论的内容
+        vc.callBack = ({(words: String)->Void  in
+            print(selected.currentId)
+            print(selected.postId)
+            print(selected.text)
+            print(words)
+        })
+        
+        self.present(vc,animated: true){
+            
+        }
+
+    }
+    
 
     @IBAction func addCommentTapped(_ sender: UIButton) {
         
@@ -70,6 +92,8 @@ class commentViewController: UIViewController,UITableViewDelegate,UITableViewDat
         (cell.viewWithTag(100) as! UILabel).text = comments[indexPath.row].userId
         (cell.viewWithTag(101) as! UILabel).text = comments[indexPath.row].date
         (cell.viewWithTag(102) as! UILabel).text = comments[indexPath.row].text
+        (cell.viewWithTag(103) as! UIButton).tag = indexPath.row
+        //self.commentButton.tag = indexPath.row
         
         return cell
     }
