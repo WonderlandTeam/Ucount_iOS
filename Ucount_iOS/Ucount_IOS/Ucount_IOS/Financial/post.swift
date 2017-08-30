@@ -18,8 +18,10 @@ struct Post {
 
 }
 struct postRead {
+    var id: String
     var isLike: Bool
     var isCollect: Bool
+    var comment: String
 }
 
 

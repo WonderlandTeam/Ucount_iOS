@@ -24,8 +24,13 @@ class articleViewController: UIViewController {
     var post: Post!
     var callBack: postCallBack!
     
+    var isLike: Bool = false
+    var isCollect: Bool  = false
+    var comment: String = ""
+    
+    
     @IBAction func backTapped(_ sender: Any) {
-        self.callBack(postRead(isLike: false, isCollect: true))
+        self.callBack(postRead(id: post.id, isLike: isLike, isCollect: isCollect, comment: self.comment))
         self.dismiss(animated: true )
     }
     
@@ -33,8 +38,10 @@ class articleViewController: UIViewController {
         sender.isEnabled = false
         if(sender.imageView?.image == UIImage(named:"收藏")){
             sender.setImage(UIImage(named:"已收藏"), for: UIControlState.normal)
+            self.isCollect = true
         }else if (sender.imageView?.image == UIImage(named:"已收藏")){
             sender.setImage(UIImage(named:"收藏"), for: UIControlState.normal)
+            self.isCollect = false
         }
         
         sender.isEnabled  = true
@@ -48,9 +55,11 @@ class articleViewController: UIViewController {
         if(sender.imageView?.image == UIImage(named:"赞")){
             sender.setImage(UIImage(named:"已赞"), for: UIControlState.normal)
             self.likeLabel.text = String(origin!+1)
+            self.isLike = true
         }else if (sender.imageView?.image == UIImage(named:"已赞")){
             sender.setImage(UIImage(named:"赞"), for: UIControlState.normal)
             self.likeLabel.text = String(origin!-1)
+            self.isLike = false
         }
         
         sender.isEnabled  = true
@@ -61,7 +70,7 @@ class articleViewController: UIViewController {
         
         //返回的是评论的内容
         vc.callBack = ({(words: String)->Void  in
-            print(words)
+            self.comment = words
         })
         
         self.present(vc,animated: true){

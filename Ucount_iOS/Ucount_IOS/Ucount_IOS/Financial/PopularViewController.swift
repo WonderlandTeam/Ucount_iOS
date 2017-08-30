@@ -53,10 +53,12 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
         self.tableView.deselectRow(at: indexPath, animated: true)
         let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "articleViewController") as! articleViewController
         
-        //返回的是否点赞和收藏的数据
+        //返回的是否点赞和收藏，评论的数据
         vc.callBack = ({(change: postRead)->Void  in
+            print(change.id)
             print(change.isLike)
             print(change.isCollect)
+            print(change.comment)
         })
         //传递过去的有关帖子的数据
         vc.post = posts[indexPath.row]
