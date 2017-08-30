@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rRW-ce-3v2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="rRW-ce-3v2">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,11 +14,11 @@
             <objects>
                 <viewController id="rRW-ce-3v2" customClass="LoginViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KIY-Mg-IQm"/>
-                        <viewControllerLayoutGuide type="bottom" id="bO6-v5-J6Y"/>
+                        <viewControllerLayoutGuide type="top" id="kka-Kb-L6P"/>
+                        <viewControllerLayoutGuide type="bottom" id="ru8-bc-G2I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hj7-cj-5r5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手机号或用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f35-KP-Cvd">
@@ -44,7 +48,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" backgroundImage="Group-3"/>
                                 <connections>
-                                    <segue destination="aHY-ak-ecf" kind="show" id="llH-WI-82e"/>
+                                    <segue destination="aHY-ak-ecf" kind="modal" id="llH-WI-82e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfT-Ri-rvw">
@@ -56,7 +60,7 @@
                                     <color key="titleShadowColor" red="0.73209518194198608" green="0.92530184984207153" blue="0.72667396068572998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Sqz-az-3rA" kind="show" id="wQw-KY-Z9a"/>
+                                    <segue destination="Sqz-az-3rA" kind="modal" id="wQw-KY-Z9a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDo-e0-123">
@@ -66,7 +70,7 @@
                                     <color key="titleColor" red="0.9274865984916687" green="0.27282547950744629" blue="0.16877865791320801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yew-6a-WLk" kind="show" id="GDy-Dj-jhC"/>
+                                    <segue destination="yew-6a-WLk" kind="modal" id="GDy-Dj-jhC"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBd-zh-YUz">
@@ -90,18 +94,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g8-bd-g2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3748" y="-562"/>
+            <point key="canvasLocation" x="-2342.5" y="-624.75666666666666"/>
         </scene>
         <!--Forget View Controller-->
         <scene sceneID="6pF-FF-d5g">
             <objects>
                 <viewController id="yew-6a-WLk" customClass="ForgetViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lTu-L4-8fu"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kj7-gn-xvS"/>
+                        <viewControllerLayoutGuide type="top" id="TXi-bS-ali"/>
+                        <viewControllerLayoutGuide type="bottom" id="0CK-Dh-iqc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1RC-zh-VoT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手机号或邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbr-gz-IXl">
@@ -151,7 +155,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="确认"/>
                                 <connections>
-                                    <segue destination="aHY-ak-ecf" kind="show" id="GK3-4y-qh4"/>
+                                    <segue destination="aHY-ak-ecf" kind="modal" id="GK3-4y-qh4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="找回密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXx-0n-XY1">
@@ -181,37 +185,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWe-yg-4u5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3gJ-bM-qXb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3524" y="421"/>
+            <point key="canvasLocation" x="-2202.5" y="468.01166666666666"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="C6Z-tq-ZJV">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="aHY-ak-ecf" customClass="ViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mTv-my-caz"/>
-                        <viewControllerLayoutGuide type="bottom" id="5dP-fD-MDS"/>
+                        <viewControllerLayoutGuide type="top" id="0S1-Lm-UTZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gk-NL-Ywz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OvW-y2-mB3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlT-C5-RzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-815" y="300"/>
+            <point key="canvasLocation" x="-509.375" y="333.5"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="ykY-yS-vt2">
             <objects>
                 <viewController id="Sqz-az-3rA" customClass="RegisterViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PMW-65-9bI"/>
-                        <viewControllerLayoutGuide type="bottom" id="tPW-SZ-Z13"/>
+                        <viewControllerLayoutGuide type="top" id="Sda-i2-si7"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Es-88-KJV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7Cv-kw-gBO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvM-65-kz2">
@@ -261,7 +264,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="注册"/>
                                 <connections>
-                                    <segue destination="aHY-ak-ecf" kind="show" id="nQk-DX-dKY"/>
+                                    <segue destination="aHY-ak-ecf" kind="modal" id="nQk-DX-dKY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFj-ko-Ffb">
@@ -292,14 +295,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMN-D0-CSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0o8-Tl-Ou2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1372" y="-858.62068965517244"/>
+            <point key="canvasLocation" x="-857.5" y="-954.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Group-3" width="252" height="46"/>
         <image name="Shape" width="436" height="506"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
+    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nQk-DX-dKY"/>
+        <segue reference="GK3-4y-qh4"/>
     </inferredMetricsTieBreakers>
 </document>

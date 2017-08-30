@@ -71,7 +71,7 @@ class articleViewController: UIViewController {
     @IBAction func talkTapped(_ sender: Any) {
 
         //这里根据post.id来找到所有的评论，并传给commentViewController
-        var comments = [Comment(postId: post.id, userId: "userid1", date: "2017-3-18 22:00", text: "文章写得很好。"),
+        var comments = [Comment(postId: post.id, userId: "userid1", date: "2017-3-18 22:00", text: "文章写得很好。这个人之前写过很多有用的干活，希望大家都踊跃一些去找他啊"),
                        Comment(postId: post.id, userId: "userid2", date: "2013-12-1 22:20", text: "给你加个鸡腿！！"),
                        Comment(postId: post.id, userId: "userid3", date: "2012-11-28 12:00", text: "哈哈哈")]
 
@@ -90,6 +90,8 @@ class articleViewController: UIViewController {
             }
         }else{//有评论
             let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "commentViewController") as! commentViewController
+            vc.comments = comments
+            
             self.present(vc,animated: true){
                 
             }
