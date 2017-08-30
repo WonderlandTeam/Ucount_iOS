@@ -24,6 +24,7 @@
 		71802FF91F4ED1DB005D39E4 /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71802FF81F4ED1DB005D39E4 /* Person.storyboard */; };
 		718B85141F55420400C972BE /* articleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85131F55420400C972BE /* articleViewController.swift */; };
 		718B85181F556A2E00C972BE /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85171F556A2E00C972BE /* post.swift */; };
+		7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */; };
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
 		E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50535831F504E5A00CD8A2F /* itemizeViewController.swift */; };
@@ -91,6 +92,7 @@
 		71802FF81F4ED1DB005D39E4 /* Person.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Person.storyboard; path = ../login/Person.storyboard; sourceTree = "<group>"; };
 		718B85131F55420400C972BE /* articleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = articleViewController.swift; sourceTree = "<group>"; };
 		718B85171F556A2E00C972BE /* post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
+		7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyPassword1ViewController.swift; sourceTree = "<group>"; };
 		C34FE42D6B8405B16123136E /* Pods-Ucount_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 				71802FD81F4EB71A005D39E4 /* PersonViewController.swift */,
 				71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */,
 				71802FF81F4ED1DB005D39E4 /* Person.storyboard */,
+				7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				718B85141F55420400C972BE /* articleViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */,
+				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
