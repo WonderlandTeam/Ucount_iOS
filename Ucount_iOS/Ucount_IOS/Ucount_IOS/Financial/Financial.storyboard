@@ -323,24 +323,6 @@
             </objects>
             <point key="canvasLocation" x="2220" y="4425"/>
         </scene>
-        <!--No Comment View Controller-->
-        <scene sceneID="SRE-lk-Ncg">
-            <objects>
-                <viewController storyboardIdentifier="noCommentViewController" id="a6Y-Pf-73J" customClass="noCommentViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YNH-RK-25v"/>
-                        <viewControllerLayoutGuide type="bottom" id="FVc-pE-Wi9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LOD-Gb-yTD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1IL-FZ-fYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3086" y="4425"/>
-        </scene>
         <!--Talk View Controller-->
         <scene sceneID="fTO-pm-yam">
             <objects>
