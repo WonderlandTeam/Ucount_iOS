@@ -21,6 +21,12 @@ class ThirdReportViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 2)
+    }
 
     /*
     // MARK: - Navigation

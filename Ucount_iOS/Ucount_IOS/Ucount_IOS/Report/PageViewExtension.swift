@@ -12,6 +12,20 @@ import UIKit
 
 extension ReportViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?{
+        if viewController is SecondReportViewController
+        {
+            return firstReport
+        }
+        else if viewController is ThirdReportViewController
+        {
+            return secondReport
+        }
+        
+        return nil
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?{
+        
         
         if viewController is FirstReportViewController
         {
@@ -23,20 +37,7 @@ extension ReportViewController: UIPageViewControllerDataSource {
         }
         
         return nil
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?{
-        
-        if viewController is SecondReportViewController
-        {
-            return firstReport
-        }
-        else if viewController is ThirdReportViewController
-        {
-            return secondReport
-        }
-        
-        return nil
+
     }
     
 }

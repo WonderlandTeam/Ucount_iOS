@@ -15,6 +15,12 @@ class FirstReportViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 0)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
