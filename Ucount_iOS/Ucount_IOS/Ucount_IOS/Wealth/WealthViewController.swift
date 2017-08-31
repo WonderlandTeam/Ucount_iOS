@@ -17,10 +17,30 @@ class WealthViewController : UIViewController,SendMessageDelegate{
     
     var allAcountVC : allAcountableViewController?
     
+    var cashView : CashViewController!
+    var bankView : bankCardViewController!
+    var schoolView : schoolCardViewController!
+    var alipayView : aliPayViewController!
+    
+    var jumpTo : String?
+    
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cashView = UIStoryboard(name:"Wealth",bundle:nil).instantiateViewController(withIdentifier: "cash") as! CashViewController
+        
+        bankView = UIStoryboard(name:"Wealth", bundle:nil).instantiateViewController(withIdentifier: "bankCard") as!
+            bankCardViewController
+        
+        schoolView = UIStoryboard(name:"Wealth", bundle:nil).instantiateViewController(withIdentifier: "schoolCard") as!
+            schoolCardViewController
+        
+        alipayView = UIStoryboard(name:"Wealth",bundle:nil).instantiateViewController(withIdentifier: "aliPay") as!
+            aliPayViewController
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(WealthViewController.selectedTypeFunc(notification:)), name: NSNotification.Name( "selectedType"), object: nil)
         print("进来了")
        
     }
@@ -54,6 +74,33 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         allAcountVC!.typeMoney.append(message[1])
         allAcountVC!.countType.append(message[2])
         print("已发送")
+        
+    }
+    
+    
+    //通知响应方法
+    func selectedTypeFunc(notification: NSNotification) {
+        jumpTo = notification.object as! String
+        switch jumpTo {
+        case "银行卡"?:
+            
+            self.present(bankView, animated: true, completion: nil)
+            break
+        case "现金"?:
+            
+            self.present(cashView, animated: true, completion: nil)
+            break
+        case "支付宝"?:
+            
+            self.present(alipayView, animated: true, completion: nil)
+            break
+        case "校园卡"?:
+            
+            self.present(schoolView, animated: true, completion: nil)
+            break
+        default:
+            break
+        }
         
     }
 }

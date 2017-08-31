@@ -71,7 +71,9 @@ class allAcountableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
         selectType = countType[indexPath.row]
-        print("电机的是"+"\(typeName[indexPath.row])")
+        
+        NotificationCenter.default.post(name: NSNotification.Name( "selectedType"), object: selectType)
+        
         
     }
 
