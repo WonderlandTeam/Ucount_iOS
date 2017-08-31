@@ -279,7 +279,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="再次输入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgV-e0-BBa">
                                 <rect key="frame" x="44" y="362" width="70" height="21"/>
@@ -293,14 +293,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mce-pd-iwn">
                                 <rect key="frame" x="152" y="358" width="162" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjT-8r-8oi">
                                 <rect key="frame" x="252" y="195" width="62" height="30"/>
@@ -335,7 +335,7 @@
         <!--忘记密码-->
         <scene sceneID="TZn-9s-OAx">
             <objects>
-                <viewController id="umX-D7-UQN" sceneMemberID="viewController">
+                <viewController id="umX-D7-UQN" customClass="forgetViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Eq-1x-Cer"/>
                         <viewControllerLayoutGuide type="bottom" id="Uf6-1t-5no"/>
@@ -359,36 +359,53 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-PG-II9">
-                                <rect key="frame" x="248" y="201" width="77" height="30"/>
+                                <rect key="frame" x="248" y="221" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="发送验证码"/>
+                                <connections>
+                                    <action selector="sendTapped:" destination="umX-D7-UQN" eventType="touchUpInside" id="pFf-mO-HHe"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-yB-w3G">
-                                <rect key="frame" x="189" y="245" width="136" height="30"/>
+                                <rect key="frame" x="189" y="285" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGF-Dw-Gfo">
-                                <rect key="frame" x="105" y="250" width="52" height="21"/>
+                                <rect key="frame" x="105" y="290" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="验证码已发送" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypR-ts-6Nu">
+                                <rect key="frame" x="64" y="226" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6E-OR-TPF">
-                                <rect key="frame" x="172" y="353" width="31" height="30"/>
+                                <rect key="frame" x="172" y="402" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="确认"/>
                                 <connections>
-                                    <segue destination="hRZ-1q-cNO" kind="push" id="h38-sD-zLt"/>
+                                    <segue destination="hRZ-1q-cNO" kind="push" identifier="forgetToPassword2" id="h38-sD-zLt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="忘记密码" id="ahv-iH-y5l"/>
+                    <connections>
+                        <outlet property="code" destination="dJp-yB-w3G" id="ULf-dS-21G"/>
+                        <outlet property="codeLabel" destination="EGF-Dw-Gfo" id="MGd-OB-GSd"/>
+                        <outlet property="okButton" destination="T6E-OR-TPF" id="XJQ-uJ-cSv"/>
+                        <outlet property="phoneOrEmail" destination="iLA-I0-wgL" id="kJc-To-apJ"/>
+                        <outlet property="sendMessage" destination="ypR-ts-6Nu" id="XYz-BC-xLi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6u-Me-FTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -397,7 +414,7 @@
         <!--修改密码-->
         <scene sceneID="g8m-JL-OSe">
             <objects>
-                <viewController id="hRZ-1q-cNO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="modifyPassword2ViewController" id="hRZ-1q-cNO" customClass="modifyPassword2ViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LUx-bK-aiw"/>
                         <viewControllerLayoutGuide type="bottom" id="Ycg-fG-Lsn"/>
@@ -425,24 +442,31 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cv2-k8-Lrp">
                                 <rect key="frame" x="160" y="307" width="162" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSC-7v-Jvf">
                                 <rect key="frame" x="172" y="423" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="okTapped:" destination="hRZ-1q-cNO" eventType="touchUpInside" id="Xz4-kE-2bP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="修改密码" id="4me-9v-wu1"/>
+                    <connections>
+                        <outlet property="againPassword" destination="Cv2-k8-Lrp" id="pLb-Lr-S4Y"/>
+                        <outlet property="newPassword" destination="0gf-FR-MeQ" id="NBE-52-30U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3d-qQ-QPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,6 +19,11 @@ class modifyPassword1ViewController: UIViewController,UITextFieldDelegate {
         oldPassword.delegate = self
         newPassword.delegate = self
         againPassword.delegate = self
+        
+        
+        self.oldPassword.text = ""
+        self.newPassword.text = ""
+        self.againPassword.text = ""
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -48,6 +53,7 @@ class modifyPassword1ViewController: UIViewController,UITextFieldDelegate {
             
         if(newPassword.text == againPassword.text){
             alertController = UIAlertController(title: "保存成功",message: nil, preferredStyle: .alert)
+            self.navigationController?.popViewController(animated: true)
         }else{
             alertController = UIAlertController(title: "新密码不一致!",message: nil, preferredStyle: .alert)
         }
@@ -60,7 +66,9 @@ class modifyPassword1ViewController: UIViewController,UITextFieldDelegate {
         }
         
         if(newPassword.text == againPassword.text){
-            self.navigationController?.popViewController(animated: true)
+            self.oldPassword.text = ""
+            self.newPassword.text = ""
+            self.againPassword.text = ""
         }
         
     }
