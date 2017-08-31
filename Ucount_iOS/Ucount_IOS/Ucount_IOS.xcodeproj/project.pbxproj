@@ -31,6 +31,9 @@
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
 		E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50535831F504E5A00CD8A2F /* itemizeViewController.swift */; };
+		E511661F1F57EA0A00885634 /* bankCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E511661E1F57EA0A00885634 /* bankCardViewController.swift */; };
+		E51166211F57EA1900885634 /* schoolCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51166201F57EA1900885634 /* schoolCardViewController.swift */; };
+		E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51166221F57EA2D00885634 /* aliPayViewController.swift */; };
 		E51B15A61F56D9E300CB9CDE /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15A51F56D9E300CB9CDE /* ReportViewController.swift */; };
 		E51B15A81F56E12200CB9CDE /* CreateNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15A71F56E12200CB9CDE /* CreateNewController.swift */; };
 		E51B15AA1F56ED8C00CB9CDE /* FirstReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15A91F56ED8C00CB9CDE /* FirstReportViewController.swift */; };
@@ -103,6 +106,9 @@
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50535831F504E5A00CD8A2F /* itemizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemizeViewController.swift; sourceTree = "<group>"; };
+		E511661E1F57EA0A00885634 /* bankCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bankCardViewController.swift; sourceTree = "<group>"; };
+		E51166201F57EA1900885634 /* schoolCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schoolCardViewController.swift; sourceTree = "<group>"; };
+		E51166221F57EA2D00885634 /* aliPayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aliPayViewController.swift; sourceTree = "<group>"; };
 		E51B15A51F56D9E300CB9CDE /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		E51B15A71F56E12200CB9CDE /* CreateNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewController.swift; sourceTree = "<group>"; };
 		E51B15A91F56ED8C00CB9CDE /* FirstReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstReportViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +304,9 @@
 				E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */,
 				E50535831F504E5A00CD8A2F /* itemizeViewController.swift */,
 				E59AB5C31F5155B600FDA308 /* CashViewController.swift */,
+				E511661E1F57EA0A00885634 /* bankCardViewController.swift */,
+				E51166201F57EA1900885634 /* schoolCardViewController.swift */,
+				E51166221F57EA2D00885634 /* aliPayViewController.swift */,
 			);
 			path = Wealth;
 			sourceTree = "<group>";
@@ -621,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */,
+				E51166211F57EA1900885634 /* schoolCardViewController.swift in Sources */,
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
 				E51B15AA1F56ED8C00CB9CDE /* FirstReportViewController.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
@@ -632,6 +642,7 @@
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
 				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
 				E51B15A61F56D9E300CB9CDE /* ReportViewController.swift in Sources */,
+				E511661F1F57EA0A00885634 /* bankCardViewController.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
 				71F7CEF21F579B490012DE98 /* forgetViewController.swift in Sources */,
 				710361551F510A71003B15E2 /* PopularViewController.swift in Sources */,
@@ -642,6 +653,7 @@
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
+				E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
 				7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */,

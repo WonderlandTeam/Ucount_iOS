@@ -12,9 +12,13 @@ class allAcountableViewController: UITableViewController{
     
     @IBOutlet var acountTableview: UITableView!
     
-    var typeName : [String] = ["现金","银行卡","支付宝","校园卡"]
+    var typeName : [String] = ["现金","银行卡","支付宝","校园卡"] //账户名称
     
-    var typeMoney : [String] = ["9.9","0.0","0.0","0.0"]
+    var countType : [String] = ["现金","银行卡","支付宝","校园卡"] //账户类型
+    
+    var typeMoney : [String] = ["9.9","0.0","0.0","0.0"] //账户金额
+    
+    var selectType : String? //点击的账户
     
     var newTypeInfo : [String] = []
     
@@ -65,6 +69,9 @@ class allAcountableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+        selectType = countType[indexPath.row]
+        print("电机的是"+"\(typeName[indexPath.row])")
         
     }
 

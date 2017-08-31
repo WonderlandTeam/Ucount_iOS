@@ -52,6 +52,7 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         
         allAcountVC!.typeName.append(message[0])
         allAcountVC!.typeMoney.append(message[1])
+        allAcountVC!.countType.append(message[2])
         print("已发送")
         
     }
