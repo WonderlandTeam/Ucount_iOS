@@ -32,6 +32,7 @@ struct myPost{
 
 struct Comment{
     var postId: String
+    var currentId: String
     var userId: String
     var date: String
     var text: String
