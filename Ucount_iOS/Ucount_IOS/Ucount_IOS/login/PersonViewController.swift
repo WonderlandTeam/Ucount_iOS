@@ -49,4 +49,18 @@ class PersonViewController: UIViewController,UITableViewDelegate,UITableViewData
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! postViewController
+        vc.theTitle = segue.identifier
+    }
+    
 }
+
+
+
+
+
+
+
+
+

@@ -13,6 +13,7 @@
 		710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361581F510A8E003B15E2 /* KnowledgeViewController.swift */; };
 		710890D51F56CED4006181BC /* commentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710890D41F56CED4006181BC /* commentViewController.swift */; };
 		7152762D1F566B3900086254 /* talkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152762C1F566B3900086254 /* talkViewController.swift */; };
+		7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C9E51F57F43000D391A4 /* postViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
 		71802FD51F4EB691005D39E4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD41F4EB691005D39E4 /* Common.swift */; };
 		71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */; };
@@ -83,6 +84,7 @@
 		710361581F510A8E003B15E2 /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
 		710890D41F56CED4006181BC /* commentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentViewController.swift; sourceTree = "<group>"; };
 		7152762C1F566B3900086254 /* talkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = talkViewController.swift; sourceTree = "<group>"; };
+		7152C9E51F57F43000D391A4 /* postViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
 		71802FD41F4EB691005D39E4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = login/Common.swift; sourceTree = "<group>"; };
 		71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonNavigationController.swift; path = ../login/PersonNavigationController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */,
 				71F7CEF11F579B490012DE98 /* forgetViewController.swift */,
 				71F7CEF31F579F8A0012DE98 /* modifyPassword2ViewController.swift */,
+				7152C9E51F57F43000D391A4 /* postViewController.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
+				7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				71F7CEF41F579F8A0012DE98 /* modifyPassword2ViewController.swift in Sources */,
 				E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */,
