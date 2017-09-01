@@ -17,6 +17,9 @@ class messageViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.table.tableFooterView = UIView()
+        messages = [Message(userId: "userid1", title: "本月食堂预算超支", date: "2017-9-1 8:00", content: "您本月食堂预算已超支，请注意。"),
+                    Message(userId: "userid2", title: "购买台灯任务完成", date: "2013-9-1 15:00", content: "您要购买台灯的任务已完成啦~~~恭喜啦~~~")]
 
         // Do any additional setup after loading the view.
     }
@@ -48,6 +51,7 @@ class messageViewController: UIViewController ,UITableViewDelegate,UITableViewDa
         self.table.deselectRow(at: indexPath, animated: true)
         let vc = UIStoryboard(name: "Person", bundle: nil).instantiateViewController(withIdentifier: "messageDetailViewController") as! messageDetailViewController
     
+        vc.message = messages[indexPath.row]
         self.present(vc,animated: true){
             
         }

@@ -9,10 +9,24 @@
 import UIKit
 
 class messageDetailViewController: UIViewController {
+    
+    var message: Message!
+    @IBOutlet weak var content: UITextView!
 
+    @IBAction func backTapped(_ sender: UIButton) {
+        self.dismiss(animated: true) { 
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.content.text = message.content
+        self.content.layer.borderWidth = 1
+        self.content.layer.borderColor = UIColor.gray.cgColor
+        self.content.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 
