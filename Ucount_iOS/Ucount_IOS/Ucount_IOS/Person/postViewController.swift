@@ -21,6 +21,7 @@ class postViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.table.tableFooterView = UIView()
         
         //假定所要展示的帖子列表
+        
         postsToShow = [Post(id: "456", title: "title1", author: "author1", date: "2017-12-30 12:00", content: "content1", like: 67),
                        Post(id: "457", title: "title2", author: "author2", date: "2016-12-4 22:00", content: "content2", like: 7),
                        Post(id: "458", title: "title3", author: "author3", date: "2013-11-20 6:00", content: "content3", like: 6)]
@@ -51,8 +52,8 @@ class postViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        
-        return postsToShow.count
+        //return self.postsToShow.count
+        return  3
         //return dataArray.count
     }
     

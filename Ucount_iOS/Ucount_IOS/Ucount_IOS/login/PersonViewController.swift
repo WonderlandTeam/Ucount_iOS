@@ -50,8 +50,12 @@ class PersonViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! postViewController
-        vc.theTitle = segue.identifier
+        if(segue.identifier=="我的消息" || segue.identifier=="修改密码"){
+        }else{
+            let vc = segue.destination as! postViewController
+            vc.theTitle = segue.identifier
+        }
+        
     }
     
 }
