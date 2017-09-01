@@ -15,12 +15,19 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     
     @IBOutlet weak var passwordText: UITextField!
 
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var loginTop: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         idText.delegate = self
         passwordText.delegate = self
-       
+        self.loginButton.backgroundColor = UIColor(red: 123/255, green: 237/255, blue: 67/255, alpha: 0.6)
+        self.loginButton.layer.cornerRadius = 20
+        self.navigationController?.isNavigationBarHidden = true
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,11 +46,6 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         textField.resignFirstResponder()
         return true
     }
-    
-    @IBAction func close(segue: UIStoryboardSegue){
-        print("mengbi")
-    }
-
 
 }
 

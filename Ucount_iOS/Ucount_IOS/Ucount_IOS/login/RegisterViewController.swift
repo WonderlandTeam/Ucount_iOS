@@ -13,14 +13,17 @@ class RegisterViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var telephone: UITextField!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    
+    @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         telephone.delegate = self
         username.delegate = self
         password.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.registerButton.backgroundColor = UIColor(red: 123/255, green: 237/255, blue: 67/255, alpha: 0.6)
+        self.registerButton.layer.cornerRadius = 20
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func didReceiveMemoryWarning() {

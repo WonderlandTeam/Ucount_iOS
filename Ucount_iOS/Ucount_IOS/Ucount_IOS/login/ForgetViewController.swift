@@ -11,18 +11,19 @@ import UIKit
 class ForgetViewController: UIViewController,UITextFieldDelegate{
     
     @IBOutlet weak var phoneOrMail: UITextField!
-  
     @IBOutlet weak var password: UITextField!
-    
     @IBOutlet weak var confirm: UITextField!
-    
+    @IBOutlet weak var comfirmButton: UIButton!    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneOrMail.delegate = self
         password.delegate = self
         confirm.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.comfirmButton.backgroundColor = UIColor(red: 123/255, green: 237/255, blue: 67/255, alpha: 0.6)
+        self.comfirmButton.layer.cornerRadius = 20
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func didReceiveMemoryWarning() {
