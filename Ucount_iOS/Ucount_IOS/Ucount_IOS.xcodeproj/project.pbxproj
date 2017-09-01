@@ -16,6 +16,7 @@
 		711309101F58FB6200B9D596 /* messageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */; };
 		711309121F591EAD00B9D596 /* knowledgeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */; };
 		71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71223DA91F5801D100BDDEAA /* messageViewController.swift */; };
+		713A620D1F594C2D008B7FDA /* 7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 713A620C1F594C2D008B7FDA /* 7.pdf */; };
 		7152762D1F566B3900086254 /* talkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152762C1F566B3900086254 /* talkViewController.swift */; };
 		7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C9E51F57F43000D391A4 /* postViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
@@ -105,6 +106,7 @@
 		7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageDetailViewController.swift; sourceTree = "<group>"; };
 		711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knowledgeDetailViewController.swift; sourceTree = "<group>"; };
 		71223DA91F5801D100BDDEAA /* messageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
+		713A620C1F594C2D008B7FDA /* 7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 7.pdf; sourceTree = "<group>"; };
 		7152762C1F566B3900086254 /* talkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = talkViewController.swift; sourceTree = "<group>"; };
 		7152C9E51F57F43000D391A4 /* postViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 		E58447581F46C39D006F976E /* Financial */ = {
 			isa = PBXGroup;
 			children = (
+				713A620C1F594C2D008B7FDA /* 7.pdf */,
 				71F57D361F59447F006C4A6D /* 1.pdf */,
 				71F57D371F59447F006C4A6D /* 2.pdf */,
 				71F57D381F59447F006C4A6D /* 3.pdf */,
@@ -495,6 +498,7 @@
 				71F57D3D1F59447F006C4A6D /* 2.pdf in Resources */,
 				E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */,
 				71802FEE1F4EC789005D39E4 /* Plan.storyboard in Resources */,
+				713A620D1F594C2D008B7FDA /* 7.pdf in Resources */,
 				E58447151F468AF9006F976E /* Assets.xcassets in Resources */,
 				E58447131F468AF9006F976E /* Main.storyboard in Resources */,
 				71F57D411F59447F006C4A6D /* 6.pdf in Resources */,

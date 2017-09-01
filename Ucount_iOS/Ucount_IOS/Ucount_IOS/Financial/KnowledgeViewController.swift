@@ -11,7 +11,7 @@ import UIKit
 class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
    
     var titles = ["基础理财知识普及","大学生理财真人秀：不做“穷学生”，只需这四步","理财和不理财，人生会有多大差别？",
-                  "理财全靠机器？理财经理怎么办？","银行理财要蔫了，但还有更安全的理财方式！","政府工作报告对股市影响解读汇总：2017全年看呈U型","普及知识部分","拓展知识部分"]
+                  "理财全靠机器？理财经理怎么办？","银行理财要蔫了，但还有更安全的理财方式！","政府工作报告对股市影响解读汇总：2017全年看呈U型","普及与拓展知识部分"]
 
 
 
@@ -33,7 +33,7 @@ class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableVi
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
 
     
