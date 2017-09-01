@@ -12,6 +12,9 @@
 		710361571F510A80003B15E2 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361561F510A80003B15E2 /* PushViewController.swift */; };
 		710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361581F510A8E003B15E2 /* KnowledgeViewController.swift */; };
 		710890D51F56CED4006181BC /* commentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710890D41F56CED4006181BC /* commentViewController.swift */; };
+		7113090E1F58F99700B9D596 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113090D1F58F99700B9D596 /* Message.swift */; };
+		711309101F58FB6200B9D596 /* messageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */; };
+		71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71223DA91F5801D100BDDEAA /* messageViewController.swift */; };
 		7152762D1F566B3900086254 /* talkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152762C1F566B3900086254 /* talkViewController.swift */; };
 		7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C9E51F57F43000D391A4 /* postViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
@@ -89,6 +92,9 @@
 		710361561F510A80003B15E2 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		710361581F510A8E003B15E2 /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
 		710890D41F56CED4006181BC /* commentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentViewController.swift; sourceTree = "<group>"; };
+		7113090D1F58F99700B9D596 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageDetailViewController.swift; sourceTree = "<group>"; };
+		71223DA91F5801D100BDDEAA /* messageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
 		7152762C1F566B3900086254 /* talkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = talkViewController.swift; sourceTree = "<group>"; };
 		7152C9E51F57F43000D391A4 /* postViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +199,9 @@
 				71F7CEF11F579B490012DE98 /* forgetViewController.swift */,
 				71F7CEF31F579F8A0012DE98 /* modifyPassword2ViewController.swift */,
 				7152C9E51F57F43000D391A4 /* postViewController.swift */,
+				71223DA91F5801D100BDDEAA /* messageViewController.swift */,
+				7113090D1F58F99700B9D596 /* Message.swift */,
+				7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -652,6 +661,7 @@
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
 				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
 				E51B15A61F56D9E300CB9CDE /* ReportViewController.swift in Sources */,
+				711309101F58FB6200B9D596 /* messageDetailViewController.swift in Sources */,
 				E511661F1F57EA0A00885634 /* bankCardViewController.swift in Sources */,
 				E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
@@ -662,12 +672,17 @@
 				71802FDB1F4EB743005D39E4 /* ViewController.swift in Sources */,
 				718B85141F55420400C972BE /* articleViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
+				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
 				E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
+
 				E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */,
+
+				7113090E1F58F99700B9D596 /* Message.swift in Sources */,
+
 				7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				71F7CEF41F579F8A0012DE98 /* modifyPassword2ViewController.swift in Sources */,

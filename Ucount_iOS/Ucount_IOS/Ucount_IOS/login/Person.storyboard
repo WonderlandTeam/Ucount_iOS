@@ -10,6 +10,96 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--我的消息-->
+        <scene sceneID="39q-Dd-orc">
+            <objects>
+                <viewController storyboardIdentifier="messageViewController" id="1zG-4b-0Xi" customClass="messageViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1QL-mB-uZS"/>
+                        <viewControllerLayoutGuide type="bottom" id="qFJ-w1-2hz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nln-VR-4Sf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7J1-4j-jtY">
+                                <rect key="frame" x="0.0" y="72" width="414" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="firstCell" id="Ulo-Fv-8LI">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ulo-Fv-8LI" id="e7S-8q-q1b">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvM-WB-GM6">
+                                                    <rect key="frame" x="30" y="0.0" width="327" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1zG-4b-0Xi" id="evZ-pt-j31"/>
+                                    <outlet property="delegate" destination="1zG-4b-0Xi" id="W4i-D7-J6f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的消息" id="2iz-OE-XOc"/>
+                    <connections>
+                        <outlet property="table" destination="7J1-4j-jtY" id="DVB-y0-Om0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLr-Hz-3vD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="-1175.5434782608697"/>
+        </scene>
+        <!--Message Detail View Controller-->
+        <scene sceneID="icL-jG-mwK">
+            <objects>
+                <viewController storyboardIdentifier="messageDetailViewController" id="ExJ-hy-qFW" customClass="messageDetailViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zot-za-WkN"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fV-yh-hys"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wi4-19-ybB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="97U-km-ZAl">
+                                <rect key="frame" x="56" y="79" width="302" height="540"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iha-Cd-dMD">
+                                <rect key="frame" x="28" y="20" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="ExJ-hy-qFW" eventType="touchUpInside" id="nw3-8i-VlQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="content" destination="97U-km-ZAl" id="Vhl-cl-1kr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCL-ps-E1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.7391304347827" y="-1158.4239130434783"/>
+        </scene>
         <!--个人中心-->
         <scene sceneID="mph-oF-jxQ">
             <objects>
@@ -57,7 +147,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="gFe-p0-RyA" kind="push" id="TMi-SI-UwV"/>
+                                            <segue destination="gFe-p0-RyA" kind="push" identifier="修改密码" id="TMi-SI-UwV"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="帖子" id="uG4-PL-IHK">
@@ -226,6 +316,9 @@
                                                 <constraint firstItem="zaC-RH-s8l" firstAttribute="centerY" secondItem="1Ts-sU-uWw" secondAttribute="centerY" id="zSS-P1-HQQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1zG-4b-0Xi" kind="push" identifier="我的消息" id="mpf-Da-m8U"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
