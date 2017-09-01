@@ -23,7 +23,7 @@ class RegisterViewController: UIViewController ,UITextFieldDelegate{
         
         self.registerButton.backgroundColor = UIColor(red: 123/255, green: 237/255, blue: 67/255, alpha: 0.6)
         self.registerButton.layer.cornerRadius = 20
-        self.navigationController?.isNavigationBarHidden = false
+        //self.navigationController?.isNavigationBarHidden = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,9 +44,6 @@ class RegisterViewController: UIViewController ,UITextFieldDelegate{
         textField.resignFirstResponder()
         return true
     }
-    
-    
-    
     
 }
 

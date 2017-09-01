@@ -23,7 +23,7 @@ class ForgetViewController: UIViewController,UITextFieldDelegate{
         
         self.comfirmButton.backgroundColor = UIColor(red: 123/255, green: 237/255, blue: 67/255, alpha: 0.6)
         self.comfirmButton.layer.cornerRadius = 20
-        self.navigationController?.isNavigationBarHidden = false
+        //self.navigationController?.isNavigationBarHidden = false
     }
     
     override func didReceiveMemoryWarning() {
