@@ -525,7 +525,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AGV-Ej-rXM" id="o1g-Sd-OlA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-qT-6LJ">
@@ -613,7 +613,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="理财" id="5SV-VD-zsS"/>
+                    <tabBarItem key="tabBarItem" title="理财" image="ic_menu_money_off" selectedImage="ic_menu_money_on" id="5SV-VD-zsS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="segment" destination="vta-OJ-mw8" id="0Gg-wW-sQ5"/>
@@ -625,6 +625,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_menu_money_off" width="33" height="28"/>
+        <image name="ic_menu_money_on" width="33" height="28"/>
         <image name="收藏" width="469" height="459"/>
         <image name="评论" width="408" height="396"/>
         <image name="赞" width="352" height="352"/>

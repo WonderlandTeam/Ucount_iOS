@@ -17,8 +17,6 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
 
     @IBOutlet weak var loginButton: UIButton!
     
-    @IBOutlet weak var loginTop: UINavigationItem!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         idText.delegate = self

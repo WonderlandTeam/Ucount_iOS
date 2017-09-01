@@ -93,7 +93,6 @@
                     <connections>
                         <outlet property="idText" destination="oRQ-cz-6fJ" id="JgR-1A-1Lw"/>
                         <outlet property="loginButton" destination="ysy-yC-hKb" id="itl-E3-rdQ"/>
-                        <outlet property="loginTop" destination="Vkz-Z4-sb3" id="VK8-T5-hl7"/>
                         <outlet property="passwordText" destination="gBd-zh-YUz" id="r0Q-XH-Fff"/>
                     </connections>
                 </viewController>
@@ -181,7 +180,6 @@
                     <connections>
                         <outlet property="comfirmButton" destination="LyZ-PU-NNJ" id="ufb-UD-6oC"/>
                         <outlet property="confirm" destination="MwJ-yG-See" id="JXU-Am-SVD"/>
-                        <outlet property="navigationItem" destination="rQU-xd-Wix" id="92r-fv-Ny3"/>
                         <outlet property="password" destination="Ezo-HM-elj" id="3CD-xE-T4n"/>
                         <outlet property="phoneOrMail" destination="rWW-Kc-F39" id="zIP-bs-86r"/>
                     </connections>
@@ -319,6 +317,6 @@
         <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="llH-WI-82e"/>
+        <segue reference="nQk-DX-dKY"/>
     </inferredMetricsTieBreakers>
 </document>
