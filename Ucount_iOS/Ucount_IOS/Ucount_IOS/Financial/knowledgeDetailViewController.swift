@@ -9,10 +9,8 @@
 import UIKit
 
 class knowledgeDetailViewController: UIViewController {
-
-    var knowledge: Knowledge!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var content: UITextView!
+    
+    var num:Int!
     
     
     @IBAction func backTapped(_ sender: UIButton) {
@@ -23,12 +21,12 @@ class knowledgeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.content.layer.borderWidth = 1
-        self.content.layer.borderColor = UIColor.gray.cgColor
-        self.content.layer.cornerRadius = 10
-        self.titleLabel.text = knowledge.title
-        self.content.text = knowledge.content
-        // Do any additional setup after loading the view.
+        let pdfPath = Bundle.main.path(forResource: String(num), ofType: "pdf")
+        let pdfUrl = URL(fileURLWithPath: pdfPath!)
+        let scrollView = PDFScrollView(frame: view.frame)
+        scrollView.PDF = CGPDFDocument.init(pdfUrl as CFURL)
+        scrollView.initialize()
+        view.addSubview(scrollView)
     }
 
     override func didReceiveMemoryWarning() {

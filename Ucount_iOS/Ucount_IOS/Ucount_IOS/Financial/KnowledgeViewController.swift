@@ -27,6 +27,7 @@ class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableVi
 
         self.table.tableFooterView = UIView()
         
+        
         // Do any additional setup after loading the view.
     }
 
@@ -37,7 +38,7 @@ class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableVi
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 6
     }
 
     
@@ -57,7 +58,7 @@ class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableVi
         let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "knowledgeDetailViewController") as! knowledgeDetailViewController
         
         //传递过去的有关帖子的数据
-        vc.knowledge = self.knowledges[indexPath.row]
+        vc.num = indexPath.row+1
         
         self.present(vc,animated: true){
             

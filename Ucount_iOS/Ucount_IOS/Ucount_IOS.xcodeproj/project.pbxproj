@@ -30,6 +30,14 @@
 		718B85141F55420400C972BE /* articleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85131F55420400C972BE /* articleViewController.swift */; };
 		718B85181F556A2E00C972BE /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85171F556A2E00C972BE /* post.swift */; };
 		7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */; };
+		71F57D331F593FF2006C4A6D /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F57D321F593FF2006C4A6D /* PDFView.swift */; };
+		71F57D351F594020006C4A6D /* PDFScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F57D341F594020006C4A6D /* PDFScrollView.swift */; };
+		71F57D3C1F59447F006C4A6D /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D361F59447F006C4A6D /* 1.pdf */; };
+		71F57D3D1F59447F006C4A6D /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D371F59447F006C4A6D /* 2.pdf */; };
+		71F57D3E1F59447F006C4A6D /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D381F59447F006C4A6D /* 3.pdf */; };
+		71F57D3F1F59447F006C4A6D /* 4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D391F59447F006C4A6D /* 4.pdf */; };
+		71F57D401F59447F006C4A6D /* 5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D3A1F59447F006C4A6D /* 5.pdf */; };
+		71F57D411F59447F006C4A6D /* 6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D3B1F59447F006C4A6D /* 6.pdf */; };
 		71F7CEF21F579B490012DE98 /* forgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7CEF11F579B490012DE98 /* forgetViewController.swift */; };
 		71F7CEF41F579F8A0012DE98 /* modifyPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7CEF31F579F8A0012DE98 /* modifyPassword2ViewController.swift */; };
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
@@ -111,6 +119,14 @@
 		718B85131F55420400C972BE /* articleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = articleViewController.swift; sourceTree = "<group>"; };
 		718B85171F556A2E00C972BE /* post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyPassword1ViewController.swift; sourceTree = "<group>"; };
+		71F57D321F593FF2006C4A6D /* PDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		71F57D341F594020006C4A6D /* PDFScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScrollView.swift; sourceTree = "<group>"; };
+		71F57D361F59447F006C4A6D /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
+		71F57D371F59447F006C4A6D /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
+		71F57D381F59447F006C4A6D /* 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.pdf; sourceTree = "<group>"; };
+		71F57D391F59447F006C4A6D /* 4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.pdf; sourceTree = "<group>"; };
+		71F57D3A1F59447F006C4A6D /* 5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 5.pdf; sourceTree = "<group>"; };
+		71F57D3B1F59447F006C4A6D /* 6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 6.pdf; sourceTree = "<group>"; };
 		71F7CEF11F579B490012DE98 /* forgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = forgetViewController.swift; sourceTree = "<group>"; };
 		71F7CEF31F579F8A0012DE98 /* modifyPassword2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyPassword2ViewController.swift; sourceTree = "<group>"; };
 		C34FE42D6B8405B16123136E /* Pods-Ucount_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,6 +300,12 @@
 		E58447581F46C39D006F976E /* Financial */ = {
 			isa = PBXGroup;
 			children = (
+				71F57D361F59447F006C4A6D /* 1.pdf */,
+				71F57D371F59447F006C4A6D /* 2.pdf */,
+				71F57D381F59447F006C4A6D /* 3.pdf */,
+				71F57D391F59447F006C4A6D /* 4.pdf */,
+				71F57D3A1F59447F006C4A6D /* 5.pdf */,
+				71F57D3B1F59447F006C4A6D /* 6.pdf */,
 				E5DA70C91F4EFC1600D43B73 /* Financial.storyboard */,
 				7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */,
 				710361541F510A71003B15E2 /* PopularViewController.swift */,
@@ -294,6 +316,8 @@
 				7152762C1F566B3900086254 /* talkViewController.swift */,
 				710890D41F56CED4006181BC /* commentViewController.swift */,
 				711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */,
+				71F57D321F593FF2006C4A6D /* PDFView.swift */,
+				71F57D341F594020006C4A6D /* PDFScrollView.swift */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -467,14 +491,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F57D3E1F59447F006C4A6D /* 3.pdf in Resources */,
+				71F57D3D1F59447F006C4A6D /* 2.pdf in Resources */,
 				E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */,
 				71802FEE1F4EC789005D39E4 /* Plan.storyboard in Resources */,
 				E58447151F468AF9006F976E /* Assets.xcassets in Resources */,
 				E58447131F468AF9006F976E /* Main.storyboard in Resources */,
+				71F57D411F59447F006C4A6D /* 6.pdf in Resources */,
 				E5DA70CA1F4EFC1600D43B73 /* Financial.storyboard in Resources */,
 				71802FE71F4EC6C4005D39E4 /* Login.storyboard in Resources */,
+				71F57D401F59447F006C4A6D /* 5.pdf in Resources */,
+				71F57D3C1F59447F006C4A6D /* 1.pdf in Resources */,
 				71802FF01F4EC7B0005D39E4 /* Report.storyboard in Resources */,
 				71802FF91F4ED1DB005D39E4 /* Person.storyboard in Resources */,
+				71F57D3F1F59447F006C4A6D /* 4.pdf in Resources */,
 				E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +682,7 @@
 			files = (
 				E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */,
 				711309121F591EAD00B9D596 /* knowledgeDetailViewController.swift in Sources */,
+				71F57D331F593FF2006C4A6D /* PDFView.swift in Sources */,
 				E51166211F57EA1900885634 /* schoolCardViewController.swift in Sources */,
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
 				E5D7A1AC1F58EBE7009FE44E /* IncomeViewController.swift in Sources */,
@@ -682,11 +713,9 @@
 				E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
-
 				E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */,
-
+				71F57D351F594020006C4A6D /* PDFScrollView.swift in Sources */,
 				7113090E1F58F99700B9D596 /* Message.swift in Sources */,
-
 				7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
 				71F7CEF41F579F8A0012DE98 /* modifyPassword2ViewController.swift in Sources */,

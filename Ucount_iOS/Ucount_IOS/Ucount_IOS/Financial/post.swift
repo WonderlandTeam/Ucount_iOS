@@ -43,9 +43,9 @@ struct  Knowledge{
     var content: String
 }
 
-let content1 = "content1"
-let content2 = "content2"
-let content3 = "content3"
+let content1 = ""
+let content2 = ""
+let content3 = ""
 let content4 = "content4"
 let content5 = "content5"
 let content6 = "content6"
