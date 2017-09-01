@@ -38,10 +38,6 @@ struct Comment{
     var text: String
 }
 
-struct  Knowledge{
-    var title:String
-    var content: String
-}
 
 let content1 = ""
 let content2 = ""

@@ -11,13 +11,8 @@ import UIKit
 class knowledgeDetailViewController: UIViewController {
     
     var num:Int!
-    
-    
-    @IBAction func backTapped(_ sender: UIButton) {
-        self.dismiss(animated: true) { 
-        
-        }
-    }
+
+    @IBOutlet var gesture: UISwipeGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +22,21 @@ class knowledgeDetailViewController: UIViewController {
         scrollView.PDF = CGPDFDocument.init(pdfUrl as CFURL)
         scrollView.initialize()
         view.addSubview(scrollView)
+        
+        self.gesture.addTarget(self, action: #selector(knowledgeDetailViewController.back(_:)))
+        self.view.addGestureRecognizer(self.gesture)
+
     }
 
+    
+    func back(_ sender: UISwipeGestureRecognizer) {
+        if (sender.direction == UISwipeGestureRecognizerDirection.right) {
+            self.dismiss(animated: true, completion: {
+                
+            })
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
