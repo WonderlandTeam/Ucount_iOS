@@ -21,8 +21,9 @@ class CashViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func back(){
+    @IBAction func back(_ sender:Any){
         self.dismiss(animated: true, completion: nil)
+        print("找不出来bug")
     }
     
     
