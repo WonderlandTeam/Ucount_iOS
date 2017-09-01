@@ -38,6 +38,16 @@ struct Comment{
     var text: String
 }
 
+struct  Knowledge{
+    var title:String
+    var content: String
+}
 
-
-
+let content1 = "content1"
+let content2 = "content2"
+let content3 = "content3"
+let content4 = "content4"
+let content5 = "content5"
+let content6 = "content6"
+let content7 = "content7"
+let content8 = "content8"
