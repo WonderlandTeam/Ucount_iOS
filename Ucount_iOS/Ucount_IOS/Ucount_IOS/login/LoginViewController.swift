@@ -32,8 +32,8 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         self.navigationController?.isNavigationBarHidden = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
         self.navigationController?.isNavigationBarHidden = false
     }
 

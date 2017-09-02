@@ -21,17 +21,25 @@ class PushViewController: UIViewController,UITextFieldDelegate ,UITextViewDelega
         self.postTitle.text = ""
         self.postTitle.layer.borderWidth = 1
         self.postTitle.layer.borderColor = UIColor.gray.cgColor
-        self.postTitle.layer.cornerRadius = 8
+        self.postTitle.layer.cornerRadius = 4
 
         self.postContent.text = ""
         self.postContent.layer.borderWidth = 1
         self.postContent.layer.borderColor = UIColor.gray.cgColor
-        self.postContent.layer.cornerRadius = 10
+        self.postContent.layer.cornerRadius = 5
         self.postTitle.delegate = self
         self.postContent.delegate = self
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 1)
+    }
+    
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,13 +48,13 @@ class PushViewController: UIViewController,UITextFieldDelegate ,UITextViewDelega
 
     func textViewDidBeginEditing(_ textView: UITextView) {
         UIView.animate(withDuration: 0.4, animations: {
-            self.contentHeight.constant = 300
+            self.contentHeight.constant = 280
         })
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
         UIView.animate(withDuration: 0.8, animations: {
-            self.contentHeight.constant = 528
+            self.contentHeight.constant = 490
             
         })
     }

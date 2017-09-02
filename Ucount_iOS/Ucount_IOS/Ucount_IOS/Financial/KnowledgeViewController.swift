@@ -19,13 +19,14 @@ class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.table.tableFooterView = UIView()
-        
-        
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 2)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
