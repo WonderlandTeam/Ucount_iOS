@@ -28,6 +28,7 @@ class PersonViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.view.addGestureRecognizer(leftPan)
         
         self.view.frame = CGRect(x:0,y:0,width:Common.screenWidth,height: Common.screenHeight)
+
     }
     
     override func didReceiveMemoryWarning() {
