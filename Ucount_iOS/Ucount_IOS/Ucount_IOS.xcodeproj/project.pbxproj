@@ -46,7 +46,6 @@
 		71F7CEF41F579F8A0012DE98 /* modifyPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7CEF31F579F8A0012DE98 /* modifyPassword2ViewController.swift */; };
 		CC4846F6FBD71902A55080E3 /* Pods_Ucount_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC6B44C5DC4649065D7CA42 /* Pods_Ucount_IOSTests.framework */; };
 		D05C3A66817D2234242D0270 /* Pods_Ucount_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */; };
-		E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50535831F504E5A00CD8A2F /* itemizeViewController.swift */; };
 		E511661F1F57EA0A00885634 /* bankCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E511661E1F57EA0A00885634 /* bankCardViewController.swift */; };
 		E51166211F57EA1900885634 /* schoolCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51166201F57EA1900885634 /* schoolCardViewController.swift */; };
 		E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51166221F57EA2D00885634 /* aliPayViewController.swift */; };
@@ -68,6 +67,8 @@
 		E58447791F487298006F976E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447781F487298006F976E /* RegisterViewController.swift */; };
 		E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584477C1F49F3DA006F976E /* allAcountableViewController.swift */; };
 		E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB5C31F5155B600FDA308 /* CashViewController.swift */; };
+		E5AA5F2E1F5B093B00225003 /* TradeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5F2D1F5B093B00225003 /* TradeRecordViewController.swift */; };
+		E5AA5F301F5B096F00225003 /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5F2F1F5B096F00225003 /* itemizeViewController.swift */; };
 		E5D7A1AC1F58EBE7009FE44E /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */; };
 		E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */; };
 		E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */; };
@@ -140,7 +141,6 @@
 		C34FE42D6B8405B16123136E /* Pods-Ucount_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSTests/Pods-Ucount_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3466A1801B2D65B314FCFD4 /* Pods-Ucount_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOS/Pods-Ucount_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A65C3800A0089744795A61 /* Pods_Ucount_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ucount_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E50535831F504E5A00CD8A2F /* itemizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemizeViewController.swift; sourceTree = "<group>"; };
 		E511661E1F57EA0A00885634 /* bankCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bankCardViewController.swift; sourceTree = "<group>"; };
 		E51166201F57EA1900885634 /* schoolCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schoolCardViewController.swift; sourceTree = "<group>"; };
 		E51166221F57EA2D00885634 /* aliPayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aliPayViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +168,8 @@
 		E58447781F487298006F976E /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E584477C1F49F3DA006F976E /* allAcountableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allAcountableViewController.swift; sourceTree = "<group>"; };
 		E59AB5C31F5155B600FDA308 /* CashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
+		E5AA5F2D1F5B093B00225003 /* TradeRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeRecordViewController.swift; sourceTree = "<group>"; };
+		E5AA5F2F1F5B096F00225003 /* itemizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemizeViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpendViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashPageExtension.swift; sourceTree = "<group>"; };
@@ -348,13 +350,13 @@
 		E58447671F46C40D006F976E /* Wealth */ = {
 			isa = PBXGroup;
 			children = (
+				E5AA5F2F1F5B096F00225003 /* itemizeViewController.swift */,
 				E51B15A71F56E12200CB9CDE /* CreateNewController.swift */,
 				E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */,
 				E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */,
 				E58447711F481625006F976E /* WealthViewController.swift */,
 				E584477C1F49F3DA006F976E /* allAcountableViewController.swift */,
 				E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */,
-				E50535831F504E5A00CD8A2F /* itemizeViewController.swift */,
 				E59AB5C31F5155B600FDA308 /* CashViewController.swift */,
 				E511661E1F57EA0A00885634 /* bankCardViewController.swift */,
 				E51166201F57EA1900885634 /* schoolCardViewController.swift */,
@@ -362,6 +364,7 @@
 				E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */,
 				E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */,
 				E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */,
+				E5AA5F2D1F5B093B00225003 /* TradeRecordViewController.swift */,
 			);
 			path = Wealth;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AA5F301F5B096F00225003 /* itemizeViewController.swift in Sources */,
 				E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */,
 				711309121F591EAD00B9D596 /* knowledgeDetailViewController.swift in Sources */,
 				71F57D331F593FF2006C4A6D /* PDFView.swift in Sources */,
@@ -722,13 +726,13 @@
 				718B85141F55420400C972BE /* articleViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
-				E50535841F504E5A00CD8A2F /* itemizeViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
 				E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */,
 				71F57D351F594020006C4A6D /* PDFScrollView.swift in Sources */,
+				E5AA5F2E1F5B093B00225003 /* TradeRecordViewController.swift in Sources */,
 				7113090E1F58F99700B9D596 /* Message.swift in Sources */,
 				7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
