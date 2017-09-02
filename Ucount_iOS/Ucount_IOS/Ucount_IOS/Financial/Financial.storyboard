@@ -607,7 +607,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="热门">
-                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="y7s-bP-I8M" eventType="touchUpInside" id="dGT-AG-KRZ"/>
@@ -618,7 +618,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="发帖">
-                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="y7s-bP-I8M" eventType="touchUpInside" id="jh0-aZ-clz"/>
@@ -632,11 +632,11 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQh-pH-rJt">
-                                <rect key="frame" x="314" y="37" width="47" height="40"/>
+                                <rect key="frame" x="330" y="37" width="47" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="知识">
-                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="y7s-bP-I8M" eventType="touchUpInside" id="9Xl-70-b19"/>
@@ -648,6 +648,9 @@
                     <tabBarItem key="tabBarItem" title="理财" image="ic_menu_money_off" selectedImage="ic_menu_money_on" id="5SV-VD-zsS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="knowButton" destination="yQh-pH-rJt" id="isq-F0-qna"/>
+                        <outlet property="popularButton" destination="Ej8-0E-yWj" id="kq0-IU-9bJ"/>
+                        <outlet property="pushButton" destination="HD0-dC-cyK" id="iFs-C8-VS9"/>
                         <outlet property="sliderView" destination="cZc-GS-AZg" id="zgi-uS-0ZF"/>
                     </connections>
                 </viewController>

@@ -22,6 +22,13 @@ class FinancialViewController: UIViewController {
     
     var sliderImage: UIImageView!
     
+    @IBOutlet weak var popularButton: UIButton!
+    
+    @IBOutlet weak var pushButton: UIButton!
+    
+    @IBOutlet weak var knowButton: UIButton!
+    
+    
     //添加两个变量索引当前page和上一个page
     var lastPage = 0
     var currentPage = 0 {
@@ -71,10 +78,15 @@ class FinancialViewController: UIViewController {
         
         //添加提示条
         sliderImage = UIImageView(frame: CGRect(x: 0 , y: -1 , width: self.view.frame.width / 3.0, height: 3.0))
-        sliderImage.image = UIImage(named: "slider")
+        sliderImage.image = UIImage(named: "slider_green")
         sliderView.addSubview(sliderImage)
         
         NotificationCenter.default.addObserver(self, selector: #selector(FinancialViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged"), object: nil)
+        
+        self.popularButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.pushButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.knowButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        
         
     }
     
