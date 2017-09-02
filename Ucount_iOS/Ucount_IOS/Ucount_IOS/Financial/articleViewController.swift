@@ -55,12 +55,12 @@ class articleViewController: UIViewController {
     @IBAction func likeTapped(_ sender: UIButton) {
         sender.isEnabled = false
         let origin = Int(self.likeLabel.text!)
-        if(sender.imageView?.image == UIImage(named:"赞")){
+        if(sender.imageView?.image == UIImage(named:"点赞")){
             sender.setImage(UIImage(named:"已赞"), for: UIControlState.normal)
             self.likeLabel.text = String(origin!+1)
             self.isLike = true
         }else if (sender.imageView?.image == UIImage(named:"已赞")){
-            sender.setImage(UIImage(named:"赞"), for: UIControlState.normal)
+            sender.setImage(UIImage(named:"点赞"), for: UIControlState.normal)
             self.likeLabel.text = String(origin!-1)
             self.isLike = false
         }
@@ -115,6 +115,7 @@ class articleViewController: UIViewController {
         self.content.layer.cornerRadius = 10
 
         self.content.isEditable = false
+
     }
 
     override func didReceiveMemoryWarning() {
