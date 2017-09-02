@@ -16,6 +16,9 @@ class CashViewController: UIViewController {
     @IBOutlet weak var recordExplain: UITextField!//备注信息
     @IBOutlet weak var countCash: UITextField!//记录金额
     
+    typealias closureBlock = ([Int:String]) -> Void
+    
+    var sendToWealth : closureBlock?
     
     var pageViewController : UIPageViewController!
     
@@ -151,14 +154,19 @@ class CashViewController: UIViewController {
             }
             
             recordInfo[3] = recordExplain.text
+            
+            if sendToWealth != nil{
+                sendToWealth?(recordInfo)
+            }
+            let alertSuccess = UIAlertController(title: "系统提示",message: "保存成功！",preferredStyle: .alert)
+            
+            
+            self.present(alertSuccess, animated: true, completion: nil)
+            
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
+
         }
         
-        let alertSuccess = UIAlertController(title: "系统提示",message: "保存成功！",preferredStyle: .alert)
-        
-        
-        self.present(alertSuccess, animated: true, completion: nil)
-       
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
         
         
         

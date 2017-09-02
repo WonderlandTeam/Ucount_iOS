@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="明细"/>
                                 <connections>
-                                    <segue destination="Xr8-ED-bWe" kind="show" id="R9e-pl-pMW"/>
+                                    <segue destination="Xr8-ED-bWe" kind="show" identifier="countRecord" id="R9e-pl-pMW"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RvH-Dq-33N">
