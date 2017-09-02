@@ -8,10 +8,17 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "incomeCell"
 
 class IncomeViewController: UICollectionViewController {
     
+    var sorts = [
+    ["name":"工资收入","pic":"工资收入"],
+    ["name":"奖金收入","pic":"奖金收入"],
+    ["name":"理财收入","pic":"理财收入"],
+    ["name":"一般收入","pic":"一般收入"]
+    
+    ]
 
 
     override func viewDidLoad() {
@@ -54,18 +61,23 @@ class IncomeViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return sorts.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        
+        (cell.contentView.viewWithTag(1) as! UIImageView).image = UIImage(named: sorts[indexPath.item]["pic"]!)
+        
+        (cell.contentView.viewWithTag(2) as! UILabel).text = sorts[indexPath.item]["name"]!
+        (cell.contentView.viewWithTag(2) as! UILabel).adjustsFontSizeToFitWidth = true
+        
         // Configure the cell
     
         return cell
@@ -73,12 +85,33 @@ class IncomeViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
+    
+//     Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
         return true
     }
-    */
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        var cell = collectionView.cellForItem(at: indexPath)
+        
+        //var indexArray = [IndexPath]()
+        
+        var itemCount = sorts.count
+        
+        for index in 0...(itemCount-1){
+            let tempIndex = IndexPath(row : index,section: 0)
+            //indexArray.append(tempIndex)
+            cell = collectionView.cellForItem(at: tempIndex)
+            cell?.backgroundColor = UIColor.white
+        }
+        
+            cell = collectionView.cellForItem(at: indexPath)
+            cell?.backgroundColor = UIColor.brown
+        
+            NotificationCenter.default.post(name: NSNotification.Name( "printIcon"), object: sorts[indexPath.item]["name"]!)
+        //print(sorts[indexPath.item]["name"]!)
+    }
+    
 
     /*
     // Uncomment this method to specify if the specified item should be selected
