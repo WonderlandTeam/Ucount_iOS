@@ -10,9 +10,9 @@ import UIKit
 
 class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     
-    var posts = [Post(id: "456", title: "title1", author: "author1", date: "2017-12-30 12:00", content: "content1", like: 67),
-                 Post(id: "457", title: "title2", author: "author2", date: "2016-12-4 22:00", content: "content2", like: 7),
-                 Post(id: "458", title: "title3", author: "author3", date: "2013-11-20 6:00", content: "content3", like: 6)]
+    var posts = [Post(id: "0", title: "大学生理财真人秀：不做“穷学生”，只需这四步", author: "幸福的小草鸟 她理财", date: "2015-11-14 12:00", content: "content1", like: 67),
+                 Post(id: "1", title: "理财全靠机器？理财经理怎么办？", author: "理财经理第一频道", date: "2017-08-20 22:00", content: "content2", like: 7),
+                 Post(id: "2", title: "银行理财要蔫了，但还有更安全的理财方式！", author: "菜鸟 菜鸟理财", date: "2017-07-23 6:00", content: "content3", like: 6)]
     
     @IBOutlet weak var tableView: UITableView!
     
