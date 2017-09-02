@@ -19,6 +19,8 @@
 		713A620D1F594C2D008B7FDA /* 7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 713A620C1F594C2D008B7FDA /* 7.pdf */; };
 		7152762D1F566B3900086254 /* talkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152762C1F566B3900086254 /* talkViewController.swift */; };
 		7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C9E51F57F43000D391A4 /* postViewController.swift */; };
+		715F99FB1F5B05BF00FEF0FB /* PageViewExtension_plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F99FA1F5B05BF00FEF0FB /* PageViewExtension_plan.swift */; };
+		715F99FD1F5B05F500FEF0FB /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F99FC1F5B05F500FEF0FB /* PlanViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
 		71802FD51F4EB691005D39E4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD41F4EB691005D39E4 /* Common.swift */; };
 		71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */; };
@@ -110,6 +112,8 @@
 		713A620C1F594C2D008B7FDA /* 7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 7.pdf; sourceTree = "<group>"; };
 		7152762C1F566B3900086254 /* talkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = talkViewController.swift; sourceTree = "<group>"; };
 		7152C9E51F57F43000D391A4 /* postViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
+		715F99FA1F5B05BF00FEF0FB /* PageViewExtension_plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewExtension_plan.swift; sourceTree = "<group>"; };
+		715F99FC1F5B05F500FEF0FB /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
 		71802FD41F4EB691005D39E4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = login/Common.swift; sourceTree = "<group>"; };
 		71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonNavigationController.swift; path = ../login/PersonNavigationController.swift; sourceTree = "<group>"; };
@@ -365,7 +369,9 @@
 		E584476C1F46C418006F976E /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				715F99FA1F5B05BF00FEF0FB /* PageViewExtension_plan.swift */,
 				71802FED1F4EC789005D39E4 /* Plan.storyboard */,
+				715F99FC1F5B05F500FEF0FB /* PlanViewController.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -693,6 +699,7 @@
 				E51166211F57EA1900885634 /* schoolCardViewController.swift in Sources */,
 				E58447771F487272006F976E /* LoginViewController.swift in Sources */,
 				E5D7A1AC1F58EBE7009FE44E /* IncomeViewController.swift in Sources */,
+				715F99FB1F5B05BF00FEF0FB /* PageViewExtension_plan.swift in Sources */,
 				E51B15AA1F56ED8C00CB9CDE /* FirstReportViewController.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
 				710890D51F56CED4006181BC /* commentViewController.swift in Sources */,
@@ -729,6 +736,7 @@
 				E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */,
 				71802FD51F4EB691005D39E4 /* Common.swift in Sources */,
 				7152762D1F566B3900086254 /* talkViewController.swift in Sources */,
+				715F99FD1F5B05F500FEF0FB /* PlanViewController.swift in Sources */,
 				71A176491F5A4F270083FD5F /* PageViewExtension_Financial.swift in Sources */,
 				E51B15AC1F56EDA400CB9CDE /* SecondReportViewController.swift in Sources */,
 				E58447751F48724C006F976E /* ForgetViewController.swift in Sources */,

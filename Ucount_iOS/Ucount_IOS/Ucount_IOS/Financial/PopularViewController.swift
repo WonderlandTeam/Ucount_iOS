@@ -19,10 +19,6 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     override func viewDidLoad() {
         self.tableView.tableFooterView = UIView()
         super.viewDidLoad()
-        
-      //  self.view.bringSubview(toFront: tableView)
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {

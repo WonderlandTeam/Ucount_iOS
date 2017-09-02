@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X9-fl-nnI">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -8,17 +12,80 @@
         <!--规划-->
         <scene sceneID="zDy-vo-qFZ">
             <objects>
-                <viewController id="1X9-fl-nnI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlanViewController" id="1X9-fl-nnI" customClass="PlanViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QKv-sw-beS"/>
                         <viewControllerLayoutGuide type="bottom" id="IRB-V4-MhV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yT5-K8-Am8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="规划界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvE-vP-iSX">
-                                <rect key="frame" x="152" y="169" width="70" height="21"/>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-Rc-Cch">
+                                <rect key="frame" x="92" y="32" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="预算"/>
+                                <connections>
+                                    <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="Dzr-uc-zDj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-w9-dhi">
+                                <rect key="frame" x="1" y="92" width="413" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-k4-P88">
+                                <rect key="frame" x="0.0" y="104" width="414" height="583"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="5nz-rx-YUW" kind="embed" id="ZtC-hA-m2x"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-0c-Ets">
+                                <rect key="frame" x="275" y="32" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="计划"/>
+                                <connections>
+                                    <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="9eD-ch-WqL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="规划" image="ic_menu_plan_off" selectedImage="ic_menu_plan_on" id="T7A-AS-uNt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="budgetButton" destination="1y5-Rc-Cch" id="AeY-kD-A6V"/>
+                        <outlet property="saveButton" destination="AZ5-0c-Ets" id="r4F-Gb-VZb"/>
+                        <outlet property="sliderView" destination="jRF-w9-dhi" id="H1M-i8-OVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLs-eV-eyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.826086956522" y="1697.2826086956522"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="JQS-uH-xk8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5nz-rx-YUW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vY7-la-cpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="1698"/>
+        </scene>
+        <!--Budget View Controller-->
+        <scene sceneID="JuH-c3-udE">
+            <objects>
+                <viewController storyboardIdentifier="budgetView" id="1Aj-DF-fVh" customClass="BudgetViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gd-4e-GRd"/>
+                        <viewControllerLayoutGuide type="bottom" id="ssD-ig-tMw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ApQ-iK-mxM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="预算" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p81-U9-wMG">
+                                <rect key="frame" x="153" y="230" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -27,13 +94,41 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="规划" id="T7A-AS-uNt"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HLs-eV-eyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToZ-ml-Icg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="2445"/>
+            <point key="canvasLocation" x="1268" y="2794"/>
+        </scene>
+        <!--Save View Controller-->
+        <scene sceneID="An0-U1-cRP">
+            <objects>
+                <viewController storyboardIdentifier="saveView" id="oZN-K1-wTZ" customClass="SaveViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efB-7y-kal"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y02-hp-MlC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WNX-MC-WIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="计划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAS-68-0FM">
+                                <rect key="frame" x="166" y="258" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAM-Qs-ZYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="2794"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_menu_plan_off" width="32" height="32"/>
+        <image name="ic_menu_plan_on" width="32" height="32"/>
+    </resources>
 </document>
