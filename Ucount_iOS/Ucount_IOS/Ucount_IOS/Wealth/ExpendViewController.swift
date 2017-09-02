@@ -98,6 +98,28 @@ class ExpendViewController: UICollectionViewController {
         return cell
     }
 
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        var cell = collectionView.cellForItem(at: indexPath)
+        
+        
+        
+        var itemCount = sorts.count
+        
+        for index in 0...(itemCount-1){
+            let tempIndex = IndexPath(row : index,section: 0)
+            //indexArray.append(tempIndex)
+            cell = collectionView.cellForItem(at: tempIndex)
+            cell?.backgroundColor = UIColor.white
+        }
+        
+        cell = collectionView.cellForItem(at: indexPath)
+        cell?.backgroundColor = UIColor.brown
+        
+        NotificationCenter.default.post(name: NSNotification.Name( "printIcon"), object: sorts[indexPath.item]["name"]!)
+        
+    }
+
     // MARK: UICollectionViewDelegate
 
     /*

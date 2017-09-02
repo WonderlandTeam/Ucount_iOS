@@ -9,6 +9,7 @@
 import UIKit
 
 class CashViewController: UIViewController {
+    @IBOutlet weak var typeIcon: UIImageView!
    
     @IBOutlet weak var sliderView: UIView!
     
@@ -47,6 +48,8 @@ class CashViewController: UIViewController {
         }
     }
     
+    var iconName: String? //要显示的图标类型
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +75,9 @@ class CashViewController: UIViewController {
         
 
         
-        NotificationCenter.default.addObserver(self, selector: #selector(ReportViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(CashViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(CashViewController.printIconChangedFucn(notification:)), name: NSNotification.Name( "printIcon"), object: nil)
         // Do any additional setup after loading the view.
     }
 
@@ -91,10 +96,17 @@ class CashViewController: UIViewController {
         currentPage = sender.tag - 20
     }
     
-    //通知响应方法
+    //通知page改变响应方法
     func currentPageChangedFunc(notification: NSNotification) {
         currentPage = notification.object as! Int
     }
+    
+    //通知消费类型图标改变
+    func printIconChangedFucn(notification: NSNotification){
+        iconName = notification.object as? String
+        typeIcon.image = UIImage(named: iconName!)
+    }
+    
 
     
 

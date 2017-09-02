@@ -288,7 +288,7 @@
                                 <rect key="frame" x="14" y="115" width="63" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-Ug-MLk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-Ug-MLk" userLabel="金额">
                                 <rect key="frame" x="85" y="133" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -339,6 +339,7 @@
                     <navigationItem key="navigationItem" id="tPE-VD-ftQ"/>
                     <connections>
                         <outlet property="sliderView" destination="CtT-Md-Odb" id="gWJ-Pe-Kcc"/>
+                        <outlet property="typeIcon" destination="0EN-ma-3mc" id="ps7-h7-yTO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urp-nC-7HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,7 +358,7 @@
         <scene sceneID="jdy-WW-PlY">
             <objects>
                 <collectionViewController storyboardIdentifier="incomeView" id="AMv-S2-pfW" userLabel="income" customClass="IncomeViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="yit-5u-YoN">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yit-5u-YoN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -380,7 +381,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-f9-LmC">
-                                            <rect key="frame" x="20" y="54" width="42" height="21"/>
+                                            <rect key="frame" x="11" y="54" width="60" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -391,8 +392,8 @@
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="AMv-S2-pfW" id="W6V-xq-jSK"/>
-                            <outlet property="delegate" destination="AMv-S2-pfW" id="6y5-Rw-9rY"/>
+                            <outlet property="dataSource" destination="AMv-S2-pfW" id="aMy-oU-WPY"/>
+                            <outlet property="delegate" destination="AMv-S2-pfW" id="mRI-Bz-SeG"/>
                         </connections>
                     </collectionView>
                 </collectionViewController>
@@ -404,7 +405,7 @@
         <scene sceneID="mog-dC-zwR">
             <objects>
                 <collectionViewController storyboardIdentifier="expendView" id="Wiu-YD-jbl" userLabel="expend" customClass="ExpendViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="o75-Tt-NPH">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="o75-Tt-NPH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
