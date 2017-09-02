@@ -13,6 +13,10 @@ class CashViewController: UIViewController {
    
     @IBOutlet weak var sliderView: UIView!
     
+    @IBOutlet weak var recordExplain: UITextField!//备注信息
+    @IBOutlet weak var countCash: UITextField!//记录金额
+    
+    
     var pageViewController : UIPageViewController!
     
     var incomeView : IncomeViewController!
@@ -50,9 +54,13 @@ class CashViewController: UIViewController {
     
     var iconName: String? //要显示的图标类型
     
+    var recordInfo = [Int:String]() //用来记录每一次的交易详情 0代表是收入还是支出，1代表具体类型，2代表金额，3代表备注
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         pageViewController = self.childViewControllers.first as! UIPageViewController
         
@@ -86,6 +94,11 @@ class CashViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        countCash.text = ""
+        recordExplain.text = ""
+    }
+    
     @IBAction func back(_ sender:Any){
         self.dismiss(animated: true, completion: nil)
         
@@ -107,6 +120,49 @@ class CashViewController: UIViewController {
         typeIcon.image = UIImage(named: iconName!)
     }
     
+    @IBAction func sendRecord(_ sender: UIButton){
+        
+        let confirmAction = UIAlertAction(title: "确定",style : .default,handler: nil)
+        
+        if (countCash.text == "")
+        {
+            let alertName = UIAlertController(title : "系统提示",
+                                              message: "请输入金额",preferredStyle: .alert)
+            
+            
+            alertName.addAction(confirmAction)
+            self.present(alertName, animated: true, completion: nil)
+            
+        }
+        else
+        {
+            if currentPage == 0{
+                recordInfo[0] = "收入"
+            }
+            else{
+                recordInfo[0] = "支出"
+            }
+            
+
+            recordInfo[2] = countCash.text
+            if(iconName != nil)
+            {
+                recordInfo[1] = iconName!
+            }
+            
+            recordInfo[3] = recordExplain.text
+        }
+        
+        let alertSuccess = UIAlertController(title: "系统提示",message: "保存成功！",preferredStyle: .alert)
+        
+        
+        self.present(alertSuccess, animated: true, completion: nil)
+       
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        
+        
+        
+    }
 
     
 
