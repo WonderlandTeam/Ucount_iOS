@@ -12,10 +12,11 @@ import UIKit
 class WealthViewController : UIViewController,SendMessageDelegate{
     
     
+    var test :[[Int:String]] = [[Int:String]]()
     
     
-    
-    var allAcountVC : allAcountableViewController?
+    var allAcountVC : allAcountableViewController? //账户类型界面
+    var itemizeVC : itemizeViewController? //账户交易详情界面
     
     var cashView : CashViewController!
     var bankView : bankCardViewController!
@@ -40,14 +41,26 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         alipayView = UIStoryboard(name:"Wealth",bundle:nil).instantiateViewController(withIdentifier: "aliPay") as!
             aliPayViewController
         
+        cashView.sendToWealth = {( backStr:[Int:String]) -> Void in
+            //print(self.itemizeVC)
+            self.test.append(backStr)
+            
+        }
+
+        
+        
         NotificationCenter.default.addObserver(self, selector: #selector(WealthViewController.selectedTypeFunc(notification:)), name: NSNotification.Name( "selectedType"), object: nil)
         print("进来了")
        
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+
+    
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "createNewSegue")
         {
+            print("瞥一瞥")
             let Create = segue.destination as! CreateNewController
             Create.sendDelegate = self
             
@@ -55,7 +68,16 @@ class WealthViewController : UIViewController,SendMessageDelegate{
         else if(segue.identifier == "allAcountInfo")
         {
             allAcountVC = segue.destination as! allAcountableViewController
+            print("瞅一瞅"+"\(allAcountVC)")
         }
+        else if(segue.identifier == "countRecord")
+        {
+            itemizeVC = segue.destination as! itemizeViewController
+            itemizeVC?.countRecord = test
+            print("瞧一瞧"+"\(itemizeVC)")
+        }
+        
+        
     }
     
     @IBAction func closeToWealth(segue : UIStoryboardSegue) {

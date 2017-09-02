@@ -9,9 +9,12 @@
 import UIKit
 
 class itemizeViewController: UIViewController {
+    
+    var countRecord :[[Int:String]] = [[Int:String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(countRecord)
 
         // Do any additional setup after loading the view.
     }
