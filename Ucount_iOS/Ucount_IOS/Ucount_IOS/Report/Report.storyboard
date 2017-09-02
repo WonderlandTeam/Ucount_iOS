@@ -60,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="报表" id="PMF-0d-mba" userLabel="报表"/>
+                    <tabBarItem key="tabBarItem" title="报表" image="ic_menu_report_off" id="PMF-0d-mba" userLabel="报表"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="sliderView" destination="2Wj-Z8-VEB" id="HZM-tj-X0n"/>
@@ -160,4 +160,7 @@
             <point key="canvasLocation" x="1605.7971014492755" y="-997.01086956521749"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_menu_report_off" width="32" height="32"/>
+    </resources>
 </document>

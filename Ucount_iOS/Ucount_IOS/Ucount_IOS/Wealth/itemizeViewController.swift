@@ -14,7 +14,7 @@ class itemizeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(countRecord)
+        
 
         // Do any additional setup after loading the view.
     }
