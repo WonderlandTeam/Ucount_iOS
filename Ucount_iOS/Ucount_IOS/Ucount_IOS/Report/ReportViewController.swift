@@ -10,6 +10,10 @@ import UIKit
 
 class ReportViewController: UIViewController {
 
+    @IBOutlet weak var thirdReportButton: UIButton!
+    @IBOutlet weak var secondReportButton: UIButton!
+    @IBOutlet weak var firstReportButton: UIButton!
+    
     @IBOutlet weak var sliderView: UIView!
     var pageViewController : UIPageViewController!
     
@@ -68,9 +72,16 @@ class ReportViewController: UIViewController {
         controllers.append(secondReport)
         controllers.append(thirdReport)
         
+        
+        self.firstReportButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        
+        self.secondReportButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        
+        self.thirdReportButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        
         //添加提示条 
         sliderImage = UIImageView(frame: CGRect(x: 0 , y: -1 , width: self.view.frame.width / 3.0, height: 3.0))
-        sliderImage.image = UIImage(named: "slider")
+        sliderImage.image = UIImage(named: "slider_green")
         sliderView.addSubview(sliderImage)
         
         NotificationCenter.default.addObserver(self, selector: #selector(ReportViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged"), object: nil)

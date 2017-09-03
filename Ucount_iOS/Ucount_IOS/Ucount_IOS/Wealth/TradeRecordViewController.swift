@@ -79,7 +79,7 @@ class TradeRecordViewController: UITableViewController {
         //cellTime.lineBreakMode = NSLineBreakMode.byWordWrapping
         cellTime.numberOfLines = 3
         cellTime.adjustsFontSizeToFitWidth = true
-        print(cellTime.text!)
+        
         
 
         return cell

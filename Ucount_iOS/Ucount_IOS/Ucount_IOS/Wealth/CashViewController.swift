@@ -13,6 +13,8 @@ class CashViewController: UIViewController {
    
     @IBOutlet weak var sliderView: UIView!
     
+    @IBOutlet weak var expendButton: UIButton!
+    @IBOutlet weak var incomeButton: UIButton!
     @IBOutlet weak var recordExplain: UITextField!//备注信息
     @IBOutlet weak var countCash: UITextField!//记录金额
     
@@ -77,11 +79,16 @@ class CashViewController: UIViewController {
         
         //添加提示条
         sliderImage = UIImageView(frame: CGRect(x: 0 , y: -1 , width: self.view.frame.width / 2.0 , height: 3.0))
-        sliderImage.image = UIImage(named: "slider")
+        sliderImage.image = UIImage(named: "slider_green")
         sliderView.addSubview(sliderImage)
         
         controllers.append(incomeView)
         controllers.append(expendView)
+        
+        //更改按钮颜色
+        
+        self.incomeButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.expendButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
         
         
 

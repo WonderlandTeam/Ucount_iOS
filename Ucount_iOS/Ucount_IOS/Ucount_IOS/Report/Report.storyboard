@@ -63,7 +63,10 @@
                     <tabBarItem key="tabBarItem" title="报表" image="ic_menu_report_off" id="PMF-0d-mba" userLabel="报表"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="firstReportButton" destination="d9b-K2-hUv" id="kfd-Sy-01R"/>
+                        <outlet property="secondReportButton" destination="zPr-eM-xFu" id="MbE-2H-ga9"/>
                         <outlet property="sliderView" destination="2Wj-Z8-VEB" id="HZM-tj-X0n"/>
+                        <outlet property="thirdReportButton" destination="YfZ-B1-7gW" id="uld-fy-bNB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctz-Ij-uZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
