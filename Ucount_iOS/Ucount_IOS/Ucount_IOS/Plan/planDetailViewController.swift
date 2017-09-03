@@ -74,7 +74,7 @@ class planDetailViewController: UIViewController ,UITextFieldDelegate{
         self.plan.money = Float(self.moneyField.text!)!
         var dateFormatter:DateFormatter = DateFormatter();
         dateFormatter.dateFormat = "yyyy-MM-dd";
-        var dateString:String = dateFormatter.string(from: NSDate() as Date)
+        var dateString:String = dateFormatter.string(from: self.datePicker.date as Date)
         self.plan.date = dateString
         self.callback(self.plan)
         self.dismiss(animated: true) { 

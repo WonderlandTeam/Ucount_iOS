@@ -304,7 +304,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="添加"/>
                                 <connections>
-                                    <segue destination="IXM-Vm-Hgr" kind="modal" id="Mr2-XX-lCu"/>
+                                    <action selector="addTapped:" destination="oZN-K1-wTZ" eventType="touchUpInside" id="XMt-ai-ORm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -452,10 +452,10 @@
             </objects>
             <point key="canvasLocation" x="2118.840579710145" y="3489.9456521739135"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Plan View Controller-->
         <scene sceneID="ojg-5d-ZlB">
             <objects>
-                <viewController id="IXM-Vm-Hgr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addPlanView" id="IXM-Vm-Hgr" customClass="addPlanViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mni-dd-O7Z"/>
                         <viewControllerLayoutGuide type="bottom" id="Jf1-rF-C2U"/>
@@ -470,6 +470,9 @@
                                 <state key="normal" title="Button" image="返回">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="backTapped:" destination="IXM-Vm-Hgr" eventType="touchUpInside" id="n5K-qi-fOG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="计划名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnu-Va-egW">
                                 <rect key="frame" x="54" y="102" width="82" height="24"/>
@@ -518,10 +521,18 @@
                                 <rect key="frame" x="187" y="457" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="confirm"/>
+                                <connections>
+                                    <action selector="saveTapped:" destination="IXM-Vm-Hgr" eventType="touchUpInside" id="2Xo-Su-7JF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Wfo-aD-JR9" id="h7Q-N1-41b"/>
+                        <outlet property="money" destination="3vM-0d-URm" id="dNU-eB-WQ0"/>
+                        <outlet property="planName" destination="rFu-zh-yUt" id="f0x-lT-6pF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyw-7R-Fz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

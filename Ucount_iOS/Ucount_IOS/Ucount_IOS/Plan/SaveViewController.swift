@@ -21,6 +21,21 @@ class SaveViewController: UIViewController ,UITableViewDataSource,UITableViewDel
         self.table.tableFooterView = UIView()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func addTapped(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "addPlanView") as! addPlanViewController
+        
+        vc.callBack = ({(modify: Plan)->Void  in
+            if(modify.name != ""){
+                plans.append(modify)
+                self.table.reloadData()
+            }
+        })
+        
+        self.present(vc,animated: true)
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
