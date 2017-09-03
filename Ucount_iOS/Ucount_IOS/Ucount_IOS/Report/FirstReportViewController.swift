@@ -7,12 +7,36 @@
 //
 
 import UIKit
+import Charts
 
 class FirstReportViewController: UIViewController {
 
+    @IBOutlet weak var firstReportScroll: UIScrollView!
+    
+    
+    @IBOutlet weak var beginDate: UIDatePicker!
+    
+    @IBOutlet weak var endDate: UIDatePicker!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        firstReportScroll.isScrollEnabled = true //可以上下滚动
+        firstReportScroll.scrollsToTop = true //点击状态栏到顶端
+        firstReportScroll.bounces = true //反弹效果
+        
+//        beginDate.frame = CGRectMake(0,0,100,100)
+        beginDate.datePickerMode = .date
+        beginDate.locale = Locale(identifier: "zh_CN") //将语言变为中文
+        
+        endDate.datePickerMode = .date
+        endDate.locale = Locale(identifier: "zh_CN")
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

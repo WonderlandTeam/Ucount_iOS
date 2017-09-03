@@ -61,9 +61,15 @@ class allAcountableViewController: UITableViewController{
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "countType")!
         var name = cell.viewWithTag(21) as! UILabel
         name.text = typeName[indexPath.row]
+        name.adjustsFontSizeToFitWidth = true
+        
+        var icon = cell.viewWithTag(23) as! UIImageView
+        icon.image = UIImage(named: countType[indexPath.row])
         
         var money = cell.viewWithTag(22) as! UILabel
         money.text = "\(typeMoney[indexPath.row])"+" 元"
+        
+        money.adjustsFontSizeToFitWidth = true
         
         return cell
     }
