@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BudgetViewController: UIViewController {
+class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource{
     
     @IBOutlet weak var picker: UIPickerView!
    
@@ -55,6 +55,29 @@ class BudgetViewController: UIViewController {
         super.viewWillAppear(animated)
         NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 0)
     }
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int{
+        return  2
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+        if (component == 0){
+            return years.count
+        }else{
+            return months.count
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
+        
+        //let row1 = pickerView.selectedRow(inComponent: 0)
+        if (component == 0){
+            return String(years[row])
+        }else{
+            return String(months[row])
+        }
+    }
+
 
 }
 
