@@ -11,6 +11,8 @@ import UIKit
 class itemizeViewController: UIViewController {
     
     var countRecord :[[Int:String]] = [[Int:String]]()
+    
+    var tradeRecordView : TradeRecordViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +26,22 @@ class itemizeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "transTrade")
+        {
+            
+            tradeRecordView = segue.destination as! TradeRecordViewController
+            
+            tradeRecordView?.records = countRecord
+        }
+    }
+    
     //返回事件
     @IBAction func back(_ sender:Any)
     {
         self.dismiss(animated: true, completion: nil)
     }
+    
     
 
     /*

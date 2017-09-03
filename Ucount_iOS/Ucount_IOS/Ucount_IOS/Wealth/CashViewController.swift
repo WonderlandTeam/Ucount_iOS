@@ -57,7 +57,7 @@ class CashViewController: UIViewController {
     
     var iconName: String? //要显示的图标类型
     
-    var recordInfo = [Int:String]() //用来记录每一次的交易详情 0代表是收入还是支出，1代表具体类型，2代表金额，3代表备注
+    var recordInfo = [Int:String]() //用来记录每一次的交易详情 0代表是收入还是支出，1代表具体类型，2代表金额，3代表备注，4代表时间
     
     
     
@@ -125,6 +125,12 @@ class CashViewController: UIViewController {
     
     @IBAction func sendRecord(_ sender: UIButton){
         
+        let now = Date() //获取当前时间   
+        
+        let dformatter = DateFormatter()
+        dformatter.dateFormat = "yyyy年\nMM月dd日\nHH:mm"
+        
+        
         let confirmAction = UIAlertAction(title: "确定",style : .default,handler: nil)
         
         if (countCash.text == "")
@@ -154,6 +160,7 @@ class CashViewController: UIViewController {
             }
             
             recordInfo[3] = recordExplain.text
+            recordInfo[4] = dformatter.string(from: now)
             
             if sendToWealth != nil{
                 sendToWealth?(recordInfo)
