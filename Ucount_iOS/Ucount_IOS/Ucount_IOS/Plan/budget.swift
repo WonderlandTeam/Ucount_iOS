@@ -11,4 +11,5 @@ import Foundation
 struct Budget {
     var type:String
     var money: Float
+    var date:String
 }

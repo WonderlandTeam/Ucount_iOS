@@ -24,7 +24,7 @@ class KnowledgeViewController: UIViewController ,UITableViewDataSource,UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 2)
+        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged_financial"), object: 2)
     }
     
     override func didReceiveMemoryWarning() {

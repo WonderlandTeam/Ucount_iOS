@@ -24,7 +24,7 @@ class PopularViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 0)
+        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged_financial"), object: 0)
     }
     
 
