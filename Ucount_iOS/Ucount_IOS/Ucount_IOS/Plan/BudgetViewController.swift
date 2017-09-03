@@ -9,10 +9,37 @@
 import UIKit
 
 class BudgetViewController: UIViewController {
-
+    
+    @IBOutlet weak var picker: UIPickerView!
+   
+    var currentYear:String!
+    var currentMonth:String!
+    
+    var years = [String]()
+    var months = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var dateFormatter:DateFormatter = DateFormatter();
+        dateFormatter.dateFormat = "yyyy/MM/dd";
+        var dateString:String = dateFormatter.string(from: NSDate() as Date);
+        var dates = dateString.components(separatedBy: "/")
+        currentYear  = (dates[0])
+        currentMonth = (dates[1])
+    
+        for i in 0 ... 10{
+            years.append(String(Int(currentYear)!+i))
+        }
+        
+        for i in 1...12{
+            months.append(String( i))
+        }
+        
+        
+        picker.delegate = self
+        picker.dataSource = self
 
+    
         // Do any additional setup after loading the view.
     }
 
@@ -27,14 +54,40 @@ class BudgetViewController: UIViewController {
         NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 0)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
