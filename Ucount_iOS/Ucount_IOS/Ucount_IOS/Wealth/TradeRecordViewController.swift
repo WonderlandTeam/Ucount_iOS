@@ -10,14 +10,23 @@ import UIKit
 
 class TradeRecordViewController: UITableViewController {
 
+    @IBOutlet var traderecord: UITableView!
+    var records : [[Int:String]] = [[Int:String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        traderecord.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +38,53 @@ class TradeRecordViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        var num = records.count
+        
+        return num
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "transRecordCell", for: indexPath)
 
-        // Configure the cell...
+        var cellIcon = cell.viewWithTag(23) as! UIImageView
+        var cellType = cell.viewWithTag(20) as! UILabel
+        var cellComment = cell.viewWithTag(21) as! UILabel
+        var cellTime = cell.viewWithTag(22) as! UILabel
+        var cellMoney = cell.viewWithTag(24) as! UILabel
+        
+        cellIcon.image = UIImage(named:records[indexPath.row][1]!)
+        cellType.text = records[indexPath.row][1]
+        cellType.adjustsFontSizeToFitWidth = true
+        cellMoney.adjustsFontSizeToFitWidth = true
+        if(records[indexPath.row][0] == "收入")
+        {
+            cellMoney.text = "+" + records[indexPath.row][2]!
+            cellMoney.textColor = UIColor.green
+        }
+        else
+        {
+            cellMoney.text = "-"+records[indexPath.row][2]!
+            cellMoney.textColor = UIColor.red
+        }
+        
+        cellComment.text = records[indexPath.row][3]
+        cellTime.text = records[indexPath.row][4]
+        //cellTime.lineBreakMode = NSLineBreakMode.byWordWrapping
+        cellTime.numberOfLines = 3
+        cellTime.adjustsFontSizeToFitWidth = true
+        print(cellTime.text!)
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -18,20 +18,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="tT5-CJ-o8A">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="transRecordCell" rowHeight="65" id="tT5-CJ-o8A">
                                 <rect key="frame" x="0.0" y="28" width="405" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT5-CJ-o8A" id="dOA-Y0-ir6">
-                                    <rect key="frame" x="0.0" y="0.0" width="405" height="64.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="405" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GW-LN-laC" userLabel="icon">
+                                            <rect key="frame" x="8" y="0.0" width="60" height="56"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-GV-dey" userLabel="type">
+                                            <rect key="frame" x="76" y="0.0" width="90" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-lt-OWw" userLabel="comments">
+                                            <rect key="frame" x="76" y="35" width="172" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGv-9m-U8W" userLabel="time">
+                                            <rect key="frame" x="345" y="0.0" width="56" height="55"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="24" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-qF-MCW" userLabel="money">
+                                            <rect key="frame" x="266" y="13" width="51" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="eXo-kU-BTZ" id="ohK-a1-TCH"/>
-                            <outlet property="delegate" destination="eXo-kU-BTZ" id="nu0-eo-qik"/>
+                            <outlet property="dataSource" destination="eXo-kU-BTZ" id="UOs-Z4-eDv"/>
+                            <outlet property="delegate" destination="eXo-kU-BTZ" id="fyx-ib-nAq"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="traderecord" destination="6sr-wo-UZE" id="Isz-yO-bml"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfr-mN-Cdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="125" width="405" height="554"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="eXo-kU-BTZ" kind="embed" id="4s7-Qn-cLe"/>
+                                    <segue destination="eXo-kU-BTZ" kind="embed" identifier="transTrade" id="4s7-Qn-cLe"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -140,7 +177,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="明细"/>
                                 <connections>
-                                    <segue destination="Xr8-ED-bWe" kind="show" id="LUO-i7-XxG"/>
+                                    <segue destination="Xr8-ED-bWe" kind="show" identifier="countRecord" id="LUO-i7-XxG"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RvH-Dq-33N">
