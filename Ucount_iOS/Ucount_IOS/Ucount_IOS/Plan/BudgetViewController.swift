@@ -25,7 +25,7 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         super.viewDidLoad()
         var dateFormatter:DateFormatter = DateFormatter();
         dateFormatter.dateFormat = "yyyy/MM/dd";
-        var dateString:String = dateFormatter.string(from: NSDate() as Date);
+        var dateString:String = dateFormatter.string(from: NSDate() as Date)
         var dates = dateString.components(separatedBy: "/")
         currentYear  = (dates[0])
         currentMonth = (dates[1])

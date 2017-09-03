@@ -13,3 +13,12 @@ struct Budget {
     var money: Float
     var date:String
 }
+
+struct Plan {
+    var name: String
+    var date: String
+    var money: Float
+    var hasMoney: Float
+    var completeDate:String
+    var moneyEveryday:Float
+}

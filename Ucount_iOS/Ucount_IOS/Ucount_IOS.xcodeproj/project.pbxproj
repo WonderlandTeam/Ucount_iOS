@@ -17,6 +17,7 @@
 		711309121F591EAD00B9D596 /* knowledgeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */; };
 		71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71223DA91F5801D100BDDEAA /* messageViewController.swift */; };
 		7136BC1C1F5C47050005CD50 /* passwrodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136BC1B1F5C47050005CD50 /* passwrodViewController.swift */; };
+		7136BC1E1F5C55710005CD50 /* planDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136BC1D1F5C55710005CD50 /* planDetailViewController.swift */; };
 		713A620D1F594C2D008B7FDA /* 7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 713A620C1F594C2D008B7FDA /* 7.pdf */; };
 		7152762D1F566B3900086254 /* talkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152762C1F566B3900086254 /* talkViewController.swift */; };
 		7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C9E51F57F43000D391A4 /* postViewController.swift */; };
@@ -116,6 +117,7 @@
 		711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knowledgeDetailViewController.swift; sourceTree = "<group>"; };
 		71223DA91F5801D100BDDEAA /* messageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
 		7136BC1B1F5C47050005CD50 /* passwrodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwrodViewController.swift; sourceTree = "<group>"; };
+		7136BC1D1F5C55710005CD50 /* planDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = planDetailViewController.swift; sourceTree = "<group>"; };
 		713A620C1F594C2D008B7FDA /* 7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 7.pdf; sourceTree = "<group>"; };
 		7152762C1F566B3900086254 /* talkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = talkViewController.swift; sourceTree = "<group>"; };
 		7152C9E51F57F43000D391A4 /* postViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 				715F9A061F5B0EE900FEF0FB /* SaveViewController.swift */,
 				71B219C61F5BF924000E9CB8 /* budget.swift */,
 				71B219C81F5BFE22000E9CB8 /* addBudgetViewController.swift */,
+				7136BC1D1F5C55710005CD50 /* planDetailViewController.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				715F9A071F5B0EE900FEF0FB /* SaveViewController.swift in Sources */,
+				7136BC1E1F5C55710005CD50 /* planDetailViewController.swift in Sources */,
 				E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
