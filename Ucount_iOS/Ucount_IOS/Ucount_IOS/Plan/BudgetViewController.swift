@@ -45,6 +45,21 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         self.table.tableFooterView = UIView()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func addTapped(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "addBudgetView") as! addBudgetViewController
+        
+//        //返回的是否点赞和收藏和收藏的数据
+//        vc.callBack = ({(budget): Budget)->Void  in
+//           
+//        })
+        
+        self.present(vc,animated: true){
+            
+        }
+
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
