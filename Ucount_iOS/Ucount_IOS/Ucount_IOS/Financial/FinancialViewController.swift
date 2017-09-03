@@ -81,7 +81,7 @@ class FinancialViewController: UIViewController {
         sliderImage.image = UIImage(named: "slider_green")
         sliderView.addSubview(sliderImage)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(FinancialViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(FinancialViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged_financial"), object: nil)
         
         self.popularButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
         self.pushButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )

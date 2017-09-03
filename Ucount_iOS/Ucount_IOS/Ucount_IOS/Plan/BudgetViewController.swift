@@ -69,7 +69,7 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 0)
+        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged_plan"), object: 0)
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
