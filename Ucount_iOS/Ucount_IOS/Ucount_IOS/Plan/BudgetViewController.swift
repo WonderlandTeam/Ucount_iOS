@@ -114,6 +114,8 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         image.image = (UIImage(named: budgets[indexPath.row].type))
         (cell.viewWithTag(101) as! UILabel).text = budgets[indexPath.row].type
         (cell.viewWithTag(102) as! UILabel).text = String(budgets[indexPath.row].money)
+        (cell.viewWithTag(103) as! UILabel).text = String(budgets[indexPath.row].date)
+        
         cell.accessoryType = .disclosureIndicator
         // cell.editingAccessoryType = .detailButton
         
