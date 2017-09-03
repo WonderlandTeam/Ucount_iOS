@@ -52,7 +52,7 @@ class ExpendViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 1)
+        NotificationCenter.default.post(name: NSNotification.Name( "currentCashPageChanged"), object: 1)
     }
 
 

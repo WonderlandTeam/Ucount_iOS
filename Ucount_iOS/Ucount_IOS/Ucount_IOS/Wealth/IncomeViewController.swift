@@ -39,7 +39,7 @@ class IncomeViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 0)
+        NotificationCenter.default.post(name: NSNotification.Name( "currentCashPageChanged"), object: 0)
     }
 
     override func didReceiveMemoryWarning() {

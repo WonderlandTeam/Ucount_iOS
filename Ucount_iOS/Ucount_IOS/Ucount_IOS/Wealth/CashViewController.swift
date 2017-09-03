@@ -13,6 +13,8 @@ class CashViewController: UIViewController {
    
     @IBOutlet weak var sliderView: UIView!
     
+    @IBOutlet weak var expendButton: UIButton!
+    @IBOutlet weak var incomeButton: UIButton!
     @IBOutlet weak var recordExplain: UITextField!//备注信息
     @IBOutlet weak var countCash: UITextField!//记录金额
     
@@ -30,26 +32,26 @@ class CashViewController: UIViewController {
     var sliderImage : UIImageView!
     
     //添加两个变量索引当前page和上一个page
-    var lastPage = 0
-    var currentPage = 0 {
+    var lastCashPage = 0
+    var currentCashPage = 0 {
         didSet{
             //根据当前页面计算得到便宜量
             //一个微小的动画移动提示条
-            let offset = self.view.frame.width / 2.0 * CGFloat(currentPage)
+            let offset = self.view.frame.width / 2.0 * CGFloat(currentCashPage)
             
             UIView.animate(withDuration: 0.3, animations: {
                 () -> Void in
                 self.sliderView.frame.origin = CGPoint(x: offset, y: 86)
             })
             //根据currentPage 和 lastPage的大小关系，控制页面的切换方向
-            if currentPage > lastPage {
-                self.pageViewController.setViewControllers([controllers[currentPage]], direction: .forward, animated: true, completion: nil)
+            if currentCashPage > lastCashPage {
+                self.pageViewController.setViewControllers([controllers[currentCashPage]], direction: .forward, animated: true, completion: nil)
             }
             else {
-                self.pageViewController.setViewControllers([controllers[currentPage]], direction: .reverse, animated: true, completion: nil)
+                self.pageViewController.setViewControllers([controllers[currentCashPage]], direction: .reverse, animated: true, completion: nil)
             }
             
-            lastPage = currentPage
+            lastCashPage = currentCashPage
             
             
         }
@@ -77,16 +79,21 @@ class CashViewController: UIViewController {
         
         //添加提示条
         sliderImage = UIImageView(frame: CGRect(x: 0 , y: -1 , width: self.view.frame.width / 2.0 , height: 3.0))
-        sliderImage.image = UIImage(named: "slider")
+        sliderImage.image = UIImage(named: "slider_green")
         sliderView.addSubview(sliderImage)
         
         controllers.append(incomeView)
         controllers.append(expendView)
         
+        //更改按钮颜色
+        
+        self.incomeButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.expendButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        
         
 
         
-        NotificationCenter.default.addObserver(self, selector: #selector(CashViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(CashViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentCashPageChanged"), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(CashViewController.printIconChangedFucn(notification:)), name: NSNotification.Name( "printIcon"), object: nil)
         // Do any additional setup after loading the view.
@@ -109,12 +116,12 @@ class CashViewController: UIViewController {
     
     
     @IBAction func changeCurrentPage(_ sender: UIButton) {
-        currentPage = sender.tag - 20
+        currentCashPage = sender.tag - 20
     }
     
     //通知page改变响应方法
     func currentPageChangedFunc(notification: NSNotification) {
-        currentPage = notification.object as! Int
+        currentCashPage = notification.object as! Int
     }
     
     //通知消费类型图标改变
@@ -145,7 +152,7 @@ class CashViewController: UIViewController {
         }
         else
         {
-            if currentPage == 0{
+            if currentCashPage == 0{
                 recordInfo[0] = "收入"
             }
             else{
