@@ -8,17 +8,18 @@
 
 import UIKit
 
-class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource{
+class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var picker: UIPickerView!
    
+    @IBOutlet weak var table: UITableView!
     var currentYear:String!
     var currentMonth:String!
     
     var years = [String]()
     var months = [String]()
     
-    
+    var budgets = [Budget(type: "饮食", money: 123.9),Budget(type: "书", money: 234),Budget(type: "交通", money: 45)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +42,7 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         picker.delegate = self
         picker.dataSource = self
 
-    
+        self.table.tableFooterView = UIView()
         // Do any additional setup after loading the view.
     }
 
@@ -78,6 +79,27 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         }
     }
 
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
+        return budgets.count
+        //return dataArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = self.table.dequeueReusableCell(withIdentifier: "firstCell")!
+        
+        //cell里要显示的东西
+        let image = cell.viewWithTag(100) as! UIImageView
+        image.image = (UIImage(named: budgets[indexPath.row].type))
+        (cell.viewWithTag(101) as! UILabel).text = budgets[indexPath.row].type
+        (cell.viewWithTag(102) as! UILabel).text = String(budgets[indexPath.row].money)
+        cell.accessoryType = .disclosureIndicator
+        // cell.editingAccessoryType = .detailButton
+        
+        return cell
+    }
+    
 
 }
 

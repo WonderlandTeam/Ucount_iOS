@@ -36,6 +36,7 @@
 		718B85181F556A2E00C972BE /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85171F556A2E00C972BE /* post.swift */; };
 		7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */; };
 		71A176491F5A4F270083FD5F /* PageViewExtension_Financial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A176481F5A4F270083FD5F /* PageViewExtension_Financial.swift */; };
+		71B219C71F5BF924000E9CB8 /* budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B219C61F5BF924000E9CB8 /* budget.swift */; };
 		71F57D331F593FF2006C4A6D /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F57D321F593FF2006C4A6D /* PDFView.swift */; };
 		71F57D351F594020006C4A6D /* PDFScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F57D341F594020006C4A6D /* PDFScrollView.swift */; };
 		71F57D3C1F59447F006C4A6D /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71F57D361F59447F006C4A6D /* 1.pdf */; };
@@ -132,6 +133,7 @@
 		718B85171F556A2E00C972BE /* post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyPassword1ViewController.swift; sourceTree = "<group>"; };
 		71A176481F5A4F270083FD5F /* PageViewExtension_Financial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewExtension_Financial.swift; sourceTree = "<group>"; };
+		71B219C61F5BF924000E9CB8 /* budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = budget.swift; sourceTree = "<group>"; };
 		71F57D321F593FF2006C4A6D /* PDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		71F57D341F594020006C4A6D /* PDFScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScrollView.swift; sourceTree = "<group>"; };
 		71F57D361F59447F006C4A6D /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 				715F99FC1F5B05F500FEF0FB /* PlanViewController.swift */,
 				715F9A041F5B0EDE00FEF0FB /* BudgetViewController.swift */,
 				715F9A061F5B0EE900FEF0FB /* SaveViewController.swift */,
+				71B219C61F5BF924000E9CB8 /* budget.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				E5D7A1AC1F58EBE7009FE44E /* IncomeViewController.swift in Sources */,
 				715F99FB1F5B05BF00FEF0FB /* PageViewExtension_plan.swift in Sources */,
 				E51B15AA1F56ED8C00CB9CDE /* FirstReportViewController.swift in Sources */,
+				71B219C71F5BF924000E9CB8 /* budget.swift in Sources */,
 				E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */,
 				710890D51F56CED4006181BC /* commentViewController.swift in Sources */,
 				710361571F510A80003B15E2 /* PushViewController.swift in Sources */,
