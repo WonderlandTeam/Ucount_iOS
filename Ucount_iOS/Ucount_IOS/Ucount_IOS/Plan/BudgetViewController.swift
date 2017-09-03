@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+var budgets = [Budget(type: "饮食", money: 123.9, date: "2017-12-31"),Budget(type: "书", money: 234, date: "2018-2-1"),Budget(type: "交通", money: 45, date: "2018-2-9")]
 class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var picker: UIPickerView!
@@ -18,8 +20,6 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
     
     var years = [String]()
     var months = [String]()
-    
-    var budgets = [Budget(type: "饮食", money: 123.9),Budget(type: "书", money: 234),Budget(type: "交通", money: 45)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,22 +43,27 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         picker.dataSource = self
 
         self.table.tableFooterView = UIView()
+        self.view.bringSubview(toFront: self.table)
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addTapped(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "addBudgetView") as! addBudgetViewController
+    func dateChanged(_ sender: UIPickerView){
         
-//        //返回的是否点赞和收藏和收藏的数据
-//        vc.callBack = ({(budget): Budget)->Void  in
-//           
-//        })
-        
-        self.present(vc,animated: true){
-            
-        }
-
     }
+    
+//    @IBAction func addTapped(_ sender: UIButton) {
+//        let vc = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "addBudgetView") as! addBudgetViewController
+//        
+////        //返回的是否点赞和收藏和收藏的数据
+////        vc.callBack = ({(budget): Budget)->Void  in
+////           
+////        })
+//        
+//        self.present(vc,animated: true){
+//            
+//        }
+//
+//    }
     
 
     override func didReceiveMemoryWarning() {
@@ -115,7 +120,21 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         return cell
     }
     
+    
+    //删除预算项
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        if(editingStyle == UITableViewCellEditingStyle.delete){
+            budgets.remove(at: indexPath.row)
+            self.table.reloadData()
+            self.table.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        }
+    }
+    
+    @IBAction func close(segue: UIStoryboardSegue){
+        table.reloadData()
+    }
 
+    
 }
 
 
