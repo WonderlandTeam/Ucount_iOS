@@ -19,7 +19,7 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
     @IBOutlet weak var saveButton: UIButton!
     
     
-    var types = ["彩妆","护肤品","交通","恋爱","社交","通讯和网费","文具","兴趣"]
+    var types = ["总预算","彩妆","护肤品","交通","恋爱","社交","通讯和网费","文具","兴趣"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,27 +16,6 @@ class commentViewController: UIViewController,UITableViewDelegate,UITableViewDat
 
     
     @IBOutlet weak var table: UITableView!
-  
-    @IBAction func commentTapped(_ sender: UIButton) {
-        var index = sender.tag
-        var selected = comments[index]
-        
-        let vc = UIStoryboard(name: "Financial", bundle: nil).instantiateViewController(withIdentifier: "talkViewController") as! talkViewController
-        
-        //返回的是评论的内容
-        vc.callBack = ({(words: String)->Void  in
-            print(selected.currentId)
-            print(selected.postId)
-            print(selected.text)
-            print(words)
-        })
-        
-        self.present(vc,animated: true){
-            
-        }
-
-    }
-    
 
     @IBAction func addCommentTapped(_ sender: UIButton) {
         

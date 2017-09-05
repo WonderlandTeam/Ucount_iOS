@@ -254,14 +254,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-bO-Qe4">
-                                                    <rect key="frame" x="305" y="8" width="25" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button" image="评论"/>
-                                                    <connections>
-                                                        <action selector="commentTapped:" destination="cjm-QU-Kx6" eventType="touchUpInside" id="m1a-Ex-Yle"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="jlM-xm-eCm" firstAttribute="top" secondItem="LOz-PT-k2Q" secondAttribute="bottom" constant="10" id="EAq-sD-Sp8"/>
