@@ -76,6 +76,8 @@
 		E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB5C31F5155B600FDA308 /* CashViewController.swift */; };
 		E5AA5F2E1F5B093B00225003 /* TradeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5F2D1F5B093B00225003 /* TradeRecordViewController.swift */; };
 		E5AA5F301F5B096F00225003 /* itemizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5F2F1F5B096F00225003 /* itemizeViewController.swift */; };
+		E5AA5F321F5D60A100225003 /* incomePieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5F311F5D60A100225003 /* incomePieViewController.swift */; };
+		E5AA5FA11F5ECAC300225003 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FA01F5ECAC300225003 /* ColorExtension.swift */; };
 		E5D7A1AC1F58EBE7009FE44E /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */; };
 		E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */; };
 		E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */; };
@@ -101,6 +103,19 @@
 			remoteInfo = Ucount_IOS;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5AA5F481F5DA68200225003 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0454428193C1CD8343DBB468 /* Pods-Ucount_IOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ucount_IOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ucount_IOSUITests/Pods-Ucount_IOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +199,8 @@
 		E59AB5C31F5155B600FDA308 /* CashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
 		E5AA5F2D1F5B093B00225003 /* TradeRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeRecordViewController.swift; sourceTree = "<group>"; };
 		E5AA5F2F1F5B096F00225003 /* itemizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemizeViewController.swift; sourceTree = "<group>"; };
+		E5AA5F311F5D60A100225003 /* incomePieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = incomePieViewController.swift; sourceTree = "<group>"; };
+		E5AA5FA01F5ECAC300225003 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpendViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashPageExtension.swift; sourceTree = "<group>"; };
@@ -357,6 +374,8 @@
 				E51B15AB1F56EDA400CB9CDE /* SecondReportViewController.swift */,
 				E51B15AD1F56EDB400CB9CDE /* ThirdReportViewController.swift */,
 				E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */,
+				E5AA5F311F5D60A100225003 /* incomePieViewController.swift */,
+				E5AA5FA01F5ECAC300225003 /* ColorExtension.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -424,6 +443,7 @@
 				E58447081F468AF9006F976E /* Resources */,
 				D32B768B883D7E07C8216E78 /* [CP] Embed Pods Frameworks */,
 				FEDFDE000C3786FF1946DEEF /* [CP] Copy Pods Resources */,
+				E5AA5F481F5DA68200225003 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -722,6 +742,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AA5F321F5D60A100225003 /* incomePieViewController.swift in Sources */,
 				E5AA5F301F5B096F00225003 /* itemizeViewController.swift in Sources */,
 				E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */,
 				711309121F591EAD00B9D596 /* knowledgeDetailViewController.swift in Sources */,
@@ -739,6 +760,7 @@
 				7136BC1C1F5C47050005CD50 /* passwrodViewController.swift in Sources */,
 				E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */,
 				E51B15A81F56E12200CB9CDE /* CreateNewController.swift in Sources */,
+				E5AA5FA11F5ECAC300225003 /* ColorExtension.swift in Sources */,
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
 				7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */,
 				E51B15A61F56D9E300CB9CDE /* ReportViewController.swift in Sources */,
