@@ -24,6 +24,8 @@ class allAcountableViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        acountTableview.separatorStyle = UITableViewCellSeparatorStyle.none
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

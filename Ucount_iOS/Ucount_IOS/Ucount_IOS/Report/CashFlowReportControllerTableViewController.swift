@@ -1,33 +1,37 @@
 //
-//  TradeRecordViewController.swift
+//  CashFlowReportControllerTableViewController.swift
 //  Ucount_IOS
 //
-//  Created by 李一鹏 on 2017/9/2.
+//  Created by 李一鹏 on 2017/9/6.
 //  Copyright © 2017年 李一鹏. All rights reserved.
 //
 
 import UIKit
 
-class TradeRecordViewController: UITableViewController {
+class CashFlowReportControllerTableViewController: UITableViewController {
 
-    @IBOutlet var traderecord: UITableView!
-    var records : [[Int:String]] = [[Int:String]]()
+    var timeLine = ["2017-09-05","2017-09-05","2017-08-31","2017-08-30","2017-08-30","2017-08-29"]
+    
+    var type = ["支出","收入","收入","支出","支出","收入"]
+    
+    var money = [269.0,350.0,580.0,188.0,399.0,600]
+    
+    var moneyType = ["书","工资收入","理财收入","彩妆","社交","一般收入"]
+    
+    
+    
+    @IBOutlet weak var CashFlow: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        traderecord.separatorStyle = UITableViewCellSeparatorStyle.none
-
+        CashFlow.separatorStyle = UITableViewCellSeparatorStyle.none
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        traderecord.reloadData()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,46 +49,80 @@ class TradeRecordViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        var num = records.count
+        return timeLine.count
         
-        return num
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "transRecordCell", for: indexPath)
-
-        var cellIcon = cell.viewWithTag(23) as! UIImageView
-        var cellType = cell.viewWithTag(20) as! UILabel
-        var cellComment = cell.viewWithTag(21) as! UILabel
-        var cellTime = cell.viewWithTag(22) as! UILabel
-        var cellMoney = cell.viewWithTag(24) as! UILabel
         
-        cellIcon.image = UIImage(named:records[indexPath.row][1]!)
-        cellType.text = records[indexPath.row][1]
-        cellType.adjustsFontSizeToFitWidth = true
-        cellMoney.adjustsFontSizeToFitWidth = true
-        if(records[indexPath.row][0] == "收入")
+        if(type[indexPath.row] == "收入")
         {
-            cellMoney.text = "+" + records[indexPath.row][2]!
-            cellMoney.textColor = UIColor.green
+            
+            let incomeCell = tableView.dequeueReusableCell(withIdentifier: "incomeFlow", for: indexPath)
+            
+            let incomeSplitLine = incomeCell.viewWithTag(21)!
+            
+            incomeSplitLine.backgroundColor = UIColor.gray
+            
+            let incomeIcon = incomeCell.viewWithTag(20) as! UIImageView
+            let incomeType = incomeCell.viewWithTag(22) as! UILabel
+            let incomeMoney = incomeCell.viewWithTag(23) as! UILabel
+            let incomeTime = incomeCell.viewWithTag(24) as! UILabel
+            
+            incomeType.text = moneyType[indexPath.row]
+            incomeType.textColor = UIColor.gray
+            incomeIcon.image = UIImage(named: moneyType[indexPath.row])
+            incomeMoney.text = "\(money[indexPath.row])"
+            incomeMoney.textColor = UIColor.gray
+            incomeTime.text = timeLine[indexPath.row]
+            incomeTime.textColor = UIColor.gray
+            
+            
+            return incomeCell
         }
+        
         else
         {
-            cellMoney.text = "-"+records[indexPath.row][2]!
-            cellMoney.textColor = UIColor.red
-        }
+            
+            let expendCell = tableView.dequeueReusableCell(withIdentifier: "expendFlow", for: indexPath)
+            
+            let expendSplitLine = expendCell.viewWithTag(11)!
+            
+            expendSplitLine.backgroundColor = UIColor.gray
+            
         
-        cellComment.text = records[indexPath.row][3]
-        cellTime.text = records[indexPath.row][4]
-        //cellTime.lineBreakMode = NSLineBreakMode.byWordWrapping
-        cellTime.numberOfLines = 3
-        cellTime.adjustsFontSizeToFitWidth = true
-        
-        
+            
+            
+            let expendIcon = expendCell.viewWithTag(10) as! UIImageView
+            
+            let expendType = expendCell.viewWithTag(12) as! UILabel
+            let expendMoney = expendCell.viewWithTag(13) as! UILabel
+            let expendTime = expendCell.viewWithTag(14) as! UILabel
 
-        return cell
+
+
+            expendType.text = moneyType[indexPath.row]
+            expendType.textColor = UIColor.gray
+            expendIcon.image = UIImage(named: moneyType[indexPath.row])
+            expendMoney.text = "\(money[indexPath.row])"
+            expendMoney.textColor = UIColor.gray
+            expendTime.text = timeLine[indexPath.row]
+            expendTime.textColor = UIColor.gray
+            
+            
+            return expendCell
+            
+        }
+
+
+    
+        // Configure the cell...
+
+        
     }
+    
+
     
 
     /*
