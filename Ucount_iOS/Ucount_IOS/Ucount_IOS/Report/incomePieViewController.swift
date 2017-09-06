@@ -12,8 +12,8 @@ import Charts
 class incomePieViewController: UIViewController {
 
     
-    var incomeType :[String] = ["理财收入","其他收入","工资收入"]
-    var incomeMoney = [400.0,200.0,500.0]
+    var incomeType :[String] = ["工资","理财","补助","其他"]
+    var incomeMoney = [400.0,200.0,500.0,300.0]
     
     @IBOutlet weak var incomePieChart: PieChartView!
     override func viewDidLoad() {
@@ -44,9 +44,11 @@ class incomePieViewController: UIViewController {
         
         
         var colors: [NSUIColor] = []
-        for _ in 0..<dataPoints.count {
-            colors.append(UIColor.randomColor)
-        }
+        colors.append(NSUIColor.init(red: 0x33/255, green: 0xCC/255, blue: 0xCC/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x66/255, blue: 0x00/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0x00/255, green: 0x99/255, blue: 0x33/255, alpha: 0.5))
+        
         
         incomeChartDataSet.colors = colors //区块的颜色
         

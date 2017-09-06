@@ -19,8 +19,8 @@ class FirstReportViewController: UIViewController {
     @IBOutlet weak var endDate: UIDatePicker!
 
 
-    var expendType :[String] = ["饮食","书本","社交","娱乐","日用品","水电费","通讯和网费","交通","电子设备"]
-    var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50,120,300]
+    var expendType :[String] = ["必需","服饰","学习","娱乐","理财","捐赠","其他"]
+    var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50]
     
     var lifeExpend :[String] = ["饮食","日用品","水电费","通讯和网费","交通","电子设备"]
     var lifeExpendMoney = [100.0,56,44.8,50,120,300]
@@ -85,9 +85,16 @@ class FirstReportViewController: UIViewController {
         
         
         var colors: [NSUIColor] = []
-        for _ in 0..<datapoints.count {
-            colors.append(UIColor.randomColor)
-        }
+        
+        colors.append(NSUIColor.init(red: 0x99/255, green: 0x66/255, blue: 0x00/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0x00/255, green: 0xCC/255, blue: 0x66/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0x99/255, green: 0xCC/255, blue: 0xFF/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0x33/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x00/255, blue: 0x66/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0xCC/255, green: 0x66/255, blue: 0x66/255, alpha: 0.5))
+        
+        
         
         expendChartDataSet.colors = colors //区块的颜色
         

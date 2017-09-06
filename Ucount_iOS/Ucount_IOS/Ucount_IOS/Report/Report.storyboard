@@ -24,7 +24,7 @@
                             <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9b-K2-hUv">
                                 <rect key="frame" x="1" y="66" width="137" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="收支储蓄"/>
+                                <state key="normal" title="收支盈余"/>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="c6K-8I-3VY" eventType="touchUpInside" id="H2r-Gw-atw"/>
                                 </connections>
