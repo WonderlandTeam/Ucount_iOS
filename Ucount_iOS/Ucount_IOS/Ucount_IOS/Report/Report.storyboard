@@ -169,7 +169,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGN-7z-qwk">
-                                        <rect key="frame" x="8" y="197" width="335" height="182"/>
+                                        <rect key="frame" x="8" y="197" width="335" height="220"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="jZj-Br-Byr" kind="embed" id="QMN-hZ-433"/>
@@ -199,7 +199,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YOF-pU-Koc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JeD-71-jJn" customClass="PieChartView" customModule="Charts">
-                        <rect key="frame" x="0.0" y="0.0" width="335" height="182"/>
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="220"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

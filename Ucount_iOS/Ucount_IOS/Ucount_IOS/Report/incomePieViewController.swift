@@ -51,19 +51,18 @@ class incomePieViewController: UIViewController {
         incomeChartDataSet.xValuePosition = .outsideSlice
         incomeChartDataSet.entryLabelColor = NSUIColor.black
         
-        incomePieChart.data = Piedata //先设置颜色再设置data才能显示全部图例
-        incomePieChart.chartDescription?.text = "收入百分比图示"
+        incomeChartDataSet.valueLinePart1Length = 0.7
         
+        incomePieChart.data = Piedata //先设置颜色再设置data才能显示全部图例
+        incomePieChart.chartDescription?.text = ""
+        
+        incomePieChart.drawCenterTextEnabled = true
+        incomePieChart.centerText = "收入"
         
         
         incomePieChart.usePercentValuesEnabled = true
         incomePieChart.dragDecelerationEnabled = true
         incomePieChart.holeRadiusPercent = 0.3
-        
-        
-        
-
-        
         
         
     }

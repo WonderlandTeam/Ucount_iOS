@@ -19,8 +19,14 @@ class FirstReportViewController: UIViewController {
     @IBOutlet weak var endDate: UIDatePicker!
 
 
-    var expendType :[String] = ["餐饮","书本","社交","娱乐"]
-    var expendMoney = [200.0,240.0,100.0,500.0]
+    var expendType :[String] = ["饮食","书本","社交","娱乐","日用品","水电费","通讯和网费","交通","电子设备"]
+    var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50,120,300]
+    
+    var lifeExpend :[String] = ["饮食","日用品","水电费","通讯和网费","交通","电子设备"]
+    var lifeExpendMoney = [100.0,56,44.8,50,120,300]
+    
+    var clothesType :[String] = ["连衣裙","裤子","短袖"]
+    var clothesMoney = [400.0,389.0,259.0]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +42,18 @@ class FirstReportViewController: UIViewController {
         endDate.datePickerMode = .date
         endDate.locale = Locale(identifier: "zh_CN")
         
-        firstReportScroll.contentSize = CGSize(width: 412,height: 1500)
+        firstReportScroll.contentSize = CGSize(width: 412,height: 1400)
         
         setExpendPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney)
+        
+        setLabel(description: "生活必需支出" , yPosition: 670)
+        
+        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 700) //生活必需支出
+        
+        setLabel(description: "服饰支出分配", yPosition: 930)
+        
+        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 970)
+        
         
         
         
@@ -52,7 +67,7 @@ class FirstReportViewController: UIViewController {
     func setExpendPie(showView: UIView,datapoints: [String],values: [Double]){
         var expendPieChart: PieChartView!
         
-        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 450,width: 350,height: 200))
+        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 450,width: 350,height: 220))
         
 
         
@@ -68,8 +83,6 @@ class FirstReportViewController: UIViewController {
         let expendChartDataSet = PieChartDataSet.init(values: dataEntries, label: "")
         
         
- 
-        
         var colors: [NSUIColor] = []
         for _ in 0..<datapoints.count {
             colors.append(UIColor.randomColor)
@@ -81,10 +94,15 @@ class FirstReportViewController: UIViewController {
         Piedata.addDataSet(expendChartDataSet)
         
         expendPieChart.data = Piedata
-        expendPieChart.chartDescription?.text = "支出百分比图示"
+        expendPieChart.chartDescription?.text = ""
+        
+        expendPieChart.drawCenterTextEnabled = true
+        expendPieChart.centerText = "支出"
         
         expendChartDataSet.xValuePosition = .outsideSlice
         expendChartDataSet.entryLabelColor = NSUIColor.black
+        
+        expendChartDataSet.valueLinePart1Length = 0.7
 
         
         expendPieChart.usePercentValuesEnabled = true
@@ -93,13 +111,70 @@ class FirstReportViewController: UIViewController {
         expendPieChart.legend.textColor = NSUIColor.black
         expendPieChart.legend.maxSizePercent = 1
         
-        
-       
 
         showView.addSubview(expendPieChart)
         
     }
     
+    func setExpendBar(datapoints:[String], values:[Double], yPosition: Int){
+        var ExpendBarChart : BarChartView!
+        
+        ExpendBarChart = BarChartView.init(frame: CGRect(x: 0,y: yPosition,width: 350, height: 220))
+        
+        var dataEntries: [BarChartDataEntry] = []
+        
+        for i in 0..<datapoints.count {
+            let dataEntry = BarChartDataEntry.init(x: Double(i), y: values[i])
+            
+            
+            dataEntries.append(dataEntry)
+        }
+        
+         let ExpendBarChartDataSet = BarChartDataSet.init(values: dataEntries, label: "")
+        
+        var colors: [NSUIColor] = []
+        for _ in 0..<datapoints.count {
+            colors.append(UIColor.randomColor)
+        }
+
+        ExpendBarChartDataSet.colors = colors
+        
+        let ExpendData = BarChartData()
+        
+        ExpendData.addDataSet(ExpendBarChartDataSet)
+        
+        ExpendBarChart.data = ExpendData
+        
+        ExpendBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: datapoints)
+        
+        ExpendBarChart.xAxis.granularity = 1
+        ExpendBarChart.xAxis.labelPosition = .bottom
+        ExpendBarChart.xAxis.drawGridLinesEnabled = false
+        
+        ExpendBarChart.rightAxis.enabled = false
+        
+        ExpendBarChart.legend.enabled = false
+        
+        ExpendBarChart.chartDescription?.text = ""
+        
+        ExpendBarChart.scaleYEnabled = false
+        ExpendBarChart.doubleTapToZoomEnabled = false
+        
+    
+        firstReportScroll.addSubview(ExpendBarChart)
+        
+    }
+    
+    
+    func setLabel(description: String, yPosition: Int){
+        let barTitle = UILabel(frame: CGRect(x: 0,y: yPosition, width:350,height: 50))
+        
+        barTitle.text = description
+        barTitle.textAlignment = .center
+        
+        firstReportScroll.addSubview(barTitle)
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
