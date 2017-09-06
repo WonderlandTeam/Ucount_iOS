@@ -42,17 +42,17 @@ class FirstReportViewController: UIViewController {
         endDate.datePickerMode = .date
         endDate.locale = Locale(identifier: "zh_CN")
         
-        firstReportScroll.contentSize = CGSize(width: 412,height: 1400)
+        firstReportScroll.contentSize = CGSize(width: 412,height: 1450)
         
         setExpendPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney)
         
-        setLabel(description: "生活必需支出" , yPosition: 670)
+        setLabel(description: "生活必需支出" , yPosition: 720)
         
-        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 700) //生活必需支出
+        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 750) //生活必需支出
         
-        setLabel(description: "服饰支出分配", yPosition: 930)
+        setLabel(description: "服饰支出分配", yPosition: 980)
         
-        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 970)
+        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1020)
         
         
         
@@ -67,16 +67,17 @@ class FirstReportViewController: UIViewController {
     func setExpendPie(showView: UIView,datapoints: [String],values: [Double]){
         var expendPieChart: PieChartView!
         
-        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 450,width: 350,height: 220))
+        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 500,width: 350,height: 220))
         
 
         
         var dataEntries: [PieChartDataEntry] = []
+        var totalExpend = 0.0
         
         for i in 0..<datapoints.count {
             let dataEntry = PieChartDataEntry.init(value: values[i], label: datapoints[i])
             
-            
+            totalExpend = totalExpend + values[i]
             dataEntries.append(dataEntry)
         }
         
@@ -97,17 +98,18 @@ class FirstReportViewController: UIViewController {
         expendPieChart.chartDescription?.text = ""
         
         expendPieChart.drawCenterTextEnabled = true
-        expendPieChart.centerText = "支出"
+        expendPieChart.centerText = "总支出"+"\(totalExpend)"
         
         expendChartDataSet.xValuePosition = .outsideSlice
-        expendChartDataSet.entryLabelColor = NSUIColor.black
+        expendChartDataSet.entryLabelColor = NSUIColor.gray
+        expendChartDataSet.entryLabelFont = NSUIFont.boldSystemFont(ofSize: 13.0)
         
-        expendChartDataSet.valueLinePart1Length = 0.7
+        expendChartDataSet.valueLinePart1Length = 0.5
 
         
         expendPieChart.usePercentValuesEnabled = true
         expendPieChart.dragDecelerationEnabled = true
-        expendPieChart.holeRadiusPercent = 0.3
+        expendPieChart.holeRadiusPercent = 0.65
         expendPieChart.legend.textColor = NSUIColor.black
         expendPieChart.legend.maxSizePercent = 1
         

@@ -27,9 +27,11 @@ class incomePieViewController: UIViewController {
     func setChart(dataPoints: [String], values: [Double]) {
        var dataEntries: [PieChartDataEntry] = []
         
+        var totalIncome = 0.0
+        
         for i in 0..<dataPoints.count {
             let dataEntry = PieChartDataEntry.init(value: values[i], label: dataPoints[i])
-            
+            totalIncome = totalIncome+values[i]
             
             dataEntries.append(dataEntry)
         }
@@ -49,7 +51,8 @@ class incomePieViewController: UIViewController {
         incomeChartDataSet.colors = colors //区块的颜色
         
         incomeChartDataSet.xValuePosition = .outsideSlice
-        incomeChartDataSet.entryLabelColor = NSUIColor.black
+        incomeChartDataSet.entryLabelColor = NSUIColor.gray
+        incomeChartDataSet.entryLabelFont = NSUIFont.boldSystemFont(ofSize: 13.0)
         
         incomeChartDataSet.valueLinePart1Length = 0.7
         
@@ -57,12 +60,12 @@ class incomePieViewController: UIViewController {
         incomePieChart.chartDescription?.text = ""
         
         incomePieChart.drawCenterTextEnabled = true
-        incomePieChart.centerText = "收入"
+        incomePieChart.centerText = "总收入"+"\(totalIncome)"
         
         
         incomePieChart.usePercentValuesEnabled = true
         incomePieChart.dragDecelerationEnabled = true
-        incomePieChart.holeRadiusPercent = 0.3
+        incomePieChart.holeRadiusPercent = 0.65
         
         
     }
