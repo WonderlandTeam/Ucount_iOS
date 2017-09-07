@@ -79,9 +79,15 @@
 		E5AA5F321F5D60A100225003 /* incomePieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5F311F5D60A100225003 /* incomePieViewController.swift */; };
 		E5AA5FA11F5ECAC300225003 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FA01F5ECAC300225003 /* ColorExtension.swift */; };
 		E5AA5FA31F5F955E00225003 /* CashFlowReportControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FA21F5F955E00225003 /* CashFlowReportControllerTableViewController.swift */; };
+		E5AA5FA51F6048B200225003 /* balanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FA41F6048B200225003 /* balanceViewController.swift */; };
+		E5AA5FA71F6048E400225003 /* balanceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FA61F6048E400225003 /* balanceViewCell.swift */; };
+		E5AA5FA91F604A7700225003 /* UICollectionGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FA81F604A7700225003 /* UICollectionGridViewLayout.swift */; };
+		E5AA5FAB1F60E22800225003 /* containBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA5FAA1F60E22800225003 /* containBalanceViewController.swift */; };
 		E5D7A1AC1F58EBE7009FE44E /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */; };
 		E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */; };
 		E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */; };
+		E5D98D6B1F617EAE003CBCC9 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D98D6A1F617EAE003CBCC9 /* FAIcon.swift */; };
+		E5D98D6D1F617EB5003CBCC9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */; };
 		E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */; };
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
 		E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */; };
@@ -203,9 +209,15 @@
 		E5AA5F311F5D60A100225003 /* incomePieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = incomePieViewController.swift; sourceTree = "<group>"; };
 		E5AA5FA01F5ECAC300225003 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E5AA5FA21F5F955E00225003 /* CashFlowReportControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashFlowReportControllerTableViewController.swift; sourceTree = "<group>"; };
+		E5AA5FA41F6048B200225003 /* balanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = balanceViewController.swift; sourceTree = "<group>"; };
+		E5AA5FA61F6048E400225003 /* balanceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = balanceViewCell.swift; sourceTree = "<group>"; };
+		E5AA5FA81F604A7700225003 /* UICollectionGridViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionGridViewLayout.swift; sourceTree = "<group>"; };
+		E5AA5FAA1F60E22800225003 /* containBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = containBalanceViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AB1F58EBE7009FE44E /* IncomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpendViewController.swift; sourceTree = "<group>"; };
 		E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashPageExtension.swift; sourceTree = "<group>"; };
+		E5D98D6A1F617EAE003CBCC9 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
+		E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewExtension.swift; sourceTree = "<group>"; };
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +382,8 @@
 		E584475D1F46C3E3006F976E /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */,
+				E5D98D6A1F617EAE003CBCC9 /* FAIcon.swift */,
 				71802FEF1F4EC7B0005D39E4 /* Report.storyboard */,
 				E51B15A51F56D9E300CB9CDE /* ReportViewController.swift */,
 				E51B15A91F56ED8C00CB9CDE /* FirstReportViewController.swift */,
@@ -379,6 +393,10 @@
 				E5AA5F311F5D60A100225003 /* incomePieViewController.swift */,
 				E5AA5FA01F5ECAC300225003 /* ColorExtension.swift */,
 				E5AA5FA21F5F955E00225003 /* CashFlowReportControllerTableViewController.swift */,
+				E5AA5FA41F6048B200225003 /* balanceViewController.swift */,
+				E5AA5FA61F6048E400225003 /* balanceViewCell.swift */,
+				E5AA5FA81F604A7700225003 /* UICollectionGridViewLayout.swift */,
+				E5AA5FAA1F60E22800225003 /* containBalanceViewController.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -566,6 +584,7 @@
 				71802FF91F4ED1DB005D39E4 /* Person.storyboard in Resources */,
 				71F57D3F1F59447F006C4A6D /* 4.pdf in Resources */,
 				E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */,
+				E5D98D6D1F617EB5003CBCC9 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,11 +791,15 @@
 				E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
 				71F7CEF21F579B490012DE98 /* forgetViewController.swift in Sources */,
+				E5D98D6B1F617EAE003CBCC9 /* FAIcon.swift in Sources */,
 				710361551F510A71003B15E2 /* PopularViewController.swift in Sources */,
 				71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */,
+				E5AA5FA91F604A7700225003 /* UICollectionGridViewLayout.swift in Sources */,
+				E5AA5FA71F6048E400225003 /* balanceViewCell.swift in Sources */,
 				71802FD91F4EB71A005D39E4 /* PersonViewController.swift in Sources */,
 				71802FDB1F4EB743005D39E4 /* ViewController.swift in Sources */,
 				718B85141F55420400C972BE /* articleViewController.swift in Sources */,
+				E5AA5FAB1F60E22800225003 /* containBalanceViewController.swift in Sources */,
 				7136BC201F5C68650005CD50 /* addPlanViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
@@ -785,6 +808,7 @@
 				7136BC1E1F5C55710005CD50 /* planDetailViewController.swift in Sources */,
 				E51166231F57EA2D00885634 /* aliPayViewController.swift in Sources */,
 				718B85181F556A2E00C972BE /* post.swift in Sources */,
+				E5AA5FA51F6048B200225003 /* balanceViewController.swift in Sources */,
 				710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */,
 				E5D7A1AE1F58EBFB009FE44E /* ExpendViewController.swift in Sources */,
 				71F57D351F594020006C4A6D /* PDFScrollView.swift in Sources */,

@@ -10,8 +10,11 @@ import UIKit
 
 class SecondReportViewController: UIViewController {
 
+    @IBOutlet weak var secondScroll: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        secondScroll.contentSize = CGSize(width: 412, height:1500)
 
         // Do any additional setup after loading the view.
     }
