@@ -62,7 +62,7 @@ class FirstReportViewController: UIViewController {
         
         setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1020)
         
-        setPercentTabel(type: 0  ,countType: incomeType ,money: incomeMoney)
+        setPercentTabel(type: 1  ,countType: expendType ,money: expendMoney)
         
         
         

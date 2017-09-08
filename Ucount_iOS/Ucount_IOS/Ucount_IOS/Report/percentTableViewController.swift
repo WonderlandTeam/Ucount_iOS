@@ -14,12 +14,26 @@ class percentTableViewController: UITableViewController {
     
     var countType :[String] = [String]() //收入／支出类型
     var countMoney :[Double] = [Double]()
+    var totalMoney = 0.0
+    
+    var percentRecord :[String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("已经创建了")
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+
         self.view.frame = CGRect(x:0,y:1350, width: 414, height: 240)
-        print(countType)
+        
+        for i in 0...countMoney.count-1 {
+            totalMoney = totalMoney + countMoney[i]
+        }
+        
+        for i in 0...countMoney.count-1 {
+            percentRecord.append(String(format: "%.1f", (countMoney[i] / totalMoney) * 100))
+        }
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -53,7 +67,74 @@ class percentTableViewController: UITableViewController {
         let percent = cell.viewWithTag(22) as! UILabel
         let money = cell.viewWithTag(23) as! UILabel
         
-        imageIcon.image = UIImage(named:countType[indexPath.row]+"收入")
+        //收入
+        if(type == 0)
+        {
+            if(countType[indexPath.row] == "补助")
+            {
+                imageIcon.image = UIImage(named:"奖金收入")
+            }
+            else if(countType[indexPath.row] == "其他")
+            {
+                imageIcon.image = UIImage(named:"一般收入")
+            }
+            else
+            {
+                imageIcon.image = UIImage(named:countType[indexPath.row]+"收入")
+            }
+            typeText.text = countType[indexPath.row]+"收入"
+            
+
+        }
+        //支出
+        else
+        {
+            if(countType[indexPath.row] == "必需")
+            {
+                imageIcon.image = UIImage(named:"饮食")
+            }
+            else if(countType[indexPath.row] == "服饰")
+            {
+                imageIcon.image = UIImage(named:"衣帽鞋服")
+            }
+            else if(countType[indexPath.row] == "学习")
+            {
+                imageIcon.image = UIImage(named:"书")
+            }
+            else if(countType[indexPath.row] == "娱乐")
+            {
+                imageIcon.image = UIImage(named:"社交")
+            }
+            else if(countType[indexPath.row] == "理财")
+            {
+                imageIcon.image = UIImage(named:"组织活动")
+            }
+            else if(countType[indexPath.row] == "捐赠")
+            {
+                imageIcon.image = UIImage(named:"捐款")
+            }
+            else
+            {
+                imageIcon.image = UIImage(named:"电子设备")
+            }
+            
+            typeText.text = countType[indexPath.row]+"支出"
+
+            
+        }
+        
+        percent.text = percentRecord[indexPath.row]+"%"
+        
+        money.text = "\(countMoney[indexPath.row])"
+        
+
+        typeText.adjustsFontSizeToFitWidth = true
+        
+        typeText.textColor = UIColor.gray
+        percent.textColor = UIColor.gray
+        money.textColor = UIColor.gray
+        
+
 
         // Configure the cell...
 
