@@ -13,7 +13,8 @@ class FirstReportViewController: UIViewController {
 
     @IBOutlet weak var firstReportScroll: UIScrollView!
     
-    var percentTabel :percentTableViewController!
+    var incomePercent :percentTableViewController!
+    var expendPercent :percentTableViewController!
     
     @IBOutlet weak var beginDate: UIDatePicker!
     
@@ -36,7 +37,9 @@ class FirstReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        percentTabel = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
+        incomePercent = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
+        
+        expendPercent = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
         
         print("创建了吗")
         
@@ -50,22 +53,22 @@ class FirstReportViewController: UIViewController {
         endDate.datePickerMode = .date
         endDate.locale = Locale(identifier: "zh_CN")
         
-        firstReportScroll.contentSize = CGSize(width: 412,height: 1800)
+        firstReportScroll.contentSize = CGSize(width: 412,height: 2200)
+        
+        setPercentTabel(viewController: incomePercent,type: 0, countType: incomeType, money: incomeMoney, yValue: 450, height: 220)
         
         setExpendPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney)
         
-        setLabel(description: "生活必需支出" , yPosition: 720)
+        setPercentTabel(viewController: expendPercent,type: 1, countType: expendType, money: expendMoney, yValue: 900, height: 180)
         
-        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 750) //生活必需支出
+        setLabel(description: "生活必需支出" , yPosition: 1100)
         
-        setLabel(description: "服饰支出分配", yPosition: 980)
+        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 1200) //生活必需支出
         
-        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1020)
+        setLabel(description: "服饰支出分配", yPosition: 1450)
         
-        setPercentTabel(type: 1  ,countType: expendType ,money: expendMoney)
-        
-        
-        
+        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1550)
+
         
         // Do any additional setup after loading the view.
     }
@@ -77,7 +80,7 @@ class FirstReportViewController: UIViewController {
     func setExpendPie(showView: UIView,datapoints: [String],values: [Double]){
         var expendPieChart: PieChartView!
         
-        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 500,width: 350,height: 220))
+        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 650,width: 350,height: 220))
         
 
         
@@ -197,12 +200,15 @@ class FirstReportViewController: UIViewController {
     
     
     //设置饼状图下方的百分比说明, type（0代表收入,1代表支出）, countType代表具体支出／收入类型，money代表相对应的金额
-    func setPercentTabel(type: Int ,countType: [String], money: [Double]){
-        percentTabel.type = type
-        percentTabel.countType = countType
-        percentTabel.countMoney = money
+    func setPercentTabel(viewController: percentTableViewController,type: Int ,countType: [String], money: [Double],yValue: Int, height: Int){
         
-        firstReportScroll.addSubview(percentTabel.view)
+        viewController.type = type
+        viewController.countType = countType
+        viewController.countMoney = money
+        viewController.yValue = yValue
+        viewController.heightValue = height
+        
+        firstReportScroll.addSubview(viewController.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {

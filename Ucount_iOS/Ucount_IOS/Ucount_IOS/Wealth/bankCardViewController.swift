@@ -9,9 +9,17 @@
 import UIKit
 
 class bankCardViewController: UIViewController {
+    @IBOutlet weak var userName: UITextField!
 
+    @IBOutlet weak var passWord: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userName.placeholder = "请输入银行卡号"
+        passWord.placeholder = "请输入密码"
+        
+        passWord.isSecureTextEntry = true
 
         // Do any additional setup after loading the view.
     }

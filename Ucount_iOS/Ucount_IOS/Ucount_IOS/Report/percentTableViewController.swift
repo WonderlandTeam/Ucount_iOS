@@ -12,6 +12,9 @@ class percentTableViewController: UITableViewController {
     
     var type: Int = 0 //0代表收入 1代表支出
     
+    var  yValue :Int = 0
+    var heightValue : Int = 0
+    
     var countType :[String] = [String]() //收入／支出类型
     var countMoney :[Double] = [Double]()
     var totalMoney = 0.0
@@ -22,16 +25,19 @@ class percentTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 
-        self.view.frame = CGRect(x:0,y:1350, width: 414, height: 240)
+        self.view.frame = CGRect(x:0,y:yValue, width: 414, height: heightValue)
+        
+        totalMoney = 0
         
         for i in 0...countMoney.count-1 {
             totalMoney = totalMoney + countMoney[i]
         }
+        print("totalMoney 是" + "\(totalMoney)")
         
+        percentRecord.removeAll()
         for i in 0...countMoney.count-1 {
             percentRecord.append(String(format: "%.1f", (countMoney[i] / totalMoney) * 100))
         }
-        
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -41,6 +47,7 @@ class percentTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -89,6 +96,10 @@ class percentTableViewController: UITableViewController {
         //支出
         else
         {
+            print(countType)
+            print(countMoney)
+            print(percentRecord)
+            
             if(countType[indexPath.row] == "必需")
             {
                 imageIcon.image = UIImage(named:"饮食")
