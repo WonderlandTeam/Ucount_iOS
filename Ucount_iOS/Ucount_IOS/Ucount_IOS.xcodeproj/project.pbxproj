@@ -88,6 +88,7 @@
 		E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */; };
 		E5D98D6B1F617EAE003CBCC9 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D98D6A1F617EAE003CBCC9 /* FAIcon.swift */; };
 		E5D98D6D1F617EB5003CBCC9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */; };
+		E5D98D6F1F621F60003CBCC9 /* percentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */; };
 		E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */; };
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
 		E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */; };
@@ -218,6 +219,7 @@
 		E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashPageExtension.swift; sourceTree = "<group>"; };
 		E5D98D6A1F617EAE003CBCC9 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
 		E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = percentTableViewController.swift; sourceTree = "<group>"; };
 		E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewExtension.swift; sourceTree = "<group>"; };
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				E5AA5FA61F6048E400225003 /* balanceViewCell.swift */,
 				E5AA5FA81F604A7700225003 /* UICollectionGridViewLayout.swift */,
 				E5AA5FAA1F60E22800225003 /* containBalanceViewController.swift */,
+				E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -802,6 +805,7 @@
 				E5AA5FAB1F60E22800225003 /* containBalanceViewController.swift in Sources */,
 				7136BC201F5C68650005CD50 /* addPlanViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
+				E5D98D6F1F621F60003CBCC9 /* percentTableViewController.swift in Sources */,
 				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				715F9A071F5B0EE900FEF0FB /* SaveViewController.swift in Sources */,

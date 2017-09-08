@@ -44,17 +44,20 @@ class incomePieViewController: UIViewController {
         
         
         var colors: [NSUIColor] = []
-        colors.append(NSUIColor.init(red: 0x33/255, green: 0xCC/255, blue: 0xCC/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x66/255, blue: 0x00/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0x00/255, green: 0x99/255, blue: 0x33/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0x33/255, green: 0xCC/255, blue: 0xCC/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x66/255, blue: 0x00/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0x00/255, green: 0x99/255, blue: 0x33/255, alpha: 0.8))
         
         
         incomeChartDataSet.colors = colors //区块的颜色
         
         incomeChartDataSet.xValuePosition = .outsideSlice
+        
         incomeChartDataSet.entryLabelColor = NSUIColor.gray
-        incomeChartDataSet.entryLabelFont = NSUIFont.boldSystemFont(ofSize: 13.0)
+        incomeChartDataSet.entryLabelFont = NSUIFont.boldSystemFont(ofSize: 12.0)
+        
+        
         
         incomeChartDataSet.valueLinePart1Length = 0.7
         
@@ -65,9 +68,9 @@ class incomePieViewController: UIViewController {
         incomePieChart.centerText = "总收入"+"\(totalIncome)"
         
         
-        incomePieChart.usePercentValuesEnabled = true
+        //incomePieChart.usePercentValuesEnabled = true
         incomePieChart.dragDecelerationEnabled = true
-        incomePieChart.holeRadiusPercent = 0.65
+        incomePieChart.holeRadiusPercent = 0.55
         
         
     }

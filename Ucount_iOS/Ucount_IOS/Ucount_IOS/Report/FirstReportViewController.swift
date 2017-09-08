@@ -13,6 +13,7 @@ class FirstReportViewController: UIViewController {
 
     @IBOutlet weak var firstReportScroll: UIScrollView!
     
+    var percentTabel :percentTableViewController!
     
     @IBOutlet weak var beginDate: UIDatePicker!
     
@@ -22,6 +23,10 @@ class FirstReportViewController: UIViewController {
     var expendType :[String] = ["必需","服饰","学习","娱乐","理财","捐赠","其他"]
     var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50]
     
+    var incomeType :[String] = ["工资","理财","补助","其他"]
+    var incomeMoney = [400.0,200.0,500.0,300.0]
+
+    
     var lifeExpend :[String] = ["饮食","日用品","水电费","通讯和网费","交通","电子设备"]
     var lifeExpendMoney = [100.0,56,44.8,50,120,300]
     
@@ -30,7 +35,10 @@ class FirstReportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        percentTabel = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
+        
+        print("创建了吗")
         
         firstReportScroll.isScrollEnabled = true //可以上下滚动
         firstReportScroll.scrollsToTop = true //点击状态栏到顶端
@@ -42,7 +50,7 @@ class FirstReportViewController: UIViewController {
         endDate.datePickerMode = .date
         endDate.locale = Locale(identifier: "zh_CN")
         
-        firstReportScroll.contentSize = CGSize(width: 412,height: 1450)
+        firstReportScroll.contentSize = CGSize(width: 412,height: 1800)
         
         setExpendPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney)
         
@@ -53,6 +61,8 @@ class FirstReportViewController: UIViewController {
         setLabel(description: "服饰支出分配", yPosition: 980)
         
         setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1020)
+        
+        setPercentTabel(type: 0  ,countType: incomeType ,money: incomeMoney)
         
         
         
@@ -86,13 +96,13 @@ class FirstReportViewController: UIViewController {
         
         var colors: [NSUIColor] = []
         
-        colors.append(NSUIColor.init(red: 0x99/255, green: 0x66/255, blue: 0x00/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0x00/255, green: 0xCC/255, blue: 0x66/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0x99/255, green: 0xCC/255, blue: 0xFF/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0x33/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x00/255, blue: 0x66/255, alpha: 0.5))
-        colors.append(NSUIColor.init(red: 0xCC/255, green: 0x66/255, blue: 0x66/255, alpha: 0.5))
+        colors.append(NSUIColor.init(red: 0x99/255, green: 0x66/255, blue: 0x00/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0x00/255, green: 0xCC/255, blue: 0x66/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0x99/255, green: 0xCC/255, blue: 0xFF/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0x33/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x00/255, blue: 0x66/255, alpha: 0.8))
+        colors.append(NSUIColor.init(red: 0xCC/255, green: 0x66/255, blue: 0x66/255, alpha: 0.8))
         
         
         
@@ -114,9 +124,9 @@ class FirstReportViewController: UIViewController {
         expendChartDataSet.valueLinePart1Length = 0.5
 
         
-        expendPieChart.usePercentValuesEnabled = true
+       // expendPieChart.usePercentValuesEnabled = true
         expendPieChart.dragDecelerationEnabled = true
-        expendPieChart.holeRadiusPercent = 0.65
+        expendPieChart.holeRadiusPercent = 0.55
         expendPieChart.legend.textColor = NSUIColor.black
         expendPieChart.legend.maxSizePercent = 1
         
@@ -183,6 +193,16 @@ class FirstReportViewController: UIViewController {
         
         firstReportScroll.addSubview(barTitle)
         
+    }
+    
+    
+    //设置饼状图下方的百分比说明, type（0代表收入,1代表支出）, countType代表具体支出／收入类型，money代表相对应的金额
+    func setPercentTabel(type: Int ,countType: [String], money: [Double]){
+        percentTabel.type = type
+        percentTabel.countType = countType
+        percentTabel.countMoney = money
+        
+        firstReportScroll.addSubview(percentTabel.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
