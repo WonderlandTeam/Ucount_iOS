@@ -21,6 +21,9 @@ class bankCardViewController: UIViewController {
        
         userName.placeholder = "请输入"
         userName.title = "银行卡号"
+        userName.iconFont = UIFont.init(name: "FontAwesome", size: 15)
+        userName.iconText = "\u{f007}"
+        
         
         passWord.placeholder = "请输入密码"
         
