@@ -10,9 +10,11 @@ import UIKit
 
 class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate {
     
+    var years = [String]()
+    var months = [String]()
     @IBOutlet weak var typePicker: UIPickerView!
     
-    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var monthPicker: UIPickerView!
     
     @IBOutlet weak var money: UITextField!
     
@@ -25,9 +27,22 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
         super.viewDidLoad()
 
         self.typePicker.delegate = self
-        self.typePicker.dataSource = self        // Do any additional setup after loading the view.
+        self.typePicker.dataSource = self// Do any additional setup after loading the view.
+        
+        self.monthPicker.delegate = self
+        self.monthPicker.delegate = self
         self.money.delegate = self
         self.view.bringSubview(toFront: self.saveButton)
+        
+        for i in 0 ... 10{
+            years.append(String(Int(2017)+i))
+        }
+        
+        for i in 1...12{
+            months.append(String( i))
+        }
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +54,7 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
         if(pickerView == self.typePicker){
             return 1
         }else{
-            return 3
+            return 2
         }
     }
     
@@ -47,7 +62,11 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
         if (pickerView == self.typePicker){
             return types.count
         }else{
-            return 0
+            if(component == 0){
+                return years.count
+            }else{
+                return months.count
+            }
         }
     }
     
@@ -57,18 +76,20 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
         if (pickerView == self.typePicker){
             return types[row]
         }else{
-            return nil
+            if(component == 0){
+                return String(years[row])
+            }else{
+                return String(months[row])
+            }
         }
     }
 
     @IBAction func saveTapped(_ sender: UIButton) {
-        let date = datePicker.date
-        let dformatter = DateFormatter()
-        dformatter.dateFormat = "yyyy-MM-dd"
-        let dateStr = dformatter.string(from: date)
+        let dateStr = String(years[self.monthPicker.selectedRow(inComponent: 0)])+"-"+String(months[self.monthPicker.selectedRow(inComponent: 1)])
+        
         let type = types[Int(self.typePicker.selectedRow(inComponent: 0).description)!]
         
-        let budgetAdded = Budget(type: type, money: Float(self.money.text!)!, date: dateStr)
+        let budgetAdded = Budget(type: type, money: Float(self.money.text!)!, month: Int(months[self.monthPicker.selectedRow(inComponent: 1)])!, year: Int(years[self.monthPicker.selectedRow(inComponent: 0)])!, left: Float(self.money.text!)!)
         budgets.append(budgetAdded)
         
     }
