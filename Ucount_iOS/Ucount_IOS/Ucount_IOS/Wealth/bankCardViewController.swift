@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class bankCardViewController: UIViewController {
-    @IBOutlet weak var userName: UITextField!
+    
+    @IBOutlet weak var userName: SkyFloatingLabelTextFieldWithIcon!
 
     @IBOutlet weak var passWord: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userName.placeholder = "请输入银行卡号"
+       
+        userName.placeholder = "请输入"
+        userName.title = "银行卡号"
+        
         passWord.placeholder = "请输入密码"
         
         passWord.isSecureTextEntry = true
