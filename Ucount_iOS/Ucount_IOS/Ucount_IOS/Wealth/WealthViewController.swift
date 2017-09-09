@@ -33,11 +33,11 @@ class WealthViewController : UIViewController,SendMessageDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        test2 = self.view.viewWithTag(1)!
-        
-        test3 = self.view.viewWithTag(2) as! UIImageView
-        
-        test2.backgroundColor = UIColor.clear
+//        test2 = self.view.viewWithTag(1)!
+//        
+//        test3 = self.view.viewWithTag(2) as! UIImageView
+//        
+//        test2.backgroundColor = UIColor.clear
         
         self.view.sendSubview(toBack: test3)
         

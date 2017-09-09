@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class CashViewController: UIViewController {
     @IBOutlet weak var typeIcon: UIImageView!
    
+    @IBOutlet weak var countCash: SkyFloatingLabelTextField!
     @IBOutlet weak var sliderView: UIView!
     
     @IBOutlet weak var expendButton: UIButton!
     @IBOutlet weak var incomeButton: UIButton!
-    @IBOutlet weak var recordExplain: UITextField!//备注信息
-    @IBOutlet weak var countCash: UITextField!//记录金额
+    
+    @IBOutlet weak var recordExplain: SkyFloatingLabelTextFieldWithIcon!
+    
+    let overcastGreen = UIColor.init(red: 0x5E/255, green: 0xC9/255, blue: 0xAF/255, alpha: 1)
     
     typealias closureBlock = ([Int:String]) -> Void
     
@@ -97,6 +101,27 @@ class CashViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(CashViewController.printIconChangedFucn(notification:)), name: NSNotification.Name( "printIcon"), object: nil)
         // Do any additional setup after loading the view.
+        
+        countCash.title = "金额"
+        countCash.selectedTitleColor = overcastGreen
+        countCash.selectedLineColor = overcastGreen
+        countCash.tintColor = overcastGreen
+        
+        recordExplain.title = "备注信息"
+        recordExplain.selectedTitleColor = overcastGreen
+        recordExplain.selectedLineColor = overcastGreen
+        recordExplain.tintColor = overcastGreen
+        
+        recordExplain.iconFont = UIFont.init(name: "FontAwesome", size: 15)
+        recordExplain.iconText = "\u{f23a}"
+        recordExplain.iconMarginBottom = -3
+
+        
+//        countCash.iconFont = UIFont.init(name: "FontAwesome", size: 13)
+//        countCash.iconText = "\u{f0d6}"
+//        countCash.iconMarginBottom = -3
+//
+        
     }
 
     override func didReceiveMemoryWarning() {

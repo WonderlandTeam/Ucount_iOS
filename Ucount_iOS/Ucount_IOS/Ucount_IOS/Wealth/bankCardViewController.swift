@@ -13,21 +13,36 @@ class bankCardViewController: UIViewController {
     
     @IBOutlet weak var userName: SkyFloatingLabelTextFieldWithIcon!
 
-    @IBOutlet weak var passWord: UITextField!
+    
+    @IBOutlet weak var passWord: SkyFloatingLabelTextFieldWithIcon!
+    
+    let overcastGreen = UIColor.init(red: 0x5E/255, green: 0xC9/255, blue: 0xAF/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
        
-        userName.placeholder = "请输入"
+        userName.placeholder = "请输入银行卡号"
         userName.title = "银行卡号"
-        userName.iconFont = UIFont.init(name: "FontAwesome", size: 15)
+        userName.iconFont = UIFont.init(name: "FontAwesome", size: 13)
         userName.iconText = "\u{f007}"
+        userName.iconMarginBottom = -3
+        userName.tintColor = overcastGreen
+        userName.selectedTitleColor = overcastGreen
+        userName.selectedLineColor = overcastGreen
         
         
         passWord.placeholder = "请输入密码"
+        passWord.title = "密码"
+        passWord.iconFont = UIFont.init(name: "FontAwesome", size: 13)
+        passWord.iconText = "\u{f084}"
+        passWord.iconMarginBottom = -3
+        passWord.tintColor = overcastGreen
+        passWord.selectedTitleColor = overcastGreen
+        passWord.selectedLineColor = overcastGreen
         
         passWord.isSecureTextEntry = true
+        
 
         // Do any additional setup after loading the view.
     }
