@@ -65,7 +65,6 @@
 		E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */; };
 		E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584470D1F468AF9006F976E /* AppDelegate.swift */; };
 		E58447131F468AF9006F976E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447111F468AF9006F976E /* Main.storyboard */; };
-		E58447151F468AF9006F976E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58447141F468AF9006F976E /* Assets.xcassets */; };
 		E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447161F468AF9006F976E /* LaunchScreen.storyboard */; };
 		E58447231F468AF9006F976E /* Ucount_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58447221F468AF9006F976E /* Ucount_IOSTests.swift */; };
 		E584472E1F468AF9006F976E /* Ucount_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584472D1F468AF9006F976E /* Ucount_IOSUITests.swift */; };
@@ -91,6 +90,7 @@
 		E5D98D6D1F617EB5003CBCC9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */; };
 		E5D98D6F1F621F60003CBCC9 /* percentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */; };
 		E5D98D751F63DD4F003CBCC9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D741F63DD4F003CBCC9 /* FontAwesome.ttf */; };
+		E5D98D771F658D32003CBCC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D761F658D32003CBCC9 /* Assets.xcassets */; };
 		E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */; };
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
 		E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */; };
@@ -193,7 +193,6 @@
 		E584470A1F468AF9006F976E /* Ucount_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ucount_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584470D1F468AF9006F976E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58447121F468AF9006F976E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E58447141F468AF9006F976E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58447171F468AF9006F976E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E58447191F468AF9006F976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E584471E1F468AF9006F976E /* Ucount_IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ucount_IOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +223,7 @@
 		E5D98D6C1F617EB5003CBCC9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = percentTableViewController.swift; sourceTree = "<group>"; };
 		E5D98D741F63DD4F003CBCC9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		E5D98D761F658D32003CBCC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewExtension.swift; sourceTree = "<group>"; };
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -323,11 +323,11 @@
 		E584470C1F468AF9006F976E /* Ucount_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				E5D98D761F658D32003CBCC9 /* Assets.xcassets */,
 				E58447111F468AF9006F976E /* Main.storyboard */,
 				71802FDA1F4EB743005D39E4 /* ViewController.swift */,
 				71802FD41F4EB691005D39E4 /* Common.swift */,
 				E584470D1F468AF9006F976E /* AppDelegate.swift */,
-				E58447141F468AF9006F976E /* Assets.xcassets */,
 				E58447161F468AF9006F976E /* LaunchScreen.storyboard */,
 				E58447191F468AF9006F976E /* Info.plist */,
 				718030091F4EE505005D39E4 /* Person */,
@@ -583,7 +583,6 @@
 				71802FEE1F4EC789005D39E4 /* Plan.storyboard in Resources */,
 				713A620D1F594C2D008B7FDA /* 7.pdf in Resources */,
 				E5D98D751F63DD4F003CBCC9 /* FontAwesome.ttf in Resources */,
-				E58447151F468AF9006F976E /* Assets.xcassets in Resources */,
 				E58447131F468AF9006F976E /* Main.storyboard in Resources */,
 				71F57D411F59447F006C4A6D /* 6.pdf in Resources */,
 				E5DA70CA1F4EFC1600D43B73 /* Financial.storyboard in Resources */,
@@ -594,6 +593,7 @@
 				71802FF91F4ED1DB005D39E4 /* Person.storyboard in Resources */,
 				71F57D3F1F59447F006C4A6D /* 4.pdf in Resources */,
 				E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */,
+				E5D98D771F658D32003CBCC9 /* Assets.xcassets in Resources */,
 				E5D98D6D1F617EB5003CBCC9 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
