@@ -7,6 +7,7 @@ target 'Ucount_IOS' do
   pod 'Alamofire'
   pod 'Charts'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'DGElasticPullToRefresh'
 
   # Pods for Ucount_IOS
 

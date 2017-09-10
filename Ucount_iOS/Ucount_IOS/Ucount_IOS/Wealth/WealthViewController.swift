@@ -11,9 +11,9 @@ import UIKit
 
 class WealthViewController : UIViewController,SendMessageDelegate{
     
-    @IBOutlet weak var test2: UIView!
+    @IBOutlet weak var test2: UIView!  //TabelView的容器View
     
-    @IBOutlet weak var test3: UIImageView!
+    //@IBOutlet weak var test3: UIImageView!
     
     var test :[[Int:String]] = [[Int:String]]()
     
@@ -39,7 +39,7 @@ class WealthViewController : UIViewController,SendMessageDelegate{
 //        
 //        test2.backgroundColor = UIColor.clear
         
-        self.view.sendSubview(toBack: test3)
+        //self.view.sendSubview(toBack: test3)
         
         cashView = UIStoryboard(name:"Wealth",bundle:nil).instantiateViewController(withIdentifier: "cash") as! CashViewController
         

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class allAcountableViewController: UITableViewController{
     
     @IBOutlet var acountTableview: UITableView!
@@ -22,10 +23,14 @@ class allAcountableViewController: UITableViewController{
     
     var newTypeInfo : [String] = []
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         acountTableview.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -128,16 +128,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景界面" translatesAutoresizingMaskIntoConstraints="NO" id="zLQ-BA-40S">
-                                <rect key="frame" x="87" y="250" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RvH-Dq-33N">
-                                <rect key="frame" x="25" y="205" width="363" height="423"/>
+                                <rect key="frame" x="25" y="205" width="377" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <containerView opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f58-ZX-xzt">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="423"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="423"/>
                                         <connections>
                                             <segue destination="my7-dw-wdK" kind="embed" identifier="allAcountInfo" id="amI-eD-bf1"/>
                                         </connections>
@@ -145,7 +141,7 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景界面" translatesAutoresizingMaskIntoConstraints="NO" id="zQe-1Y-uIq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="161"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp6-eK-nM7">
@@ -153,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="明细"/>
                                 <connections>
-                                    <segue destination="Xr8-ED-bWe" kind="show" id="tbc-21-CX4"/>
+                                    <segue destination="Xr8-ED-bWe" kind="show" identifier="countRecord" id="tbc-21-CX4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-uh-b0A">
@@ -161,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新建"/>
                                 <connections>
-                                    <segue destination="DWf-DS-axJ" kind="show" id="mMK-jP-ize"/>
+                                    <segue destination="DWf-DS-axJ" kind="show" identifier="createNewSegue" id="mMK-jP-ize"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="净资产" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9z-hR-IGb">
@@ -215,7 +211,6 @@
                     <connections>
                         <outlet property="panGesture" destination="K3d-tg-fdh" id="1h7-lx-H6M"/>
                         <outlet property="test2" destination="f58-ZX-xzt" id="vCk-8u-rTe"/>
-                        <outlet property="test3" destination="zLQ-BA-40S" id="I4Q-2R-5d6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Huo-dB-FgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,7 +433,7 @@
         <scene sceneID="jdy-WW-PlY">
             <objects>
                 <collectionViewController storyboardIdentifier="incomeView" id="AMv-S2-pfW" userLabel="income" customClass="IncomeViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yit-5u-YoN">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="yit-5u-YoN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -485,7 +480,7 @@
         <scene sceneID="mog-dC-zwR">
             <objects>
                 <collectionViewController storyboardIdentifier="expendView" id="Wiu-YD-jbl" userLabel="expend" customClass="ExpendViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="o75-Tt-NPH">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="o75-Tt-NPH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -718,15 +713,15 @@
             <objects>
                 <tableViewController id="my7-dw-wdK" userLabel="allAcount" customClass="allAcountableViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="uCR-g4-hnn">
-                        <rect key="frame" x="0.0" y="0.0" width="363" height="423"/>
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="423"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="countType" id="ZlP-tZ-y5i">
-                                <rect key="frame" x="0.0" y="28" width="363" height="70"/>
+                                <rect key="frame" x="0.0" y="28" width="377" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZlP-tZ-y5i" id="R5s-mS-P05">
-                                    <rect key="frame" x="0.0" y="0.0" width="330" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="344" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rt-vP-csn">
