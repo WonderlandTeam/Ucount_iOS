@@ -12,6 +12,7 @@
 		710361571F510A80003B15E2 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361561F510A80003B15E2 /* PushViewController.swift */; };
 		710361591F510A8E003B15E2 /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710361581F510A8E003B15E2 /* KnowledgeViewController.swift */; };
 		710890D51F56CED4006181BC /* commentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710890D41F56CED4006181BC /* commentViewController.swift */; };
+		711220D21F65552E004B74DE /* modifyBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711220D11F65552E004B74DE /* modifyBudgetViewController.swift */; };
 		7113090E1F58F99700B9D596 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113090D1F58F99700B9D596 /* Message.swift */; };
 		711309101F58FB6200B9D596 /* messageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */; };
 		711309121F591EAD00B9D596 /* knowledgeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */; };
@@ -137,6 +138,7 @@
 		710361561F510A80003B15E2 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		710361581F510A8E003B15E2 /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
 		710890D41F56CED4006181BC /* commentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentViewController.swift; sourceTree = "<group>"; };
+		711220D11F65552E004B74DE /* modifyBudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyBudgetViewController.swift; sourceTree = "<group>"; };
 		7113090D1F58F99700B9D596 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7113090F1F58FB6200B9D596 /* messageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageDetailViewController.swift; sourceTree = "<group>"; };
 		711309111F591EAD00B9D596 /* knowledgeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knowledgeDetailViewController.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 				71B219C81F5BFE22000E9CB8 /* addBudgetViewController.swift */,
 				7136BC1D1F5C55710005CD50 /* planDetailViewController.swift */,
 				7136BC1F1F5C68650005CD50 /* addPlanViewController.swift */,
+				711220D11F65552E004B74DE /* modifyBudgetViewController.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -817,6 +820,7 @@
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				E5D98D6F1F621F60003CBCC9 /* percentTableViewController.swift in Sources */,
 				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
+				711220D21F65552E004B74DE /* modifyBudgetViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				715F9A071F5B0EE900FEF0FB /* SaveViewController.swift in Sources */,
 				7136BC1E1F5C55710005CD50 /* planDetailViewController.swift in Sources */,

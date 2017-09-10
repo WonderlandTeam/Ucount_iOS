@@ -130,6 +130,28 @@ class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let vc = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "modifyBudgetView") as! modifyBudgetViewController
+        vc.budget = budgetsToShow[indexPath.row]
+        
+        vc.callBack = ({(bud: Budget)->Void  in
+            if(bud.type == ""){
+                budgetsToShow.remove(at: indexPath.row)
+                self.table.reloadData()
+            }else{
+                budgetsToShow[indexPath.row] = bud
+                self.table.reloadData()
+            }
+        })
+        
+        self.present(vc,animated: true)
+    }
+    
+    
+    
+    
+    
+    
     @IBAction func close(segue: UIStoryboardSegue){
         table.reloadData()
     }
