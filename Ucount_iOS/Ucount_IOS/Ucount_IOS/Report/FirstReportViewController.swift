@@ -8,17 +8,26 @@
 
 import UIKit
 import Charts
+import DateTimePicker
+import SkyFloatingLabelTextField
+
 
 class FirstReportViewController: UIViewController {
 
     @IBOutlet weak var firstReportScroll: UIScrollView!
     
+    @IBOutlet weak var beginDate: SkyFloatingLabelTextFieldWithIcon!
+    
+    @IBOutlet weak var endDate: SkyFloatingLabelTextFieldWithIcon!
+    
     var incomePercent :percentTableViewController!
     var expendPercent :percentTableViewController!
     
-    @IBOutlet weak var beginDate: UIDatePicker!
     
-    @IBOutlet weak var endDate: UIDatePicker!
+    
+//    @IBOutlet weak var beginDate: UIDatePicker!
+//    
+//    @IBOutlet weak var endDate: UIDatePicker!
 
 
     var expendType :[String] = ["必需","服饰","学习","娱乐","理财","捐赠","其他"]
@@ -39,19 +48,21 @@ class FirstReportViewController: UIViewController {
         
         incomePercent = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
         
+        
+        
         expendPercent = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
         
-        print("创建了吗")
+        
         
         firstReportScroll.isScrollEnabled = true //可以上下滚动
         firstReportScroll.scrollsToTop = true //点击状态栏到顶端
         firstReportScroll.bounces = true //反弹效果
         
-        beginDate.datePickerMode = .date
-        beginDate.locale = Locale(identifier: "zh_CN") //将语言变为中文
-        
-        endDate.datePickerMode = .date
-        endDate.locale = Locale(identifier: "zh_CN")
+//        beginDate.datePickerMode = .date
+//        beginDate.locale = Locale(identifier: "zh_CN") //将语言变为中文
+//        
+//        endDate.datePickerMode = .date
+//        endDate.locale = Locale(identifier: "zh_CN")
         
         firstReportScroll.contentSize = CGSize(width: 412,height: 2200)
         
@@ -68,6 +79,8 @@ class FirstReportViewController: UIViewController {
         setLabel(description: "服饰支出分配", yPosition: 1450)
         
         setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1550)
+        
+
 
         
         // Do any additional setup after loading the view.
@@ -222,6 +235,23 @@ class FirstReportViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override  func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //点到view的别的地方，焦点从textfield转移,反焦点
+        
+        print("点击个几把222")
+        let touched = (touches as NSSet).allObjects[0] as! UITouch
+        
+        let position = touched.location(in: self.view)
+        
+        if((position.x)<170&&(position.x)>35){
+            print("点击个几把")
+            let picker = DateTimePicker.show()
+            picker.highlightColor = UIColor(red: 255.0/255.0, green: 138.0/255.0, blue: 138.0/255.0, alpha: 1)
+            picker.isDatePickerOnly = true // to hide time and show only date picker
+        }
+    }
+
 
     /*
     // MARK: - Navigation

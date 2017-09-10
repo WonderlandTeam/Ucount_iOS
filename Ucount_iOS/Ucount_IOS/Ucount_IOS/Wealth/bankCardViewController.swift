@@ -32,6 +32,7 @@ class bankCardViewController: UIViewController {
         userName.selectedLineColor = overcastGreen
         
         
+        
         passWord.placeholder = "请输入密码"
         passWord.title = "密码"
         passWord.iconFont = UIFont.init(name: "FontAwesome", size: 13)
