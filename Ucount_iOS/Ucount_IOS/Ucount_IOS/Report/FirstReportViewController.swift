@@ -12,13 +12,17 @@ import DateTimePicker
 import SkyFloatingLabelTextField
 
 
-class FirstReportViewController: UIViewController {
+class FirstReportViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var firstReportScroll: UIScrollView!
     
     @IBOutlet weak var beginDate: SkyFloatingLabelTextFieldWithIcon!
     
     @IBOutlet weak var endDate: SkyFloatingLabelTextFieldWithIcon!
+    
+    let dateformatter = DateFormatter()
+    
+    let overcastGreen = UIColor.init(red: 0x5E/255, green: 0xC9/255, blue: 0xAF/255, alpha: 1)
     
     var incomePercent :percentTableViewController!
     var expendPercent :percentTableViewController!
@@ -81,6 +85,30 @@ class FirstReportViewController: UIViewController {
         setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1550)
         
 
+        beginDate.delegate = self
+        endDate.delegate = self
+        
+        
+        
+        beginDate.placeholder = "开始日期"
+        beginDate.title = "开始日期"
+        endDate.placeholder = "结束日期"
+        endDate.title = "结束日期"
+        
+        beginDate.iconFont = UIFont(name: "FontAwesome", size: 15)
+        endDate.iconFont = UIFont(name: "FontAwesome", size: 15)
+        beginDate.iconText = "\u{f073}"
+        endDate.iconText = "\u{f073}"
+        beginDate.iconMarginBottom = -3
+        endDate.iconMarginBottom = -3
+        
+        beginDate.lineColor = overcastGreen
+        endDate.lineColor = overcastGreen
+        
+        beginDate.titleColor = overcastGreen
+        endDate.titleColor = overcastGreen
+
+        
 
         
         // Do any additional setup after loading the view.
@@ -236,22 +264,47 @@ class FirstReportViewController: UIViewController {
     }
     
     
-    override  func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //点到view的别的地方，焦点从textfield转移,反焦点
-        
-        print("点击个几把222")
-        let touched = (touches as NSSet).allObjects[0] as! UITouch
-        
-        let position = touched.location(in: self.view)
-        
-        if((position.x)<170&&(position.x)>35){
-            print("点击个几把")
-            let picker = DateTimePicker.show()
-            picker.highlightColor = UIColor(red: 255.0/255.0, green: 138.0/255.0, blue: 138.0/255.0, alpha: 1)
-            picker.isDatePickerOnly = true // to hide time and show only date picker
-        }
-    }
+    
 
+
+    
+     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        dateformatter.dateStyle = .short
+        
+        let picker = DateTimePicker.show()
+        var dateTime : Date = Date()
+        picker.highlightColor = UIColor(red: 255.0/255.0, green: 138.0/255.0, blue: 138.0/255.0, alpha: 1)
+        picker.isDatePickerOnly = true // to hide time and show only date picker
+        
+        picker.completionHandler = { date in
+            // do something after tapping done
+             dateTime = date
+            if(textField.tag == 1)
+            {
+                print("开始日期")
+                self.beginDate.text = self.dateformatter.string(from: dateTime)
+                
+            }
+                //结束日期
+            else
+            {
+                print("结束日期")
+                self.endDate.text = self.dateformatter.string(from: dateTime)
+
+                
+            }
+
+            print(dateTime)
+        }
+        
+        
+        
+        
+        
+        
+        return true
+    }
 
     /*
     // MARK: - Navigation
