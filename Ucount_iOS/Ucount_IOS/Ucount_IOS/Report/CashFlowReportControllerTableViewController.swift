@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DGElasticPullToRefresh
 
 class CashFlowReportControllerTableViewController: UITableViewController {
 
@@ -22,16 +23,31 @@ class CashFlowReportControllerTableViewController: UITableViewController {
     
     @IBOutlet weak var CashFlow: UITableView!
     
+    let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         CashFlow.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+        loadingView.tintColor = UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
+        CashFlow.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            // Do not forget to call dg_stopLoading() at the end
+            self?.CashFlow.dg_stopLoading()
+            }, loadingView: loadingView)
+        CashFlow.dg_setPullToRefreshFillColor(UIColor(red: 0xC6/255.0, green: 0xE4/255.0, blue: 0xEC/255.0, alpha: 1.0))
+        CashFlow.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    deinit {
+        CashFlow.dg_removePullToRefresh()
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +90,7 @@ class CashFlowReportControllerTableViewController: UITableViewController {
             incomeType.textColor = UIColor.gray
             incomeIcon.image = UIImage(named: moneyType[indexPath.row])
             incomeMoney.text = "\(money[indexPath.row])"
-            incomeMoney.textColor = UIColor.gray
+           // incomeMoney.textColor = UIColor.gray
             incomeTime.text = timeLine[indexPath.row]
             incomeTime.textColor = UIColor.gray
             
@@ -106,7 +122,7 @@ class CashFlowReportControllerTableViewController: UITableViewController {
             expendType.textColor = UIColor.gray
             expendIcon.image = UIImage(named: moneyType[indexPath.row])
             expendMoney.text = "\(money[indexPath.row])"
-            expendMoney.textColor = UIColor.gray
+           // expendMoney.textColor = UIColor.gray
             expendTime.text = timeLine[indexPath.row]
             expendTime.textColor = UIColor.gray
             

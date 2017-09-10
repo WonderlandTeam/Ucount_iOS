@@ -7,22 +7,38 @@
 //
 
 import UIKit
+import DGElasticPullToRefresh
 
 class TradeRecordViewController: UITableViewController {
 
     @IBOutlet var traderecord: UITableView!
     var records : [[Int:String]] = [[Int:String]]()
     
+    let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         traderecord.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+        loadingView.tintColor = UIColor(red: 0xC6/255.0, green: 0xE4/255.0, blue: 0xEC/255.0, alpha: 1.0)
+        traderecord.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            // Do not forget to call dg_stopLoading() at the end
+            self?.traderecord.dg_stopLoading()
+            }, loadingView: loadingView)
+        traderecord.dg_setPullToRefreshFillColor(UIColor(red: 0x5E/255.0, green: 0xC9/255.0, blue: 0xAF/255.0, alpha: 0.8))
+        traderecord.dg_setPullToRefreshBackgroundColor(traderecord.backgroundColor!)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    deinit {
+        traderecord.dg_removePullToRefresh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
