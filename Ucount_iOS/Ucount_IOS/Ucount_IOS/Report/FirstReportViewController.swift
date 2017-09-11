@@ -274,6 +274,8 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     }
     
     
+    
+    
     //设置饼状图下方的百分比说明, type（0代表收入,1代表支出）, countType代表具体支出／收入类型，money代表相对应的金额
     func setPercentTabel(viewController: percentTableViewController,type: Int ,countType: [String], money: [Double],yValue: Int, height: Int){
         
