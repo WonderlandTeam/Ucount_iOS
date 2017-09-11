@@ -294,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiX-bS-s51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400.00000000000006" y="3456.521739130435"/>
+            <point key="canvasLocation" x="-375" y="3457"/>
         </scene>
         <!--Add Budget View Controller-->
         <scene sceneID="AeX-MD-SyT">

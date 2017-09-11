@@ -8,7 +8,7 @@
 
 import UIKit
 
-var plans = [Plan(name: "年底买一辆自行车", date: "2017-12-31", money: 2000, hasMoney: 340, completeDate: "2017-12-22", moneyEveryday: 30),Plan(name: "这个月买手环", date: "2017-09-31", money: 500, hasMoney: 230, completeDate: "2017-08-05", moneyEveryday: 34),Plan(name: "11月初余钱3000", date: "2017-11-01", money: 3000, hasMoney: 456, completeDate: "2017-10-22", moneyEveryday: 20)]
+var plans = [Plan(name: "年底去欧洲旅游", date: "2017-12-31", money: 20000, hasMoney: 3040, completeDate: "2017-12-22", moneyEveryday: 300),Plan(name: "这个月买手环", date: "2017-09-31", money: 500, hasMoney: 230, completeDate: "2017-08-05", moneyEveryday: 34),Plan(name: "11月初余钱3000", date: "2017-11-01", money: 3000, hasMoney: 456, completeDate: "2017-10-22", moneyEveryday: 20)]
 
 class SaveViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
     
