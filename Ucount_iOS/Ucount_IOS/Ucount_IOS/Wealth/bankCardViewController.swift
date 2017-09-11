@@ -16,11 +16,14 @@ class bankCardViewController: UIViewController {
     
     @IBOutlet weak var passWord: SkyFloatingLabelTextFieldWithIcon!
     
+
+    
     let overcastGreen = UIColor.init(red: 0x5E/255, green: 0xC9/255, blue: 0xAF/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
        
         userName.placeholder = "请输入银行卡号"
         userName.title = "银行卡号"
@@ -57,6 +60,27 @@ class bankCardViewController: UIViewController {
         {
             self.dismiss(animated: true, completion: nil)
         }
+    
+    @IBAction func login(_ sender: Any)
+    {
+        if(userName.text == "")
+        {
+            SweetAlert().showAlert("登录失败", subTitle: "请填写正确的银行卡号", style: AlertStyle.error)
+        }
+        else if(passWord.text == "")
+        {
+            SweetAlert().showAlert("登录失败", subTitle: "请填写正确的密码", style: AlertStyle.error)
+        }
+        else
+        {
+            SweetAlert().showAlert("登录成功", subTitle: "恭喜您登录成功", style: AlertStyle.success)
+            
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
+            
+            
+            
+        }
+    }
         
 
     /*

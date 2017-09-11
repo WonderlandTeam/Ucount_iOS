@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT5-CJ-o8A" id="dOA-Y0-ir6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GW-LN-laC" userLabel="icon">
@@ -77,7 +77,7 @@
         <!--Itemize View Controller-->
         <scene sceneID="HhS-wn-ogJ">
             <objects>
-                <viewController id="Xr8-ED-bWe" customClass="itemizeViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="itemize" id="Xr8-ED-bWe" customClass="itemizeViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Su-SA-64H"/>
                         <viewControllerLayoutGuide type="bottom" id="EGu-fi-2vo"/>
@@ -554,6 +554,9 @@
                                 <rect key="frame" x="178" y="319" width="59" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="confirm"/>
+                                <connections>
+                                    <action selector="login:" destination="vfp-me-d2w" eventType="touchUpInside" id="TCm-W2-N6f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -704,7 +707,7 @@
                                 <rect key="frame" x="0.0" y="28" width="377" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZlP-tZ-y5i" id="R5s-mS-P05">
-                                    <rect key="frame" x="0.0" y="0.0" width="344" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="344" height="69.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rt-vP-csn">
