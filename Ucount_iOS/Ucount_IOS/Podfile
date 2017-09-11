@@ -9,6 +9,7 @@ target 'Ucount_IOS' do
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'DGElasticPullToRefresh'
   pod 'DateTimePicker'
+  pod 'LTMorphingLabel'
 
   # Pods for Ucount_IOS
 

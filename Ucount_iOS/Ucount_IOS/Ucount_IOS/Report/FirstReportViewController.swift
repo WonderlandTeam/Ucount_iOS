@@ -44,8 +44,12 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     var lifeExpend :[String] = ["饮食","日用品","水电费","通讯和网费","交通","电子设备"]
     var lifeExpendMoney = [100.0,56,44.8,50,120,300]
     
-    var clothesType :[String] = ["连衣裙","裤子","短袖"]
-    var clothesMoney = [400.0,389.0,259.0]
+    var clothesType :[String] = ["衣帽鞋包","护肤品","彩妆","首饰"]
+    var clothesMoney = [400.0,389.0,259.0,469.0]
+    
+    
+    
+    var incomePieDes = "  工资收入包括校内勤工俭学、校内工作补贴和兼职工资等多项劳动性收入，体现用户的个人劳动所得。“理财收入”作为衡量用户使用理财产品或通过理财工具获得收入的能力的重要判断要素。“家庭补助”多为来自家长的生活费补贴。其他收入考虑到了大学生额外收入的情况，展现了大学生的主要收入来源情况。"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,21 +72,27 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
 //        endDate.datePickerMode = .date
 //        endDate.locale = Locale(identifier: "zh_CN")
         
-        firstReportScroll.contentSize = CGSize(width: 412,height: 2200)
+        firstReportScroll.contentSize = CGSize(width: 412,height: 2400)
         
-        setPercentTabel(viewController: incomePercent,type: 0, countType: incomeType, money: incomeMoney, yValue: 450, height: 220)
+        
+        setPercentTabel(viewController: incomePercent,type: 0, countType: incomeType, money: incomeMoney, yValue: 450, height: 160)
+        
+        setDescription(description: incomePieDes, yPosition: 630, height: 200)
+
         
         setExpendPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney)
         
-        setPercentTabel(viewController: expendPercent,type: 1, countType: expendType, money: expendMoney, yValue: 900, height: 180)
+        setPercentTabel(viewController: expendPercent,type: 1, countType: expendType, money: expendMoney, yValue: 1150, height: 180)
         
-        setLabel(description: "生活必需支出" , yPosition: 1100)
+        setLabel(description: "生活必需支出" , yPosition: 1350)
         
-        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 1200) //生活必需支出
+        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 1400) //生活必需支出
         
-        setLabel(description: "服饰支出分配", yPosition: 1450)
+        setLabel(description: "服饰支出分配", yPosition: 1650)
         
-        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1550)
+        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1700)
+        
+
         
 
         beginDate.delegate = self
@@ -121,7 +131,7 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     func setExpendPie(showView: UIView,datapoints: [String],values: [Double]){
         var expendPieChart: PieChartView!
         
-        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 650,width: 350,height: 220))
+        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 880,width: 350,height: 220))
         
 
         
@@ -196,8 +206,18 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
          let ExpendBarChartDataSet = BarChartDataSet.init(values: dataEntries, label: "")
         
         var colors: [NSUIColor] = []
-        for _ in 0..<datapoints.count {
-            colors.append(UIColor.randomColor)
+        
+        var candiColors : [NSUIColor] = [
+            NSUIColor.init(red: 0x5E/255, green: 0xC9/255, blue: 0xAF/255, alpha: 1),
+            NSUIColor.init(red: 0xC6/255, green: 0xE4/255, blue: 0xEC/255, alpha: 1),
+            NSUIColor.init(red: 0x9F/255, green: 0xB5/255, blue: 0xDF/255, alpha: 1),
+            NSUIColor.init(red: 0xD7/255, green: 0x88/255, blue: 0xB7/255, alpha: 1),
+            NSUIColor.init(red: 0x85/255, green: 0xC5/255, blue: 0xD6/255, alpha: 1),
+            NSUIColor.init(red: 0xE4/255, green: 0xE8/255, blue: 0xBA/255, alpha: 1)
+        ]
+        
+        for i in 0..<datapoints.count {
+            colors.append(candiColors[i])
         }
 
         ExpendBarChartDataSet.colors = colors
@@ -228,11 +248,25 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
         
     }
     
+    func setDescription(description: String, yPosition: Int, height: Int){
+        let pieDes = UILabel(frame: CGRect(x:0,y: yPosition, width:380,height: height))
+        
+        pieDes.text = description
+        
+        pieDes.numberOfLines = 7
+        
+        pieDes.textColor = UIColor.init(red: 0x85/255, green: 0xC5/255, blue: 0xD6/255, alpha: 0.8)
+        
+        firstReportScroll.addSubview(pieDes)
+        
+    }
+    
     
     func setLabel(description: String, yPosition: Int){
         let barTitle = UILabel(frame: CGRect(x: 0,y: yPosition, width:350,height: 50))
         
         barTitle.text = description
+        barTitle.textColor = UIColor.init(red: 0x62/255, green: 0xC4/255, blue: 0xCB/255, alpha: 0.9)
         barTitle.textAlignment = .center
         
         firstReportScroll.addSubview(barTitle)
