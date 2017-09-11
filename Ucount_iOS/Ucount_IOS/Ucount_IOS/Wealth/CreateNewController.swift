@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 
 protocol SendMessageDelegate :class {
@@ -18,17 +19,42 @@ class CreateNewController: UIViewController {
     
     @IBOutlet weak var typePicker: UIPickerView!  //账户类型
     
-    @IBOutlet weak var money: UITextField! //账户余额
-    @IBOutlet weak var name: UITextField!  //账户名称
+
+    @IBOutlet weak var name: SkyFloatingLabelTextFieldWithIcon!
+    
+    @IBOutlet weak var money: SkyFloatingLabelTextFieldWithIcon!
     
     var countType : [String] = ["银行卡","信用卡","微信钱包"]
     
     var newInfo : [String] = [] //封装新建账户类型
     
     weak var sendDelegate : SendMessageDelegate?
+    
+    let usedColor = UIColor.init(red: 0x85/255, green: 0xC5/255, blue: 0xD6/255, alpha: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        name.placeholder = "请输入账户名称"
+        name.iconFont = UIFont.init(name: "FontAwesome", size: 18)
+        name.iconText = "\u{f007}"
+        name.iconMarginBottom = -3
+        
+        money.placeholder = "请输入账户金额"
+        money.iconFont = UIFont.init(name: "FontAwesome", size: 18)
+        money.iconText = "\u{f0d6}"
+        money.iconMarginBottom = -3
+        
+        name.title = "账户名称"
+        money.title = "账户金额"
+        
+        name.selectedIconColor = usedColor
+        money.selectedIconColor = usedColor
+        name.selectedTitleColor = usedColor
+        money.selectedTitleColor = usedColor
+        name.selectedLineColor = usedColor
+        money.selectedLineColor = usedColor
+        
 
         // Do any additional setup after loading the view.
     }

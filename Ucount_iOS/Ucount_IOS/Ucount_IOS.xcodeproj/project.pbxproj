@@ -91,6 +91,7 @@
 		E5D98D6F1F621F60003CBCC9 /* percentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */; };
 		E5D98D751F63DD4F003CBCC9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D741F63DD4F003CBCC9 /* FontAwesome.ttf */; };
 		E5D98D771F658D32003CBCC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D98D761F658D32003CBCC9 /* Assets.xcassets */; };
+		E5D98D791F66CBF3003CBCC9 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D98D781F66CBF3003CBCC9 /* SweetAlert.swift */; };
 		E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */; };
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
 		E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */; };
@@ -224,6 +225,7 @@
 		E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = percentTableViewController.swift; sourceTree = "<group>"; };
 		E5D98D741F63DD4F003CBCC9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		E5D98D761F658D32003CBCC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5D98D781F66CBF3003CBCC9 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		E5DA70C31F4D106A00D43B73 /* CreateNewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewExtension.swift; sourceTree = "<group>"; };
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		E58447671F46C40D006F976E /* Wealth */ = {
 			isa = PBXGroup;
 			children = (
+				E5D98D781F66CBF3003CBCC9 /* SweetAlert.swift */,
 				E5D98D741F63DD4F003CBCC9 /* FontAwesome.ttf */,
 				E5AA5F2F1F5B096F00225003 /* itemizeViewController.swift */,
 				E51B15A71F56E12200CB9CDE /* CreateNewController.swift */,
@@ -817,6 +820,7 @@
 				71802FD91F4EB71A005D39E4 /* PersonViewController.swift in Sources */,
 				71802FDB1F4EB743005D39E4 /* ViewController.swift in Sources */,
 				718B85141F55420400C972BE /* articleViewController.swift in Sources */,
+				E5D98D791F66CBF3003CBCC9 /* SweetAlert.swift in Sources */,
 				E5AA5FAB1F60E22800225003 /* containBalanceViewController.swift in Sources */,
 				7136BC201F5C68650005CD50 /* addPlanViewController.swift in Sources */,
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
