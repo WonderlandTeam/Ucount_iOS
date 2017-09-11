@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-uh-b0A">
-                                <rect key="frame" x="358" y="9" width="43" height="43"/>
+                                <rect key="frame" x="358" y="12" width="43" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新建" image="新建"/>
                                 <connections>
@@ -199,9 +199,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp6-eK-nM7">
-                                <rect key="frame" x="13" y="9" width="43" height="43"/>
+                                <rect key="frame" x="20" y="17" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="明细" image="明细"/>
+                                <state key="normal" title="明细" image="明细(1)"/>
                                 <connections>
                                     <segue destination="Xr8-ED-bWe" kind="show" identifier="countRecord" id="tbc-21-CX4"/>
                                 </connections>
@@ -748,7 +748,7 @@
         <image name="confirm" width="501" height="501"/>
         <image name="ic_menu_asset_off" width="32" height="32"/>
         <image name="新建" width="200" height="200"/>
-        <image name="明细" width="200" height="200"/>
+        <image name="明细(1)" width="88" height="100"/>
         <image name="背景界面" width="500" height="337"/>
         <image name="返回" width="348" height="349"/>
     </resources>

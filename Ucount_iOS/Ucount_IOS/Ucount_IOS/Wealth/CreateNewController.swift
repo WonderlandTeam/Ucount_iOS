@@ -75,35 +75,17 @@ class CreateNewController: UIViewController {
         let confirmAction = UIAlertAction(title: "确定",style : .default,handler: nil)
         if(name.text == "")
         {
-            let alertName = UIAlertController(title : "系统提示",
-                                                    message: "请输入账户名称",preferredStyle: .alert)
-            
-            
-            
 
             
-            
-            alertName.addAction(confirmAction)
-            
-            
-            self.present(alertName,animated: true,completion: nil)
+            SweetAlert().showAlert("请确认", subTitle: "您没有填写账户名称喔", style: AlertStyle.warning)
         }
         
         else if(money.text == "")
         {
-            let alertMoney = UIAlertController(title : "系统提示",
-                                                    message: "请输入账户余额",preferredStyle: .alert)
-
-            alertMoney.addAction(confirmAction)
-            
-            self.present(alertMoney,animated: true,completion: nil)
-        }
+            SweetAlert().showAlert("请确认", subTitle: "您没有填写账户金额喔", style: AlertStyle.warning)        }
         else
         {
-            let alertSuccess = UIAlertController(title: "系统提示",message: "保存成功！",preferredStyle: .alert)
-            
-            
-            self.present(alertSuccess, animated: true, completion: nil)
+            SweetAlert().showAlert("保存成功！", subTitle:"成功创建新账户",style: AlertStyle.success)
             print("选择类型"+"\(typePicker.selectedRow(inComponent: 0))")
             if sendDelegate != nil{
                  newInfo.append(name.text!)
