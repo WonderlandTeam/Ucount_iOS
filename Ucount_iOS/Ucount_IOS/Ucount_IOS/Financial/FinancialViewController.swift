@@ -83,9 +83,9 @@ class FinancialViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(FinancialViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged_financial"), object: nil)
         
-        self.popularButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
-        self.pushButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
-        self.knowButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.popularButton.setTitleColor(UIColor(red:46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
+        self.pushButton.setTitleColor(UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
+        self.knowButton.setTitleColor(UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
         
         
     }

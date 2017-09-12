@@ -91,8 +91,8 @@ class CashViewController: UIViewController {
         
         //更改按钮颜色
         
-        self.incomeButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
-        self.expendButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.incomeButton.setTitleColor(UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
+        self.expendButton.setTitleColor(UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
         
         
 

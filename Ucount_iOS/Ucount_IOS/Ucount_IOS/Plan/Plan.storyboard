@@ -22,8 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-Rc-Cch">
-                                <rect key="frame" x="92" y="32" width="31" height="30"/>
+                                <rect key="frame" x="85" y="28" width="47" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="预算"/>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="Dzr-uc-zDj"/>
@@ -42,8 +43,9 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-0c-Ets">
-                                <rect key="frame" x="275" y="32" width="31" height="30"/>
+                                <rect key="frame" x="272" y="28" width="47" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="任务"/>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="9eD-ch-WqL"/>
@@ -294,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiX-bS-s51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400.00000000000006" y="3456.521739130435"/>
+            <point key="canvasLocation" x="-375" y="3457"/>
         </scene>
         <!--Add Budget View Controller-->
         <scene sceneID="AeX-MD-SyT">

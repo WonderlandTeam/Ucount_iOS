@@ -76,8 +76,8 @@ class PlanViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(PlanViewController.currentPageChangedFunc(notification:)), name: NSNotification.Name( "currentPageChanged_plan"), object: nil)
         
-        self.budgetButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
-        self.saveButton.setTitleColor(UIColor(red: 188/255, green: 236/255, blue: 189/255, alpha: 1), for: UIControlState.normal )
+        self.budgetButton.setTitleColor(UIColor(red:46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
+        self.saveButton.setTitleColor(UIColor(red:46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
         
     }
     
