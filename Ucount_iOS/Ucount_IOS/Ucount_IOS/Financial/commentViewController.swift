@@ -71,7 +71,7 @@ class commentViewController: UIViewController,UITableViewDelegate,UITableViewDat
         (cell.viewWithTag(100) as! UILabel).text = comments[indexPath.row].userId
         (cell.viewWithTag(101) as! UILabel).text = comments[indexPath.row].date
         (cell.viewWithTag(102) as! UILabel).text = comments[indexPath.row].text
-        (cell.viewWithTag(103) as! UIButton).tag = indexPath.row
+       // (cell.viewWithTag(103) as! UIButton).tag = indexPath.row
         //self.commentButton.tag = indexPath.row
         
         return cell
