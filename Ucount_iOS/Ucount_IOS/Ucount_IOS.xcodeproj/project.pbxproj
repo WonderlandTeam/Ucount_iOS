@@ -28,6 +28,7 @@
 		715F9A051F5B0EDE00FEF0FB /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F9A041F5B0EDE00FEF0FB /* BudgetViewController.swift */; };
 		715F9A071F5B0EE900FEF0FB /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F9A061F5B0EE900FEF0FB /* SaveViewController.swift */; };
 		7173FBC71F490F0700EC01F5 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */; };
+		717D752F1F6AC27A008B1CE7 /* exponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D752E1F6AC27A008B1CE7 /* exponentViewController.swift */; };
 		71802FD51F4EB691005D39E4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD41F4EB691005D39E4 /* Common.swift */; };
 		71802FD71F4EB6E4005D39E4 /* PersonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */; };
 		71802FD91F4EB71A005D39E4 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71802FD81F4EB71A005D39E4 /* PersonViewController.swift */; };
@@ -155,6 +156,7 @@
 		715F9A041F5B0EDE00FEF0FB /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		715F9A061F5B0EE900FEF0FB /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		7173FBC61F490F0700EC01F5 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
+		717D752E1F6AC27A008B1CE7 /* exponentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exponentViewController.swift; sourceTree = "<group>"; };
 		71802FD41F4EB691005D39E4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = login/Common.swift; sourceTree = "<group>"; };
 		71802FD61F4EB6E4005D39E4 /* PersonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonNavigationController.swift; path = ../login/PersonNavigationController.swift; sourceTree = "<group>"; };
 		71802FD81F4EB71A005D39E4 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonViewController.swift; path = ../login/PersonViewController.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				71F57D321F593FF2006C4A6D /* PDFView.swift */,
 				71F57D341F594020006C4A6D /* PDFScrollView.swift */,
 				71A176481F5A4F270083FD5F /* PageViewExtension_Financial.swift */,
+				717D752E1F6AC27A008B1CE7 /* exponentViewController.swift */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -826,6 +829,7 @@
 				E58447721F481625006F976E /* WealthViewController.swift in Sources */,
 				E5D98D6F1F621F60003CBCC9 /* percentTableViewController.swift in Sources */,
 				71223DAA1F5801D100BDDEAA /* messageViewController.swift in Sources */,
+				717D752F1F6AC27A008B1CE7 /* exponentViewController.swift in Sources */,
 				711220D21F65552E004B74DE /* modifyBudgetViewController.swift in Sources */,
 				7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */,
 				715F9A071F5B0EE900FEF0FB /* SaveViewController.swift in Sources */,
