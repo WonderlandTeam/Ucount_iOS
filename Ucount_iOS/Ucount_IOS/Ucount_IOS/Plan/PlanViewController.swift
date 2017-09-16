@@ -12,6 +12,7 @@ class PlanViewController: UIViewController {
 
     var budgetView = BudgetViewController()
     var saveView = SaveViewController()
+    var adviceView = adviceViewController()
     
     @IBOutlet weak var sliderView: UIView!
     
@@ -25,6 +26,7 @@ class PlanViewController: UIViewController {
     
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var adviceButton: UIButton!
     
     //添加两个变量索引当前page和上一个page
     var lastPage = 0
@@ -32,7 +34,7 @@ class PlanViewController: UIViewController {
         didSet{
             //根据当前页面计算得到便宜量
             //一个微小的动画移动提示条
-            let offset = self.view.frame.width / 2.0 * CGFloat(currentPage)
+            let offset = self.view.frame.width / 3.0 * CGFloat(currentPage)
             
             UIView.animate(withDuration: 0.3, animations: {
                 () -> Void in
@@ -62,15 +64,18 @@ class PlanViewController: UIViewController {
         budgetView = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "budgetView") as! BudgetViewController
         saveView = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "saveView") as! SaveViewController
         
+        adviceView = UIStoryboard(name: "Plan", bundle: nil).instantiateViewController(withIdentifier: "adviceView") as! adviceViewController
+        
         pageViewController.dataSource = self
         
         pageViewController.setViewControllers([budgetView], direction: .forward, animated: true, completion: nil)
         
         controllers.append(budgetView)
         controllers.append(saveView)
+        controllers.append(adviceView)
         
         //添加提示条
-        sliderImage = UIImageView(frame: CGRect(x: 0 , y: -1 , width: self.view.frame.width / 2.0, height: 3.0))
+        sliderImage = UIImageView(frame: CGRect(x: 0 , y: -1 , width: self.view.frame.width / 3.0, height: 3.0))
         sliderImage.image = UIImage(named: "slider_green")
         sliderView.addSubview(sliderImage)
         
@@ -78,6 +83,8 @@ class PlanViewController: UIViewController {
         
         self.budgetButton.setTitleColor(UIColor(red:46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
         self.saveButton.setTitleColor(UIColor(red:46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
+        self.adviceButton.setTitleColor(UIColor(red:46/255, green: 204/255, blue: 113/255, alpha: 1), for: UIControlState.normal )
+
         
     }
     

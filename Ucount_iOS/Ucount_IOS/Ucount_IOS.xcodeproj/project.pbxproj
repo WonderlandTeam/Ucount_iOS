@@ -40,6 +40,7 @@
 		718B85141F55420400C972BE /* articleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85131F55420400C972BE /* articleViewController.swift */; };
 		718B85181F556A2E00C972BE /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B85171F556A2E00C972BE /* post.swift */; };
 		7194A2AC1F571F9500B2D827 /* modifyPassword1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */; };
+		719D90721F6D2E3800AB158D /* adviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D90711F6D2E3800AB158D /* adviceViewController.swift */; };
 		71A176491F5A4F270083FD5F /* PageViewExtension_Financial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A176481F5A4F270083FD5F /* PageViewExtension_Financial.swift */; };
 		71B219C71F5BF924000E9CB8 /* budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B219C61F5BF924000E9CB8 /* budget.swift */; };
 		71B219C91F5BFE22000E9CB8 /* addBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B219C81F5BFE22000E9CB8 /* addBudgetViewController.swift */; };
@@ -168,6 +169,7 @@
 		718B85131F55420400C972BE /* articleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = articleViewController.swift; sourceTree = "<group>"; };
 		718B85171F556A2E00C972BE /* post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		7194A2AB1F571F9500B2D827 /* modifyPassword1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyPassword1ViewController.swift; sourceTree = "<group>"; };
+		719D90711F6D2E3800AB158D /* adviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adviceViewController.swift; sourceTree = "<group>"; };
 		71A176481F5A4F270083FD5F /* PageViewExtension_Financial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewExtension_Financial.swift; sourceTree = "<group>"; };
 		71B219C61F5BF924000E9CB8 /* budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = budget.swift; sourceTree = "<group>"; };
 		71B219C81F5BFE22000E9CB8 /* addBudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addBudgetViewController.swift; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 				7136BC1D1F5C55710005CD50 /* planDetailViewController.swift */,
 				7136BC1F1F5C68650005CD50 /* addPlanViewController.swift */,
 				711220D11F65552E004B74DE /* modifyBudgetViewController.swift */,
+				719D90711F6D2E3800AB158D /* adviceViewController.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -844,6 +847,7 @@
 				7113090E1F58F99700B9D596 /* Message.swift in Sources */,
 				7152C9E61F57F43000D391A4 /* postViewController.swift in Sources */,
 				E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */,
+				719D90721F6D2E3800AB158D /* adviceViewController.swift in Sources */,
 				71F7CEF41F579F8A0012DE98 /* modifyPassword2ViewController.swift in Sources */,
 				E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */,
 				71802FD51F4EB691005D39E4 /* Common.swift in Sources */,

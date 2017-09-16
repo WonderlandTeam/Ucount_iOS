@@ -15,7 +15,11 @@ extension PlanViewController: UIPageViewControllerDataSource {
         if viewController is SaveViewController
         {
             return budgetView
+        }else if viewController is adviceViewController
+        {
+            return saveView
         }
+
         
         return nil
     }
@@ -26,6 +30,9 @@ extension PlanViewController: UIPageViewControllerDataSource {
         if viewController is BudgetViewController
         {
             return saveView
+        }else if viewController is SaveViewController
+        {
+            return adviceView
         }
         
         return nil

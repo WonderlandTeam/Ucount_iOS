@@ -21,15 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-Rc-Cch">
-                                <rect key="frame" x="85" y="28" width="47" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="预算"/>
-                                <connections>
-                                    <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="Dzr-uc-zDj"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-w9-dhi">
                                 <rect key="frame" x="1" y="92" width="413" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,12 +34,30 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-0c-Ets">
-                                <rect key="frame" x="272" y="28" width="47" height="40"/>
+                                <rect key="frame" x="184" y="28" width="47" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="任务"/>
+                                <state key="normal" title="计划"/>
                                 <connections>
                                     <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="9eD-ch-WqL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-2l-ogI">
+                                <rect key="frame" x="300" y="28" width="94" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="消费建议"/>
+                                <connections>
+                                    <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="cgQ-fN-c5t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-Rc-Cch">
+                                <rect key="frame" x="50" y="28" width="47" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="预算"/>
+                                <connections>
+                                    <action selector="changeCurrentPage:" destination="1X9-fl-nnI" eventType="touchUpInside" id="Dzr-uc-zDj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,6 +66,7 @@
                     <tabBarItem key="tabBarItem" title="规划" image="ic_menu_plan_off" selectedImage="ic_menu_plan_on" id="T7A-AS-uNt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="adviceButton" destination="pO9-2l-ogI" id="mhT-m9-odB"/>
                         <outlet property="budgetButton" destination="1y5-Rc-Cch" id="AeY-kD-A6V"/>
                         <outlet property="saveButton" destination="AZ5-0c-Ets" id="r4F-Gb-VZb"/>
                         <outlet property="sliderView" destination="jRF-w9-dhi" id="H1M-i8-OVd"/>
@@ -659,6 +669,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyw-7R-Fz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2866.666666666667" y="2750.54347826087"/>
+        </scene>
+        <!--Advice View Controller-->
+        <scene sceneID="GQd-GG-LNM">
+            <objects>
+                <viewController storyboardIdentifier="adviceView" id="Jat-aQ-eaq" customClass="adviceViewController" customModule="Ucount_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehE-aw-C0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="aMQ-6p-9bX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UCx-PT-cw1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4kp-Yj-xQu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="4kp-Yj-xQu" id="bxb-Pi-AHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ks8-3W-QFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4059.420289855073" y="2728.5326086956525"/>
         </scene>
     </scenes>
     <resources>

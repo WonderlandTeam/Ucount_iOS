@@ -29,7 +29,7 @@ class SecondReportViewController: UIViewController {
     let color2 = UIColor.init(red: 0x5E/255, green: 0xC9/255, blue: 0xAF/255, alpha: 1.0)
     var wealthAnalyse : String = "财务分析\n\n\n您属于:较高消费人群\n\n餐饮支出占总支出的26.7%，即恩格尔系数26.7%，娱乐支出占总支出的11.4%，交通支出占总支出的2.6%，文教支出占总支出的4.3%，其他支出如恋爱消费占总支出的11.7%餐饮支出和娱乐支出构成了生活支出的主力， 餐饮支出作为最大支出，超过了娱乐支出与其他消费如恋爱消费的总和。\n高投入支出为饮食娱乐，能给自身带来长远效益的相对高产出支出为文教支出，文教支出作为个人发展支出与生活资料、娱乐支出存在一定差异，但占据了合理的比例。\n\n\n"
     
-    var cosumeAdvance : String = "消费建议\n\n\n您的消费水平：较高\n\n您的消费消费特征：总支出较多，消费较为均衡\n\n此类大学生消费趋于多样化且较为均衡，文教类支出最多。建议控制好其他不必要的消费，并且培养一定的理财意识。"
+    //var cosumeAdvance : String = "消费建议\n\n\n您的消费水平：较高\n\n您的消费消费特征：总支出较多，消费较为均衡\n\n此类大学生消费趋于多样化且较为均衡，文教类支出最多。建议控制好其他不必要的消费，并且培养一定的理财意识。"
     
     
     let color3 = UIColor.init(red: 0x71/255, green: 0x75/255, blue: 0xD0/255, alpha: 1)
@@ -99,7 +99,7 @@ class SecondReportViewController: UIViewController {
         setIndex(description: "消费比率(月支出/月收入)", index: "\(consume)", yPosition: 800, height: 20, width: 300)
         setIndex(description: "储蓄比率(（月收入-月支出）/月收入)", index: "\(save)", yPosition: 830, height: 20, width: 300)
         setPromt(description: wealthAnalyse, yPositon: 880, height: 350, colored: color2)
-        setPromt(description: cosumeAdvance, yPositon: 1250, height: 350, colored: color3)
+        //setPromt(description: cosumeAdvance, yPositon: 1250, height: 350, colored: color3)
         
         NotificationCenter.default.post(name: NSNotification.Name( "currentPageChanged"), object: 1)
     }
