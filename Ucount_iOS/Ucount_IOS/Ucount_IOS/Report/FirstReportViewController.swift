@@ -38,8 +38,8 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50]
     
     var incomeType :[String] = ["工资","理财","补助","其他"]
-    var incomeMoney = [400.0,200.0,500.0,300.0]
-
+    //var incomeMoney = [400.0,200.0,500.0,300.0]
+    var incomeMoney = [Double]()
     
     var lifeExpend :[String] = ["饮食","日用品","水电费","通讯和网费","交通","电子设备"]
     var lifeExpendMoney = [100.0,56,44.8,50,120,300]
@@ -52,7 +52,12 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     var incomePieDes = "  工资收入包括校内勤工俭学、校内工作补贴和兼职工资等多项劳动性收入，体现用户的个人劳动所得。“理财收入”作为衡量用户使用理财产品或通过理财工具获得收入的能力的重要判断要素。“家庭补助”多为来自家长的生活费补贴。其他收入考虑到了大学生额外收入的情况，展现了大学生的主要收入来源情况。"
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        //计算收入百分比
+        getIncomeStatement()
+        
         
         incomePercent = UIStoryboard(name:"Report",bundle:nil).instantiateViewController(withIdentifier: "tabelPercent") as! percentTableViewController
         
@@ -75,7 +80,7 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
         firstReportScroll.contentSize = CGSize(width: 412,height: 2400)
         
         
-        setPercentTabel(viewController: incomePercent,type: 0, countType: incomeType, money: incomeMoney, yValue: 450, height: 160)
+       // setPercentTabel(viewController: incomePercent,type: 0, countType: incomeType, money: incomeMoney, yValue: 450, height: 160)
         
         setDescription(description: incomePieDes, yPosition: 630, height: 200)
 
@@ -318,20 +323,20 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
              dateTime = date
             if(textField.tag == 1)
             {
-                print("开始日期")
+                //print("开始日期")
                 self.beginDate.text = self.dateformatter.string(from: dateTime)
                 
             }
                 //结束日期
             else
             {
-                print("结束日期")
+                //print("结束日期")
                 self.endDate.text = self.dateformatter.string(from: dateTime)
 
                 
             }
 
-            print(dateTime)
+            //print(dateTime)
         }
         
         

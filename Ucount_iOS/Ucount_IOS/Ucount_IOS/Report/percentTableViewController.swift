@@ -32,7 +32,7 @@ class percentTableViewController: UITableViewController {
         for i in 0...countMoney.count-1 {
             totalMoney = totalMoney + countMoney[i]
         }
-        print("totalMoney 是" + "\(totalMoney)")
+        //print("totalMoney 是" + "\(totalMoney)")
         
         percentRecord.removeAll()
         for i in 0...countMoney.count-1 {
@@ -96,9 +96,9 @@ class percentTableViewController: UITableViewController {
         //支出
         else
         {
-            print(countType)
-            print(countMoney)
-            print(percentRecord)
+            //print(countType)
+            //print(countMoney)
+            //print(percentRecord)
             
             if(countType[indexPath.row] == "必需")
             {

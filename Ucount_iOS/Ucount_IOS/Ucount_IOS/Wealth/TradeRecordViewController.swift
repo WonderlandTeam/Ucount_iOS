@@ -18,7 +18,7 @@ class TradeRecordViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        test()
         traderecord.separatorStyle = UITableViewCellSeparatorStyle.none
         
         loadingView.tintColor = UIColor(red: 0xC6/255.0, green: 0xE4/255.0, blue: 0xEC/255.0, alpha: 1.0)

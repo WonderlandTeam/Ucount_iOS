@@ -10,6 +10,7 @@ target 'Ucount_IOS' do
   pod 'DGElasticPullToRefresh'
   pod 'DateTimePicker'
   pod 'LTMorphingLabel'
+  pod 'SwiftyJSON'
 
   # Pods for Ucount_IOS
 

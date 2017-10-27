@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -525,7 +525,7 @@
                                     <navigationItem title="添加银行卡" id="bqC-Qa-MgN" userLabel="银行卡">
                                         <barButtonItem key="leftBarButtonItem" width="15" style="plain" id="U73-Jr-Rme">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cUJ-sj-JqY">
-                                                <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                                <rect key="frame" x="20" y="0.0" width="382" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="返回" image="返回"/>
                                                 <connections>
@@ -589,7 +589,7 @@
                                     <navigationItem title="添加校园卡" id="YL4-sA-p2X">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="to8-Vr-Mm1">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U2x-Qx-gvj">
-                                                <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                                <rect key="frame" x="20" y="0.0" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="返回" image="返回"/>
@@ -651,7 +651,7 @@
                                     <navigationItem title="添加支付宝" id="nb3-al-u9n">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="0Lv-Al-OL3">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wDB-uR-YeX">
-                                                <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                                <rect key="frame" x="20" y="0.0" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="返回" image="返回"/>

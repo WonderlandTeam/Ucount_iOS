@@ -65,6 +65,7 @@
 		E51B15AC1F56EDA400CB9CDE /* SecondReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AB1F56EDA400CB9CDE /* SecondReportViewController.swift */; };
 		E51B15AE1F56EDB400CB9CDE /* ThirdReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AD1F56EDB400CB9CDE /* ThirdReportViewController.swift */; };
 		E51B15B01F56F37C00CB9CDE /* PageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */; };
+		E55719D31FA0C1A000FC6853 /* TradeRecordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55719D21FA0C1A000FC6853 /* TradeRecordData.swift */; };
 		E584470E1F468AF9006F976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584470D1F468AF9006F976E /* AppDelegate.swift */; };
 		E58447131F468AF9006F976E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447111F468AF9006F976E /* Main.storyboard */; };
 		E58447181F468AF9006F976E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58447161F468AF9006F976E /* LaunchScreen.storyboard */; };
@@ -98,6 +99,7 @@
 		E5DA70C61F4EF60A00D43B73 /* Wealth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */; };
 		E5DA70C81F4EFB4100D43B73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */; };
 		E5DA70CA1F4EFC1600D43B73 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DA70C91F4EFC1600D43B73 /* Financial.storyboard */; };
+		E5DBB3701FA30AD000E3A3F7 /* firstReportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBB36F1FA30AD000E3A3F7 /* firstReportExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +197,7 @@
 		E51B15AB1F56EDA400CB9CDE /* SecondReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondReportViewController.swift; sourceTree = "<group>"; };
 		E51B15AD1F56EDB400CB9CDE /* ThirdReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdReportViewController.swift; sourceTree = "<group>"; };
 		E51B15AF1F56F37C00CB9CDE /* PageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewExtension.swift; sourceTree = "<group>"; };
+		E55719D21FA0C1A000FC6853 /* TradeRecordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRecordData.swift; sourceTree = "<group>"; };
 		E584470A1F468AF9006F976E /* Ucount_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ucount_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584470D1F468AF9006F976E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58447121F468AF9006F976E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -234,6 +237,7 @@
 		E5DA70C51F4EF60A00D43B73 /* Wealth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wealth.storyboard; sourceTree = "<group>"; };
 		E5DA70C71F4EFB4100D43B73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E5DA70C91F4EFC1600D43B73 /* Financial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
+		E5DBB36F1FA30AD000E3A3F7 /* firstReportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstReportExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +415,7 @@
 				E5AA5FA81F604A7700225003 /* UICollectionGridViewLayout.swift */,
 				E5AA5FAA1F60E22800225003 /* containBalanceViewController.swift */,
 				E5D98D6E1F621F60003CBCC9 /* percentTableViewController.swift */,
+				E5DBB36F1FA30AD000E3A3F7 /* firstReportExtension.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -435,6 +440,7 @@
 				E5D7A1AD1F58EBFB009FE44E /* ExpendViewController.swift */,
 				E5D7A1AF1F58EF36009FE44E /* CashPageExtension.swift */,
 				E5AA5F2D1F5B093B00225003 /* TradeRecordViewController.swift */,
+				E55719D21FA0C1A000FC6853 /* TradeRecordData.swift */,
 			);
 			path = Wealth;
 			sourceTree = "<group>";
@@ -736,6 +742,7 @@
 				"${BUILT_PRODUCTS_DIR}/DateTimePicker/DateTimePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -745,6 +752,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTimePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -808,6 +816,7 @@
 				E59AB5C41F5155B600FDA308 /* CashViewController.swift in Sources */,
 				7136BC1C1F5C47050005CD50 /* passwrodViewController.swift in Sources */,
 				E584477D1F49F3DA006F976E /* allAcountableViewController.swift in Sources */,
+				E55719D31FA0C1A000FC6853 /* TradeRecordData.swift in Sources */,
 				E51B15A81F56E12200CB9CDE /* CreateNewController.swift in Sources */,
 				E5AA5FA11F5ECAC300225003 /* ColorExtension.swift in Sources */,
 				E58447791F487298006F976E /* RegisterViewController.swift in Sources */,
@@ -816,6 +825,7 @@
 				711309101F58FB6200B9D596 /* messageDetailViewController.swift in Sources */,
 				E511661F1F57EA0A00885634 /* bankCardViewController.swift in Sources */,
 				E5D7A1B01F58EF36009FE44E /* CashPageExtension.swift in Sources */,
+				E5DBB3701FA30AD000E3A3F7 /* firstReportExtension.swift in Sources */,
 				E5DA70C41F4D106A00D43B73 /* CreateNewExtension.swift in Sources */,
 				71F7CEF21F579B490012DE98 /* forgetViewController.swift in Sources */,
 				E5D98D6B1F617EAE003CBCC9 /* FAIcon.swift in Sources */,

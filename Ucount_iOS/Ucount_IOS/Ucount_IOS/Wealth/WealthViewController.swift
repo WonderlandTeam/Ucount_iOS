@@ -113,6 +113,7 @@ class WealthViewController : UIViewController,SendMessageDelegate{
     
     //通知响应方法
     func selectedTypeFunc(notification: NSNotification) {
+        print("这个通知方法")
         jumpTo = notification.object as! String
         switch jumpTo {
         case "银行卡"?:

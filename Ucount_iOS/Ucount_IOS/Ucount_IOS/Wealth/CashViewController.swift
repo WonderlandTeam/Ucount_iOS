@@ -24,7 +24,7 @@ class CashViewController: UIViewController {
     
     typealias closureBlock = ([Int:String]) -> Void
     
-    var sendToWealth : closureBlock?
+    var sendToWealth : closureBlock? //回传数据
     
     var pageViewController : UIPageViewController!
     
