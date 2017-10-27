@@ -16,7 +16,7 @@ class containBalanceViewController: UIViewController {
         super.viewDidLoad()
         gridViewController = balanceViewController()
         gridViewController.setColumns(columns: ["资产项目","成本", "市价", "负债项目", "金额","净值项目","成本","市价"])
-        gridViewController.addRow(row: ["现金","  ", "  ", "信用卡负债", "  ","  ","  "," "])
+        gridViewController.addRow(row: ["现金","1101", "1101", "信用卡负债", "  ","  ","  "," "])
         gridViewController.addRow(row: ["活存","  ", "  ", "  ", "  ","  ","  "," "])
         gridViewController.addRow(row: ["流动资产","  ", "  ", "消费负债", "流动净值","  ","  "," "])
         gridViewController.addRow(row: ["外币","  ", "  ", "  ", "  ","  ","  ","  "])

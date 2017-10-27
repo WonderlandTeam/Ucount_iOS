@@ -142,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5sf-cv-DuE" id="CKZ-c4-ohu">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view tag="11" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-eY-crb">
@@ -182,7 +182,7 @@
                                 <rect key="frame" x="0.0" y="114" width="414" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zMA-p4-MYq" id="8Zs-yC-pdy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view tag="21" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZN4-kI-kas">
@@ -319,9 +319,6 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGN-7z-qwk">
                                         <rect key="frame" x="8" y="197" width="335" height="220"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <connections>
-                                            <segue destination="jZj-Br-Byr" kind="embed" id="QMN-hZ-433"/>
-                                        </connections>
                                     </containerView>
                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-ce-8QL" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
                                         <rect key="frame" x="33" y="8" width="145" height="30"/>
@@ -368,7 +365,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YOF-pU-Koc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JeD-71-jJn" customClass="PieChartView" customModule="Charts">
-                        <rect key="frame" x="0.0" y="0.0" width="335" height="220"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -393,7 +390,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ezH-Ry-lsV" id="pe4-oY-crt">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="29.666666666666668"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="29.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-NQ-cbQ">

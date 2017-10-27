@@ -27,6 +27,23 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     var incomePercent :percentTableViewController!
     var expendPercent :percentTableViewController!
     
+    var expendColors: [NSUIColor] = [
+    NSUIColor.init(red: 0x99/255, green: 0x66/255, blue: 0x00/255, alpha: 0.8),
+    NSUIColor.init(red: 0x00/255, green: 0xCC/255, blue: 0x66/255, alpha: 0.8),
+    NSUIColor.init(red: 0x99/255, green: 0xCC/255, blue: 0xFF/255, alpha: 0.8),
+    NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0x33/255, alpha: 0.8),
+    NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.8),
+    NSUIColor.init(red: 0xFF/255, green: 0x00/255, blue: 0x66/255, alpha: 0.8),
+    NSUIColor.init(red: 0xCC/255, green: 0x66/255, blue: 0x66/255, alpha: 0.8)
+    
+    ]
+    var incomeColors: [NSUIColor] = [
+    NSUIColor.init(red: 0x33/255, green: 0xCC/255, blue: 0xCC/255, alpha: 0.8),
+    NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.8),
+    NSUIColor.init(red: 0xFF/255, green: 0x66/255, blue: 0x00/255, alpha: 0.8),
+    NSUIColor.init(red: 0x00/255, green: 0x99/255, blue: 0x33/255, alpha: 0.8)
+    ]
+    
     
     
 //    @IBOutlet weak var beginDate: UIDatePicker!
@@ -35,17 +52,22 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
 
 
     var expendType :[String] = ["必需","服饰","学习","娱乐","理财","捐赠","其他"]
-    var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50]
+
     
+    
+    //var expendMoney = [200.0,240.0,100.0,500.0,56,44.8,50]
+    var expendMoney = [Double]()
     var incomeType :[String] = ["工资","理财","补助","其他"]
     //var incomeMoney = [400.0,200.0,500.0,300.0]
     var incomeMoney = [Double]()
     
     var lifeExpend :[String] = ["饮食","日用品","水电费","通讯和网费","交通","电子设备"]
-    var lifeExpendMoney = [100.0,56,44.8,50,120,300]
+    //var lifeExpendMoney = [100.0,56,44.8,50,120,300]
+    var lifeExpendMoney = [Double]()
     
     var clothesType :[String] = ["衣帽鞋包","护肤品","彩妆","首饰"]
-    var clothesMoney = [400.0,389.0,259.0,469.0]
+    //var clothesMoney = [400.0,389.0,259.0,469.0]
+    var clothesMoney = [Double]()
     
     
     
@@ -55,7 +77,7 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
         
         super.viewDidLoad()
         
-        //计算收入百分比
+        //收支盈余表的数据传输
         getIncomeStatement()
         
         
@@ -79,23 +101,24 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
         
         firstReportScroll.contentSize = CGSize(width: 412,height: 2400)
         
+      //  setPie(showView: firstReportScroll, datapoints: incomeType, values: incomeMoney, colors: incomeColors, yValue: 100, type: "收入")
         
        // setPercentTabel(viewController: incomePercent,type: 0, countType: incomeType, money: incomeMoney, yValue: 450, height: 160)
         
         setDescription(description: incomePieDes, yPosition: 630, height: 200)
 
         
-        setExpendPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney)
+       // setPie(showView: firstReportScroll, datapoints: expendType, values: expendMoney,colors: expendColors,yValue: 880,type: "支出")
         
-        setPercentTabel(viewController: expendPercent,type: 1, countType: expendType, money: expendMoney, yValue: 1150, height: 180)
+        //setPercentTabel(viewController: expendPercent,type: 1, countType: expendType, money: expendMoney, yValue: 1150, height: 180)
         
         setLabel(description: "生活必需支出" , yPosition: 1350)
         
-        setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 1400) //生活必需支出
+        //setExpendBar(datapoints: lifeExpend,values: lifeExpendMoney,yPosition: 1400) //生活必需支出
         
         setLabel(description: "服饰支出分配", yPosition: 1650)
         
-        setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1700)
+        //setExpendBar(datapoints: clothesType, values: clothesMoney, yPosition: 1700)
         
 
         
@@ -131,72 +154,67 @@ class FirstReportViewController: UIViewController,UITextFieldDelegate {
     
 
     
+
+    
     
     //饼状图支出
-    func setExpendPie(showView: UIView,datapoints: [String],values: [Double]){
-        var expendPieChart: PieChartView!
+    func setPie(showView: UIView,datapoints: [String],values: [Double],colors:[NSUIColor],yValue: Int,type: String){
+        var pieChart: PieChartView!
         
-        expendPieChart = PieChartView.init(frame: CGRect(x: 0,y: 880,width: 350,height: 220))
+        pieChart = PieChartView.init(frame: CGRect(x: 0,y: yValue,width: 350,height: 220))
         
 
         
         var dataEntries: [PieChartDataEntry] = []
-        var totalExpend = 0.0
+        var total = 0.0
         
         for i in 0..<datapoints.count {
             let dataEntry = PieChartDataEntry.init(value: values[i], label: datapoints[i])
             
-            totalExpend = totalExpend + values[i]
+            total = total + values[i]
             dataEntries.append(dataEntry)
         }
         
-        let expendChartDataSet = PieChartDataSet.init(values: dataEntries, label: "")
+        let chartDataSet = PieChartDataSet.init(values: dataEntries, label: "")
         
         
-        var colors: [NSUIColor] = []
+        chartDataSet.colors = colors //区块的颜色
         
-        colors.append(NSUIColor.init(red: 0x99/255, green: 0x66/255, blue: 0x00/255, alpha: 0.8))
-        colors.append(NSUIColor.init(red: 0x00/255, green: 0xCC/255, blue: 0x66/255, alpha: 0.8))
-        colors.append(NSUIColor.init(red: 0x99/255, green: 0xCC/255, blue: 0xFF/255, alpha: 0.8))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0x33/255, alpha: 0.8))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x99/255, blue: 0xCC/255, alpha: 0.8))
-        colors.append(NSUIColor.init(red: 0xFF/255, green: 0x00/255, blue: 0x66/255, alpha: 0.8))
-        colors.append(NSUIColor.init(red: 0xCC/255, green: 0x66/255, blue: 0x66/255, alpha: 0.8))
+        let pieData = PieChartData()
+        pieData.addDataSet(chartDataSet)
+        
+        pieChart.data = pieData
+        pieChart.chartDescription?.text = ""
+        
+        pieChart.drawCenterTextEnabled = true
+        if(type == "支出"){
+            pieChart.centerText = "总支出"+"\(total)"
+        }else{
+            pieChart.centerText = "总收入"+"\(total)"
+        }
         
         
+        chartDataSet.xValuePosition = .outsideSlice
+        chartDataSet.entryLabelColor = NSUIColor.gray
+        chartDataSet.entryLabelFont = NSUIFont.boldSystemFont(ofSize: 13.0)
         
-        expendChartDataSet.colors = colors //区块的颜色
-        
-        let Piedata = PieChartData()
-        Piedata.addDataSet(expendChartDataSet)
-        
-        expendPieChart.data = Piedata
-        expendPieChart.chartDescription?.text = ""
-        
-        expendPieChart.drawCenterTextEnabled = true
-        expendPieChart.centerText = "总支出"+"\(totalExpend)"
-        
-        expendChartDataSet.xValuePosition = .outsideSlice
-        expendChartDataSet.entryLabelColor = NSUIColor.gray
-        expendChartDataSet.entryLabelFont = NSUIFont.boldSystemFont(ofSize: 13.0)
-        
-        expendChartDataSet.valueLinePart1Length = 0.5
+        chartDataSet.valueLinePart1Length = 0.5
 
         
        // expendPieChart.usePercentValuesEnabled = true
-        expendPieChart.dragDecelerationEnabled = true
-        expendPieChart.holeRadiusPercent = 0.55
-        expendPieChart.legend.textColor = NSUIColor.black
-        expendPieChart.legend.maxSizePercent = 1
+        pieChart.dragDecelerationEnabled = true
+        pieChart.holeRadiusPercent = 0.55
+        pieChart.legend.textColor = NSUIColor.black
+        pieChart.legend.maxSizePercent = 1
         
 
-        showView.addSubview(expendPieChart)
+        showView.addSubview(pieChart)
         
     }
     
     func setExpendBar(datapoints:[String], values:[Double], yPosition: Int){
         var ExpendBarChart : BarChartView!
-        
+       // print("receive : "+"\(values)")
         ExpendBarChart = BarChartView.init(frame: CGRect(x: 0,y: yPosition,width: 350, height: 220))
         
         var dataEntries: [BarChartDataEntry] = []
