@@ -12,7 +12,7 @@ import UIKit
 var budgets = [Budget(type: "饮食", money: 823.9, month: 9, year: 2017, left: 300),Budget(type: "书", money: 234, month: 9, year: 2017, left: 100),Budget(type: "交通", money: 45, month: 1, year: 2018, left: 45),
 Budget(type: "饮食", money: 1000, month: 1, year: 2018, left: 600)]
 
-var budgetsToShow = [Budget]()
+var budgetsToShow = budgets   // [Budget]()
 class BudgetViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var picker: UIPickerView!

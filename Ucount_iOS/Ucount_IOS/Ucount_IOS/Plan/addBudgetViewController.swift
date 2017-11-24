@@ -20,6 +20,7 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
     
     @IBOutlet weak var saveButton: UIButton!
     
+   // @IBOutlet weak var backButton: UIButton!
     
     var types = ["总预算","彩妆","护肤品","交通","恋爱","社交","通讯和网费","文具","兴趣"]
 
@@ -83,9 +84,17 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
             }
         }
     }
+    
+    @IBAction func backTapped(_ sender: UIButton) {
+        self.dismiss(animated: true) {
+            
+        }
+    }
+    
 
     @IBAction func saveTapped(_ sender: UIButton) {
-        let dateStr = String(years[self.monthPicker.selectedRow(inComponent: 0)])+"-"+String(months[self.monthPicker.selectedRow(inComponent: 1)])
+    
+      //  let dateStr = String(years[self.monthPicker.selectedRow(inComponent: 0)])+"-"+String(months[self.monthPicker.selectedRow(inComponent: 1)])
         
         let type = types[Int(self.typePicker.selectedRow(inComponent: 0).description)!]
         
@@ -104,10 +113,4 @@ class addBudgetViewController: UIViewController,UIPickerViewDataSource,UIPickerV
         return true
     }
     
-    @IBAction func backTapped(_ sender: UIButton) {
-        self.dismiss(animated: true) { 
-    
-        }
-    }
-
 }

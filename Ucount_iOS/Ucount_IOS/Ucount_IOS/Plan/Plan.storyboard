@@ -182,6 +182,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BMs-BI-Uvg"/>
                     <connections>
                         <outlet property="picker" destination="zvw-oj-172" id="EzL-jT-W2L"/>
                         <outlet property="table" destination="6xt-St-lgo" id="mc1-3K-N9h"/>
@@ -389,7 +390,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ci3-zt-tEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="AiO-u3-iI2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="744.92753623188412" y="3457.3369565217395"/>
+            <point key="canvasLocation" x="468" y="3511"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="An0-U1-cRP">
@@ -710,6 +711,6 @@
         <image name="删除" width="418" height="447"/>
         <image name="椭圆" width="50" height="50"/>
         <image name="添加" width="399" height="400"/>
-        <image name="返回" width="348" height="349"/>
+        <image name="返回" width="174" height="174"/>
     </resources>
 </document>
